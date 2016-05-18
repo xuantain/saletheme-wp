@@ -1,0 +1,4528 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: idstore\n"
+"POT-Creation-Date: 2014-04-19 14:52+0200\n"
+"PO-Revision-Date: 2015-01-07 23:07+0700\n"
+"Last-Translator: Tran Thanh Tung <tungtt@trauvang.com>\n"
+"Language-Team: 8theme <support@8theme.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-KeywordsList: _;_e;__;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:12
+msgid "<strong>404</strong>"
+msgstr "<strong>404</strong>"
+
+#: ../404.php:14
+msgid ""
+"Sorry, but the page you are looking for is not found. Please, make sure you’ve "
+"typed the current  URL."
+msgstr ""
+"Xin lỗi, nhưng trang mà bạn đang tìm kiếm không được tìm thấy. Xin vui lòng, "
+"hãy chắc chắn bạn đã nhập URL hiện hành."
+
+#: ../404.php:18 ../code/functions.php:960 ../woocommerce/archive-product.php:25
+#: ../woocommerce/single-product.php:25
+msgid "Return to Previous Page"
+msgstr "Trở về trang trước"
+
+#: ../archive.php:17
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Lưu trữ hàng ngày: %s"
+
+#: ../archive.php:19
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Lưu trữ hàng tháng: %s"
+
+#: ../archive.php:19
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "FY"
+
+#: ../archive.php:21
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Lưu trữ hàng năm: %s"
+
+#: ../archive.php:21
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: ../archive.php:23
+msgid "Blog Archives"
+msgstr "Lưu trữ"
+
+#: ../archive.php:37 ../portfolio.php:56 ../search.php:22
+msgid "Nothing Found"
+msgstr "Không tìn thấy kết quả nào"
+
+#: ../author.php:33
+#, php-format
+msgid "Author Archives: %s"
+msgstr "Tác giả : %s"
+
+#: ../author.php:43
+#, php-format
+msgid "About %s"
+msgstr "giới thiệu %s"
+
+#: ../comments.php:10
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Bài này là mật khẩu bảo vệ. Nhập mật khẩu để xem bất kỳ ý kiến."
+
+#: ../comments.php:27
+#, php-format
+msgid "One Response to %2$s"
+msgid_plural "%1$s Responses to %2$s"
+msgstr[0] "Một đáp ứng đến %2$s"
+msgstr[1] "%1$s đáp lại đến %2$s"
+
+#: ../comments.php:33 ../comments.php:46
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr "<span class=\"meta-nav\">&larr;</span> Bình luận cũ hơn"
+
+#: ../comments.php:34 ../comments.php:47
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Bình luận mới <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../comments.php:58
+msgid "Comments are closed."
+msgstr "bình luận đã ​​đóng."
+
+#: ../comments.php:65
+msgid "Leave a Comment"
+msgstr "Để lại lời bình"
+
+#: ../comments.php:67
+msgid "Your Name"
+msgstr "Tên của bạn"
+
+#: ../comments.php:72
+msgid "Your Email"
+msgstr "Email của bạn"
+
+#: ../comments.php:78
+msgid "Comment"
+msgstr "Bình luận"
+
+#: ../content-portfolio.php:70 ../loop-single.php:70 ../loop-single.php:123
+#: ../loop-single.php:151 ../loop.php:78 ../loop.php:131 ../loop.php:159
+#: ../single-etheme_portfolio.php:97
+msgid "Leave a comment"
+msgstr "Để lại một bình luận"
+
+#: ../content-portfolio.php:70 ../loop-single.php:70 ../loop-single.php:123
+#: ../loop-single.php:151 ../loop.php:78 ../loop.php:131 ../loop.php:159
+#: ../single-etheme_portfolio.php:97
+msgid "1 Comment"
+msgstr "1 bình luận"
+
+#: ../content-portfolio.php:70 ../loop-single.php:70 ../loop-single.php:123
+#: ../loop-single.php:151 ../loop.php:78 ../loop.php:131 ../loop.php:159
+#: ../single-etheme_portfolio.php:97
+msgid "% Comments"
+msgstr "% bình luận"
+
+#: ../content-portfolio.php:79 ../code/functions.php:435
+msgid "Read More"
+msgstr "Chi tiết"
+
+#: ../et-links.php:3
+msgid "Your Account"
+msgstr "Tài khoản của bạn"
+
+#: ../et-links.php:4
+msgid "Logout"
+msgstr "Đăng xuất"
+
+#: ../et-links.php:10
+msgid "Sign In"
+msgstr "Đăng nhập"
+
+#: ../et-links.php:11 ../et-registration.php:59
+#: ../woocommerce/myaccount/form-login.php:56
+#: ../woocommerce/myaccount/form-login.php:93
+msgid "Register"
+msgstr "Đăng ký"
+
+#: ../et-registration.php:32 ../woocommerce/myaccount/form-login.php:62
+msgid "New Customer?"
+msgstr "Khách hàng mới?"
+
+#: ../et-registration.php:33 ../woocommerce/myaccount/form-login.php:63
+msgid "Please, register your account to continue."
+msgstr "Xin vui lòng đăng ký tài khoản của bạn để tiếp tục."
+
+#: ../et-registration.php:36
+msgid "Enter your username"
+msgstr "Nhập địa chỉ email của bạn"
+
+#: ../et-registration.php:40 ../woocommerce/myaccount/form-login.php:70
+msgid "Enter your E-mail address"
+msgstr "Nhập địa chỉ E-mail của bạn"
+
+#: ../et-registration.php:44 ../woocommerce/myaccount/form-login.php:38
+#: ../woocommerce/myaccount/form-login.php:76
+msgid "Enter your password"
+msgstr "Nhập mật khẩu của bạn"
+
+#: ../et-registration.php:48 ../woocommerce/myaccount/form-login.php:80
+msgid "Re-enter your password"
+msgstr "Nhập lại mật khẩu của bạn"
+
+#: ../et-registration.php:91
+msgid ""
+"<span class=\"error\">Registration is currently disabled. Please try again "
+"later.<span>"
+msgstr ""
+"<span class =\"error\">Đăng ký hiện đang bị vô hiệu hóa. Vui lòng thử lại sau."
+"</span>"
+
+#: ../et-styles.php:408
+msgid "was successfully added to your shopping cart."
+msgstr "đã được thêm thành công vào giỏ mua hàng của bạn."
+
+#: ../et-styles.php:408
+msgid "Continue Shopping"
+msgstr "Tiếp tục mua hàng"
+
+#: ../et-styles.php:408 ../code/woo.php:130
+msgid "Checkout"
+msgstr "Thanh toán"
+
+#: ../footer.php:30
+msgid "Recent Tweets"
+msgstr "Tweets gần đây"
+
+#: ../footer.php:111
+msgid "Back to top"
+msgstr "Lên đầu trang"
+
+#: ../footer.php:117
+msgid "Mobile version"
+msgstr "Phiên bản điện thoại di động"
+
+#: ../footer.php:119
+msgid "Enabled"
+msgstr "Bật"
+
+#: ../footer.php:121
+msgid "Disabled"
+msgstr "Đã vô hiệu hóa"
+
+#: ../header.php:33
+#, php-format
+msgid "Page %s"
+msgstr "Trang %s"
+
+#: ../header.php:41
+msgid "All is well, your e&ndash;mail has been sent!"
+msgstr "Tất cả là tốt, e&ndash;mail của bạn đã được gửi đi!"
+
+#: ../header.php:42
+msgid "Menu"
+msgstr "Trình đơn"
+
+#: ../header.php:45
+msgid "Please, fill in the required fields!"
+msgstr "Xin vui lòng điền vào các trường được yêu cầu!"
+
+#: ../header.php:46
+msgid "Something went wrong"
+msgstr "Một cái gì đó đã sai"
+
+#: ../header.php:47
+msgid "Successfully added to your shopping cart"
+msgstr "Thêm thành công vào giỏ hàng của bạn"
+
+#: ../header.php:76
+msgid "Loading the content..."
+msgstr "Đang tải nội dung ..."
+
+#: ../header.php:77
+msgid "Loading depends on your connection speed!"
+msgstr "Đang tải phụ thuộc vào tốc độ kết nối của bạn!"
+
+#: ../loop-attachment.php:18
+#, php-format
+msgid "Return to %s"
+msgstr "Quay trở lại %s"
+
+#: ../loop-attachment.php:20
+#, php-format
+msgid "<span class=\"meta-nav\">&larr;</span> %s"
+msgstr "<span class=\"meta-nav\">&larr;</span> %s"
+
+#: ../loop-attachment.php:30
+#, php-format
+msgid "<span class=\"%1$s\">By</span> %2$s"
+msgstr "<span class=\"%1$s\">Bởi</span> %2$s"
+
+#: ../loop-attachment.php:34 ../code/functions.php:399
+#, php-format
+msgid "View all posts by %s"
+msgstr "Xem tất cả các bài viết của %s"
+
+#: ../loop-attachment.php:41
+#, php-format
+msgid "<span class=\"%1$s\">Published</span> %2$s"
+msgstr "<span class=\"%1$s\">đăng</span> %2$s"
+
+#: ../loop-attachment.php:51
+#, php-format
+msgid "Full size is %s pixels"
+msgstr "Kích thước đầy đủ là %s pixel"
+
+#: ../loop-attachment.php:54
+msgid "Link to full-size image"
+msgstr "Liên kết đến hình ảnh kích thước đầy đủ"
+
+#: ../loop-attachment.php:61 ../loop-attachment.php:106 ../loop-page.php:27
+#: ../loop-single.php:179 ../page.php:32
+#: ../option-tree/includes/ot-functions-admin.php:2731
+#: ../option-tree/includes/ot-functions-admin.php:2798
+#: ../option-tree/includes/ot-functions-admin.php:2799
+#: ../option-tree/includes/ot-functions-admin.php:2934
+#: ../option-tree/includes/ot-functions-admin.php:2935
+#: ../option-tree/includes/ot-functions-admin.php:3000
+#: ../option-tree/includes/ot-functions-admin.php:3001
+#: ../option-tree/includes/ot-functions-admin.php:3128
+#: ../option-tree/includes/ot-functions-admin.php:3129
+#: ../woocommerce/myaccount/my-address.php:45
+msgid "Edit"
+msgstr "Chỉnh sửa"
+
+#: ../loop-attachment.php:101 ../code/functions.php:269
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Tiếp tục đọc <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../loop-attachment.php:102 ../loop-page.php:26 ../loop-single.php:171
+#: ../loop.php:179 ../page.php:31
+msgid "Pages:"
+msgstr "Trang:"
+
+#: ../loop-single.php:76 ../loop-single.php:129 ../loop-single.php:157
+#: ../loop.php:84 ../loop.php:137 ../loop.php:165
+#, php-format
+msgid "%1$s"
+msgstr "%1$s"
+
+#: ../loop-single.php:170 ../loop.php:178
+msgid "<span class=\"button fl-r\"><span>Read More</span></span><br/>"
+msgstr "<span class=\"nút fl-r \"><span>Chi tiết</span></ span><br/>"
+
+#: ../loop.php:11 ../loop.php:192
+msgid "<span class=\"meta-nav\"></span> Older posts"
+msgstr "<span class=\"meta-nav\"></ span> Bài viết cũ hơn"
+
+#: ../loop.php:12 ../loop.php:193
+msgid "Newer posts <span class=\"meta-nav\"></span>"
+msgstr "Bài viết mới hơn <span class=\"meta-nav \"></span>"
+
+#: ../loop.php:20 ../page.php:35 ../single-etheme_portfolio.php:19
+msgid "Not Found"
+msgstr "Không tìm thấy"
+
+#: ../loop.php:22 ../single-etheme_portfolio.php:21
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+"Xin lỗi, nhưng không có kết quả được tìm thấy cho các kho lưu trữ yêu cầu. Có "
+"lẽ tìm kiếm sẽ giúp tìm thấy một bài viết liên quan."
+
+#: ../page.php:36
+msgid ""
+"Apologies, but the page you requested could not be found. Perhaps searching "
+"will help."
+msgstr ""
+"Xin lỗi, nhưng trang mà bạn yêu cầu không thể được tìm thấy. Có lẽ các công cụ "
+"tìm kiếm sẽ giúp đỡ bạn."
+
+#: ../portfolio.php:27
+msgid "Show All"
+msgstr "Hiện tất cả"
+
+#: ../search.php:12
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Kết quả tìm kiếm cho: %s"
+
+#: ../search.php:24
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+"Xin lỗi, nhưng không có gì phù hợp tiêu chí tìm kiếm của bạn. Vui lòng thử lại "
+"với một số từ khóa khác nhau."
+
+#: ../searchform.php:11
+msgid "Search for products"
+msgstr "Tìm kiếm sản phẩm"
+
+#: ../sidebar.php:22
+msgid "Archives"
+msgstr "Lưu trữ"
+
+#: ../sidebar.php:29
+msgid "Meta"
+msgstr "Meta"
+
+#: ../single-etheme_portfolio.php:115
+msgid "Project Details:"
+msgstr "Chi tiết dự án:"
+
+#: ../single-etheme_portfolio.php:121
+msgid "Categories:"
+msgstr "Thể loại:"
+
+#: ../single-etheme_portfolio.php:137
+msgid "Client:"
+msgstr "Khách hàng:"
+
+#: ../single-etheme_portfolio.php:148
+msgid "Copyright:"
+msgstr "Copyright:"
+
+#: ../single-etheme_portfolio.php:160
+msgid "Visit Project Site"
+msgstr "Tham quan Địa điểm dự án"
+
+#: ../single-etheme_portfolio.php:177
+msgid "Recent Works"
+msgstr "Công trình gần đây"
+
+#: ../tag.php:22
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "đánh dấu lưu trữ: %s"
+
+#: ../code/admin_functions.php:26
+msgid "Etheme Framework"
+msgstr "Etheme Khung"
+
+#: ../code/admin_functions.php:44
+msgid "Upload Image"
+msgstr "Tải lên ảnh"
+
+#: ../code/functions.php:110
+msgid "Uncategorized"
+msgstr "Chưa phân loại"
+
+#: ../code/functions.php:123 ../code/functions.php:126 ../code/functions.php:133
+#: ../code/functions.php:146 ../code/functions.php:149 ../code/functions.php:156
+#, php-format
+msgid "View all posts in %s"
+msgstr "Xem tất cả các bài viết trong %s"
+
+#: ../code/functions.php:338
+msgid "Your comment is awaiting moderation."
+msgstr "Cảm nhận của bạn đang chờ kiểm duyệt."
+
+#: ../code/functions.php:343
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s tại %2$s"
+
+#: ../code/functions.php:343 ../code/functions.php:358
+msgid "(Edit)"
+msgstr "(sửa)"
+
+#: ../code/functions.php:358
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: ../code/functions.php:383
+#, php-format
+msgid "<span class=\"%1$s\"></span> %2$s"
+msgstr "<span class=\"%1$s \"></span> %2$s"
+
+#: ../code/functions.php:395
+#, php-format
+msgid "<span class=\"%1$s\">Posted by</span> %2$s"
+msgstr "<span class=\"%1$s\">Gửi bởi</span> %2$s"
+
+#: ../code/functions.php:416
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Bài viết này đã được đăng trong %1$s và với từ khóa %2$s . Đánh dấu <a href="
+"\"%3$s\" title=\"Liên kết tới %4$s\" rel=\"bookmark \">liên kết này</a>."
+
+#: ../code/functions.php:418
+#, php-format
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title=\"Permalink "
+"to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Bài viết này đã được đăng trong %1$s. Đánh dấu <a href=\"%3$s\" title=\"Liên "
+"kết tới %4$s\" rel=\"bookmark\">liên kết này</a>."
+
+#: ../code/functions.php:420
+#, php-format
+msgid ""
+"Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+"\">permalink</a>."
+msgstr ""
+"Đánh dấu <a href=\"%3$s\" title=\"Liên kết tới %4$s\" rel=\"bookmark\">liên "
+"kết này</a>."
+
+#: ../code/functions.php:482
+msgid "The security code you entered did not match. Please try again."
+msgstr "Các mã bảo mật mà bạn đã nhập không khớp. Vui lòng thử lại."
+
+#: ../code/functions.php:491
+msgid "User name should not be empty."
+msgstr "Tên người sử dụng không nên để trống."
+
+#: ../code/functions.php:498
+msgid "Please enter a valid email."
+msgstr "Vui lòng nhập email hợp lệ."
+
+#: ../code/functions.php:506
+msgid "Password should have more than 5 symbols"
+msgstr "Mật khẩu nên có nhiều hơn 5 ký tự"
+
+#: ../code/functions.php:512
+msgid "The passwords do not match"
+msgstr "Các mật khẩu không phù hợp"
+
+#: ../code/functions.php:520
+msgid "Username already exists. Please try another one."
+msgstr "Tên đăng nhập đã tồn tại. Hãy thử một số khác."
+
+#: ../code/functions.php:529
+msgid "Registration successful"
+msgstr "Đăng ký thành công"
+
+#: ../code/functions.php:533
+msgid "Please check your email for login details."
+msgstr "Hãy kiểm tra email của bạn để đăng nhập chi tiết."
+
+#: ../code/functions.php:554
+#, php-format
+msgid "Thanks for creating an account on %s. Your username is %s."
+msgstr ""
+"Cảm ơn cho việc tạo một tài khoản trên %s . Tên người dùng của bạn là %s ."
+
+#: ../code/functions.php:557
+#, php-format
+msgid ""
+"You can access your account area to view your orders and change your password "
+"here: <a href=\"%s\">%s</a>."
+msgstr ""
+"Bạn có thể truy cập vào khu vực tài khoản của bạn để xem đơn đặt hàng của bạn "
+"và thay đổi mật khẩu của bạn theo đường dẫn: <a href=\"%s\">%s</a>."
+
+#: ../code/functions.php:849
+msgid "Home"
+msgstr "Trang chủ"
+
+#: ../code/functions.php:871
+msgid "Archive by category"
+msgstr "Lưu trữ theo thể loại"
+
+#: ../code/functions.php:874
+msgid "Search results for"
+msgstr "Các kết quả t́m kiếm cho}"
+
+#: ../code/functions.php:955
+msgid "Page"
+msgstr "Trang"
+
+#: ../code/meta-boxes.php:7 ../code/portfolio.php:243 ../code/product.php:14
+msgid "Custom Settings"
+msgstr "Cài đặt tùy chỉnh"
+
+#: ../code/plugins.php:69 ../code/plugins/class-tgm-plugin-activation.php:164
+msgid "Install Required Plugins"
+msgstr "Cài đặt Plugins buộc"
+
+#: ../code/plugins.php:70 ../code/plugins/class-tgm-plugin-activation.php:165
+msgid "Install Plugins"
+msgstr "Cài đặt Plugins"
+
+#: ../code/plugins.php:71 ../code/plugins/class-tgm-plugin-activation.php:166
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Cài đặt Plugin: %s"
+
+#: ../code/plugins.php:72
+msgid "Something went wrong with the plugin API."
+msgstr "Một cái gì đó đã đi sai với các plugin API."
+
+#: ../code/plugins.php:83 ../code/plugins/class-tgm-plugin-activation.php:178
+#: ../code/plugins/class-tgm-plugin-activation.php:490
+msgid "Return to Required Plugins Installer"
+msgstr "Quay trở lại buộc Plugins Installer"
+
+#: ../code/plugins.php:84 ../code/plugins/class-tgm-plugin-activation.php:179
+#: ../code/plugins/class-tgm-plugin-activation.php:1846
+msgid "Plugin activated successfully."
+msgstr "Plugin kích hoạt thành công."
+
+#: ../code/plugins.php:85
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr "Tất cả các plugin được cài đặt và kích hoạt thành công. %s"
+
+#: ../code/portfolio.php:13
+msgctxt "post type general name"
+msgid "Projects"
+msgstr "Dự án"
+
+#: ../code/portfolio.php:14
+msgctxt "post type singular name"
+msgid "Project"
+msgstr "Dự án"
+
+#: ../code/portfolio.php:15
+msgctxt "project"
+msgid "Add New"
+msgstr "Thêm mới"
+
+#: ../code/portfolio.php:16
+msgid "Add New Project"
+msgstr "Thêm dự án mới"
+
+#: ../code/portfolio.php:17
+msgid "Edit Project"
+msgstr "Chỉnh sửa dự án"
+
+#: ../code/portfolio.php:18
+msgid "New Project"
+msgstr "Dự án mới"
+
+#: ../code/portfolio.php:19
+msgid "View Project"
+msgstr "Xem dự án"
+
+#: ../code/portfolio.php:20
+msgid "Search Projects"
+msgstr "Dự án tìm kiếm"
+
+#: ../code/portfolio.php:21
+msgid "No projects found"
+msgstr "Không có dự án phát"
+
+#: ../code/portfolio.php:22
+msgid "No projects found in Trash"
+msgstr "Không có dự án được tìm thấy trong thùng rác"
+
+#: ../code/portfolio.php:46
+msgctxt "taxonomy general name"
+msgid "Tags"
+msgstr "Từ khóa"
+
+#: ../code/portfolio.php:47
+msgctxt "taxonomy singular name"
+msgid "Tag"
+msgstr "Tag"
+
+#: ../code/portfolio.php:48 ../code/portfolio.php:70
+msgid "Search Types"
+msgstr "Chọn kiểu tìm kiếm"
+
+#: ../code/portfolio.php:49
+msgid "All Tags"
+msgstr "Tất cả"
+
+#: ../code/portfolio.php:50
+msgid "Parent Tag"
+msgstr "Tag mẹ"
+
+#: ../code/portfolio.php:51
+msgid "Parent Tag:"
+msgstr "Tag của phụ huynh:"
+
+#: ../code/portfolio.php:52
+msgid "Edit Tags"
+msgstr "Sửa Tag"
+
+#: ../code/portfolio.php:53
+msgid "Update Tag"
+msgstr "Cập nhật Tag"
+
+#: ../code/portfolio.php:54
+msgid "Add New Tag"
+msgstr "Thêm Tag mới"
+
+#: ../code/portfolio.php:55
+msgid "New Tag Name"
+msgstr "New Tag Name"
+
+#: ../code/portfolio.php:68
+msgctxt "taxonomy general name"
+msgid "Categories"
+msgstr "Danh mục"
+
+#: ../code/portfolio.php:69
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr "Danh mục"
+
+#: ../code/portfolio.php:71
+msgid "All Categories"
+msgstr "Tất cả danh mục"
+
+#: ../code/portfolio.php:72
+msgid "Parent Category"
+msgstr "Parent Category"
+
+#: ../code/portfolio.php:73
+msgid "Parent Category:"
+msgstr "Parent Category:"
+
+#: ../code/portfolio.php:74
+msgid "Edit Categories"
+msgstr "Sửa Categories"
+
+#: ../code/portfolio.php:75
+msgid "Update Category"
+msgstr "Cập nhật Category"
+
+#: ../code/portfolio.php:76
+msgid "Add New Category"
+msgstr "Add New Category"
+
+#: ../code/portfolio.php:77
+msgid "New Category Name"
+msgstr "New Category Name"
+
+#: ../code/product.php:25
+msgid "Enable Size Guide on this product"
+msgstr "Kích hoạt Kích Hướng dẫn về sản phẩm này"
+
+#: ../code/product.php:29
+msgid "Mark this product as a SPECIAL one"
+msgstr "Đánh dấu sản phẩm này như một ĐẶC BIỆT"
+
+#: ../code/product.php:34
+msgid "Mark this product as a NEW one"
+msgstr "Đánh dấu sản phẩm này như một MỚI"
+
+#: ../code/product.php:38
+msgid "Hover img"
+msgstr "Hover img"
+
+#: ../code/product.php:39
+msgid "png, jpg or gif file"
+msgstr "png, jpg hoặc tập tin gif"
+
+#: ../code/product.php:40
+msgid "Upload image: png, jpg or gif file"
+msgstr "Tải hình ảnh: png, jpg hoặc tập tin gif"
+
+#: ../code/product.php:43
+msgid "Tab 1 title:"
+msgstr "Tab 1 title:"
+
+#: ../code/product.php:46
+msgid "Enter custom content you would like output to the product custom tab:"
+msgstr ""
+"Nhập tùy chỉnh nội dung mà bạn muốn kết xuất ra các sản phẩm tùy chỉnh tab:"
+
+#: ../code/product.php:48 ../code/product.php:56
+msgid "<b>NOTE:</b>  You can use any shortcode / HTML code."
+msgstr "<B> Lưu ý: </ b> Bạn có thể sử dụng bất kỳ mã shortcode / HTML."
+
+#: ../code/product.php:51
+msgid "Tab 2 title:"
+msgstr "Tab 2 danh hiệu:"
+
+#: ../code/product.php:54
+msgid ""
+"Enter custom content you would like output to the product custom tab (second):"
+msgstr ""
+"Nhập tùy chỉnh nội dung mà bạn muốn kết xuất ra các tab sản phẩm tùy chỉnh "
+"(giây):"
+
+#: ../code/products.php:16 ../code/woo.php:460
+msgid "Sale!"
+msgstr "Sale!"
+
+#: ../code/products.php:24 ../code/woo.php:467
+msgid "New!"
+msgstr "New! (Mới!)"
+
+#: ../code/shortcodes.php:8
+msgid "Bestsellers"
+msgstr "Bán chạy nhất"
+
+#: ../code/shortcodes.php:43
+msgid "Featured Products"
+msgstr "Sản phẩm nổi bật"
+
+#: ../code/shortcodes.php:101
+msgid "New Products"
+msgstr "CÁC Sản phẩm mới"
+
+#: ../code/shortcodes.php:291
+msgid "Contact Form"
+msgstr "Mẫu Liên hệ"
+
+#: ../code/shortcodes.php:293 ../woocommerce/single-product-reviews.php:87
+msgid "Name"
+msgstr "Tên"
+
+#: ../code/shortcodes.php:295 ../woocommerce/single-product-reviews.php:89
+msgid "Email"
+msgstr "Email"
+
+#: ../code/shortcodes.php:297
+msgid "Subject"
+msgstr "Chủ đề"
+
+#: ../code/shortcodes.php:299
+msgid "Message"
+msgstr "Tin nhắn"
+
+#: ../code/shortcodes.php:302
+msgid "Send Request"
+msgstr "Gửi yêu cầu"
+
+#: ../code/sidebars.php:146
+msgid "Primary Widget Area"
+msgstr "Khu vực Widget chính "
+
+#: ../code/sidebars.php:148
+msgid "The primary widget area"
+msgstr "Các khu vực phụ tùng chính"
+
+#: ../code/sidebars.php:156
+msgid "Single product sidebar"
+msgstr "Độc sản phẩm sidebar"
+
+#: ../code/sidebars.php:158
+msgid "Single product sidebar widget area"
+msgstr "Sản phẩm duy nhất khu vực tiện ích sidebar"
+
+#: ../code/sidebars.php:166 ../code/sidebars.php:168
+msgid "Product Page sidebar"
+msgstr "Sản phẩm trang sidebar"
+
+#: ../code/sidebars.php:178
+msgid "Under Products"
+msgstr "Theo sản phẩm"
+
+#: ../code/sidebars.php:180
+msgid "Under Products widget area"
+msgstr "Theo khu vực phụ tùng Sản phẩm"
+
+#: ../code/sidebars.php:189 ../code/sidebars.php:193
+msgid "The First Footer Widget Area"
+msgstr "The First Footer Widget Area"
+
+#: ../code/sidebars.php:199 ../code/sidebars.php:203
+msgid "The Second Footer Widget Area"
+msgstr "Các Footer Widget Area Second"
+
+#: ../code/sidebars.php:209 ../code/sidebars.php:213
+msgid "The Third Footer Widget Area"
+msgstr "The Third Footer Widget Area"
+
+#: ../code/sidebars.php:219 ../code/sidebars.php:223
+msgid "The Fourth Footer Widget Area"
+msgstr "The Fourth Footer Widget Area"
+
+#: ../code/sidebars.php:229 ../code/sidebars.php:233
+msgid "The Fifth Footer Widget Area"
+msgstr "The Fifth Footer Widget Area"
+
+#: ../code/sidebars.php:240 ../code/sidebars.php:244
+msgid "The Sixth Footer Widget Area"
+msgstr "The Sixth Footer Widget Area"
+
+#: ../code/sidebars.php:250 ../code/sidebars.php:254
+msgid "The Seventh Footer Widget Area"
+msgstr "The Seventh Footer Widget Area"
+
+#: ../code/sidebars.php:260 ../code/sidebars.php:264
+msgid "The Eighth Footer Widget Area"
+msgstr "The Eighth Footer Widget Area"
+
+#: ../code/sidebars.php:270 ../code/sidebars.php:274 ../code/sidebars.php:280
+#: ../code/sidebars.php:284
+msgid "Payments Area"
+msgstr "Diện tích các khoản thanh toán"
+
+#: ../code/sidebars.php:290 ../code/sidebars.php:294
+msgid "Copyrights"
+msgstr "Bản quyền"
+
+#: ../code/widgets.php:14
+msgid "Display a list of subcategories on Category Page"
+msgstr "Hiển thị một danh sách các tiểu thể loại trên Trang Mục"
+
+#: ../code/widgets.php:16
+msgid "Subcategories List"
+msgstr "Danh sách danh mục con"
+
+#: ../code/widgets.php:26 ../code/widgets.php:74 ../code/widgets.php:180
+#: ../code/widgets.php:276 ../code/woo.php:153 ../code/woo.php:234
+#: ../code/woo.php:375
+msgid "Title:"
+msgstr "Chức vụ:"
+
+#: ../code/widgets.php:44
+msgid "Display most recent Twitter feed"
+msgstr "Hiển thị nguồn cấp dữ liệu Twitter gần đây nhất"
+
+#: ../code/widgets.php:46
+msgid "Twitter Feed"
+msgstr "Twitter nguồn cấp dữ liệu"
+
+#: ../code/widgets.php:75
+msgid "Username:"
+msgstr "Tên người dùng:"
+
+#: ../code/widgets.php:76
+msgid "Customer Key:"
+msgstr "Mã Khách hàng:"
+
+#: ../code/widgets.php:77
+msgid "Customer Secret:"
+msgstr "Mã bí mật của khách hàng:"
+
+#: ../code/widgets.php:78
+msgid "Access Token:"
+msgstr "Truy cập mã tự động:"
+
+#: ../code/widgets.php:79
+msgid "Access Token Secret:"
+msgstr "Truy cập Mã bí mật:"
+
+#: ../code/widgets.php:80
+msgid "Number of tweets:"
+msgstr "Số tweets:"
+
+#: ../code/widgets.php:87
+msgid "The most recent posts on your blog (Etheme Edit)"
+msgstr "Các bài viết gần đây trên blog của bạn (Etheme Edit)"
+
+#: ../code/widgets.php:88 ../code/widgets.php:110
+msgid "Recent Posts"
+msgstr "Bài viết mới nhất"
+
+#: ../code/widgets.php:183
+msgid "Number of posts to show:"
+msgstr "Số bài viết để hiển thị:"
+
+#: ../code/widgets.php:185
+msgid "(at most 15)"
+msgstr "(Tối đa 15)"
+
+#: ../code/widgets.php:193
+msgid "The most recent comments (Etheme edit)"
+msgstr "Các ý kiến ​​gần đây nhất (Etheme chỉnh sửa)"
+
+#: ../code/widgets.php:194 ../code/widgets.php:235
+msgid "Recent Comments"
+msgstr "Nhận xét gần đây"
+
+#: ../code/widgets.php:248
+#, php-format
+msgctxt "widgets"
+msgid "<span class=\"comment_author\">%1$s</span> <br> %2$s"
+msgstr "<span class=\"comment_author\">%1$s</span> <br> %2$s"
+
+#: ../code/widgets.php:279
+msgid "Number of comments to show:"
+msgstr "Số nhận xét cho thấy:"
+
+#: ../code/widgets.php:299
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../code/woo.php:42
+msgid "Display the user's Cart in the sidebar."
+msgstr "Hiển thị giỏ hàng của người sử dụng trong thanh bên."
+
+#: ../code/woo.php:44
+msgid "WooCommerce Cart"
+msgstr "WooCommerce Giỏ hàng"
+
+#: ../code/woo.php:59
+msgid "Shopping Cart"
+msgstr "Giỏ hàng"
+
+#: ../code/woo.php:71
+msgid "Recently added item(s)"
+msgstr "Gần đây, thêm item (s)"
+
+#: ../code/woo.php:95 ../woocommerce/cart/cart.php:100
+msgid "Remove this item"
+msgstr "Loại bỏ mặt hàng này"
+
+#: ../code/woo.php:101 ../woocommerce/cart/cart.php:25
+#: ../woocommerce/checkout/form-pay.php:20
+msgid "Qty"
+msgstr "Số lượng"
+
+#: ../code/woo.php:115
+msgid "No products in the cart."
+msgstr "Không có sản phẩm trong giỏ hàng."
+
+#: ../code/woo.php:122
+msgid "Total:"
+msgstr "Tổng:"
+
+#: ../code/woo.php:128
+msgid "View Cart"
+msgstr "Xem giỏ hàng"
+
+#: ../code/woo.php:157
+msgid "Hide if cart is empty"
+msgstr "Ẩn nếu hàng khối rỗng"
+
+#: ../code/woo.php:176
+msgid "Display Special Offers in sidebar"
+msgstr "Hiển thị trình đặc biệt trong sidebar"
+
+#: ../code/woo.php:178
+msgid "8theme Special Offers"
+msgstr "Quà đặc biệt 8theme"
+
+#: ../code/woo.php:193
+msgid "Special Offers"
+msgstr "Quà đặc biệt"
+
+#: ../code/woo.php:237
+msgid "Number of products to show:"
+msgstr "Số lượng sản phẩm để hiển thị:"
+
+#: ../code/woo.php:257
+msgid ""
+"Shows a price filter slider in a widget which lets you narrow down the list of "
+"shown products when viewing product categories."
+msgstr ""
+"Cho thấy một thanh trượt lọc giá trong một widget cho phép bạn thu hẹp danh "
+"sách các sản phẩm hiển thị khi xem danh mục sản phẩm."
+
+#: ../code/woo.php:259
+msgid "8theme Price Filter"
+msgstr "8theme Giá Lọc"
+
+#: ../code/woo.php:349
+msgid "Min price"
+msgstr "Giá Min"
+
+#: ../code/woo.php:350
+msgid "Max price"
+msgstr "Giá Max"
+
+#: ../code/woo.php:351
+msgid "Filter"
+msgstr "Lọc"
+
+#: ../code/woo.php:353
+msgid "Price:"
+msgstr "Giá:"
+
+#: ../code/woo.php:366
+msgid "Filter by price"
+msgstr "Lọc theo giá"
+
+#: ../code/woo.php:397 ../code/woo.php:398
+msgid "Address 2"
+msgstr "Địa chỉ 2"
+
+#: ../code/woo.php:530
+msgid "One Review"
+msgstr "Một nhận xét"
+
+#: ../code/woo.php:530
+msgid "% Reviews"
+msgstr "% Nhận xét"
+
+#: ../code/woo.php:533 ../woocommerce/single-product-reviews.php:38
+#, php-format
+msgid "Rated %s out of 5"
+msgstr "Đánh giá %s trong 5"
+
+#: ../code/woo.php:548 ../code/woo.php:554
+msgid "View as:"
+msgstr "Xem như:"
+
+#: ../code/woo.php:1158
+msgid "Add to cart"
+msgstr "Thêm vào giỏ hàng"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:167
+msgid "Something went wrong."
+msgstr "Một cái gì đó đã đi sai."
+
+#: ../code/plugins/class-tgm-plugin-activation.php:180
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Tất cả các plugin được cài đặt và kích hoạt thành công. %1$s"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:517
+#: ../code/plugins/class-tgm-plugin-activation.php:2058
+msgid "Return to the Dashboard"
+msgstr "Quay trở lại Dashboard"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:545
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr "Các plugin sau đây đã được kích hoạt thành công: %s ."
+
+#: ../code/plugins/class-tgm-plugin-activation.php:704
+msgid "Dismiss this notice"
+msgstr "Bỏ qua thông báo này"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1091
+msgid "External Link"
+msgstr "Liên kết bên ngoài"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1096
+msgid "Private Repository"
+msgstr "Nguồn Cá nhân"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1099
+msgid "Pre-Packaged"
+msgstr "Trước khi đóng gói"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1103
+msgid "WordPress Repository"
+msgstr "Nguồn từ WordPress"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1106
+msgid "Required"
+msgstr "Yêu cầu"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1106
+msgid "Recommended"
+msgstr "Đề xuất"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1109
+msgid "Not Installed"
+msgstr "Chưa được cài đặt"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1111
+msgid "Installed But Not Activated"
+msgstr "Đã cài đặt nhưng Chưa kích hoạt"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1281
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+"Không có plugin để cài đặt hoặc kích hoạt. <a href =\"%1$s\" title =\"Quay trở "
+"lại Bảng điều khiển\"> Trở về Bảng điều khiển </a>"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1297
+msgid "Plugin"
+msgstr "Plugin"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1298
+msgid "Source"
+msgstr "Nguồn"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1299
+#: ../option-tree/includes/ot-functions-docs-page.php:35
+msgid "Type"
+msgstr "Loại"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1300
+#: ../woocommerce/myaccount/my-orders.php:34
+msgid "Status"
+msgstr "Tình trạng"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1318
+msgid "Install"
+msgstr "Cài đặt"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1319
+#: ../option-tree/includes/ot-functions-admin.php:3059
+#: ../option-tree/includes/ot-functions-admin.php:3060
+msgid "Activate"
+msgstr "Kích hoạt"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1544
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "Các plugin sau đây đã được kích hoạt thành công:"
+msgstr[1] "Các plugin sau đây đã được kích hoạt thành công:"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1829
+msgid "Install package not available."
+msgstr "Cài đặt gói phần mềm không có sẵn."
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1830
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr "Tải về cài đặt gói từ <span class=\"code\">%s</span> &#8230;"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1831
+msgid "Unpacking the package&#8230;"
+msgstr "Giải nén gói &#8230;"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1832
+msgid "Installing the plugin&#8230;"
+msgstr "Cài đặt các plugin &#8230;"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1833
+msgid "Plugin install failed."
+msgstr "Plugin cài đặt không thành công."
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1834
+msgid "Plugin installed successfully."
+msgstr "Plugin cài đặt thành công."
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1845
+msgid "Plugin activation failed."
+msgstr "Kích hoạt Plugin thất bại."
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1955
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Quá trình cài đặt và kích hoạt là bắt đầu. Quá trình này có thể mất một thời "
+"gian trên một số máy chủ, vì vậy hãy kiên nhẫn."
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1956
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s được cài đặt và kích hoạt thành công."
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1956
+#: ../code/plugins/class-tgm-plugin-activation.php:1965
+msgid "Show Details"
+msgstr "Hiển thị chi tiết"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1956
+#: ../code/plugins/class-tgm-plugin-activation.php:1965
+msgid "Hide Details"
+msgstr "Hide Chi tiết"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1957
+msgid "All installations and activations have been completed."
+msgstr "Tất cả cài đặt và kích hoạt đã được hoàn thành."
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1958
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Cài đặt và kích hoạt Plugin %1$s (%2$d/%3$d)"
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1962
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Quá trình cài đặt sẽ bắt đầu. Quá trình này có thể mất một thời gian trên một "
+"số máy chủ, vì vậy hãy kiên nhẫn."
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1963
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Đã xảy ra lỗi trong khi cài đặt %1$s : <strong> %2$s </strong>."
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1964
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "Việc cài đặt %1$s đã thất bại."
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1965
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s cài đặt thành công."
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1966
+msgid "All installations have been completed."
+msgstr "Tất cả cài đặt đã được hoàn thành."
+
+#: ../code/plugins/class-tgm-plugin-activation.php:1967
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Cài đặt Plugin %1$s (%2$d/%3$d)"
+
+#: ../code/testimonials/woothemes-testimonials-template.php:140
+msgid "Previous"
+msgstr "Trước"
+
+#: ../code/testimonials/woothemes-testimonials-template.php:141
+msgid "Next"
+msgstr "Tiếp theo"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials-taxonomy.php:71
+msgid "Category"
+msgstr "Danh mục"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials-taxonomy.php:72
+msgid "Categories"
+msgstr "Danh mục"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials-taxonomy.php:95
+#, php-format
+msgctxt "taxonomy general name"
+msgid "%s"
+msgstr "%s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials-taxonomy.php:96
+#, php-format
+msgctxt "taxonomy singular name"
+msgid "%s"
+msgstr "%s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials-taxonomy.php:97
+#, php-format
+msgid "Search %s"
+msgstr "Tìm %s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials-taxonomy.php:98
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:82
+#, php-format
+msgid "All %s"
+msgstr "Tất cả %s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials-taxonomy.php:99
+#, php-format
+msgid "Parent %s"
+msgstr "Chánh %s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials-taxonomy.php:100
+#, php-format
+msgid "Parent %s:"
+msgstr "Chánh %s :"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials-taxonomy.php:101
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:80
+#, php-format
+msgid "Edit %s"
+msgstr "Sửa %s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials-taxonomy.php:102
+#, php-format
+msgid "Update %s"
+msgstr "Cập nhật %s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials-taxonomy.php:103
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:79
+#, php-format
+msgid "Add New %s"
+msgstr "Thêm New %s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials-taxonomy.php:104
+#, php-format
+msgid "New %s Name"
+msgstr "New %s Name"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials-taxonomy.php:105
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:76
+msgctxt "post type general name"
+msgid "Testimonials"
+msgstr "Chứng Thực"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:77
+msgctxt "post type singular name"
+msgid "Testimonial"
+msgstr "Nhận xét của khách hàng"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:78
+msgctxt "testimonial"
+msgid "Add New"
+msgstr "Thêm mới"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:79
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:80
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:81
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:83
+msgid "Testimonial"
+msgstr "Nhận xét của khách hàng"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:81
+#, php-format
+msgid "New %s"
+msgstr "New %s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:82
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:84
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:85
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:86
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:88
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:44
+msgid "Testimonials"
+msgstr "Chứng Thực"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:83
+#, php-format
+msgid "View %s"
+msgstr "Xem %s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:84
+msgid "Search %a"
+msgstr "Search %a"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:85
+#, php-format
+msgid "No %s Found"
+msgstr "Không có %s Found"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:86
+#, php-format
+msgid "No %s Found In Trash"
+msgstr "Không có %s tìm thấy trong thùng rác"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:159
+#: ../option-tree/includes/ot-functions-admin.php:2185
+#: ../option-tree/includes/ot-functions-admin.php:2246
+msgid "Image"
+msgstr "Hình ảnh"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:193
+#, php-format
+msgid "Testimonial updated. %sView testimonial%s"
+msgstr "Lời chứng thực được cập nhật. %s Xem lời chứng thực %s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:194
+msgid "Custom field updated."
+msgstr "Lĩnh vực tùy chỉnh cập nhật."
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:195
+msgid "Custom field deleted."
+msgstr "Lĩnh vực tùy chỉnh xóa."
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:196
+msgid "Testimonial updated."
+msgstr "Lời chứng thực được cập nhật."
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:198
+#, php-format
+msgid "Testimonial restored to revision from %s"
+msgstr "Testimonial phục hồi để sửa đổi từ %s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:199
+#, php-format
+msgid "Testimonial published. %sView testimonial%s"
+msgstr "Lời chứng thực được công bố. %s Xem lời chứng thực %s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:200
+msgid "Testimonial saved."
+msgstr "Lời chứng thực lưu."
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:201
+#, php-format
+msgid "Testimonial submitted. %sPreview testimonial%s"
+msgstr "Lời chứng thực nộp. %s Preview lời chứng thực %s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:202
+#, php-format
+msgid "Testimonial scheduled for: %1$s. %2$sPreview testimonial%3$s"
+msgstr "Testimonial dự kiến: %1$s . %2$s Preview lời chứng thực %3$s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:204
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G: i"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:205
+#, php-format
+msgid "Testimonial draft updated. %sPreview testimonial%s"
+msgstr "Dự thảo lời chứng thực được cập nhật. %s Preview lời chứng thực %s"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:219
+msgid "Testimonial Details"
+msgstr "Testimonial Chi tiết"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:318
+msgid "Enter the customer's name here"
+msgstr "Nhập tên của khách hàng ở đây"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:344
+msgid "Gravatar E-mail Address"
+msgstr "Gravatar E-mail Địa chỉ"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:345
+#, php-format
+msgid ""
+"Enter in an e-mail address, to use a %sGravatar%s, instead of using the "
+"\"Featured Image\"."
+msgstr ""
+"Nhập vào địa chỉ e-mail, để sử dụng một %s Gravatar %s , thay vì sử dụng các "
+"\"Hình ảnh  nổi bật\"."
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:352
+msgid "Byline"
+msgstr "Đường vắng"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:353
+msgid ""
+"Enter a byline for the customer giving this testimonial (for example: \"CEO of "
+"WooThemes\")."
+msgstr ""
+"Nhập vắng cho khách hàng đưa ra lời chứng thực này (ví dụ: \"Giám đốc điều "
+"hành của thegioiphukienso\")."
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:360
+msgid "URL"
+msgstr "Đường dẫn"
+
+#: ../code/testimonials/classes/class-woothemes-testimonials.php:361
+msgid ""
+"Enter a URL that applies to this customer (for example: http://woothemes.com/)."
+msgstr "Nhập URL mà áp dụng cho khách hàng này (ví dụ: http://thegioiphukienso.vn/)."
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:42
+msgid "Recent testimonials on your site."
+msgstr "Lời chứng thực gần đây trên trang web của bạn."
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:169
+msgid "Title (optional):"
+msgstr "Tiêu đề (không bắt buộc):"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:174
+msgid "Limit:"
+msgstr "Giới hạn:"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:179
+msgid "Image Size (in pixels):"
+msgstr "Kích thước hình ảnh (pixels):"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:184
+msgid "Order By:"
+msgstr "Sắp xếp theo:"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:193
+msgid "Order Direction:"
+msgstr "Hướng thứ tự:"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:203
+msgid "Display Author"
+msgstr "Hiển thị Tác giả"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:208
+msgid "Display Avatar"
+msgstr "Hiển thị Avatar"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:213
+msgid "Display URL"
+msgstr "URL hiển thị"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:217
+msgid "Category:"
+msgstr "Nhóm Hàng:"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:219
+msgid "All"
+msgstr "Tất cả"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:225
+msgid "Specific ID (optional):"
+msgstr "ID cụ thể (không bắt buộc):"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:228
+msgid "Display a specific testimonial, rather than a list."
+msgstr "Hiển thị một lời chứng thực cụ thể, chứ không phải là một danh sách."
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:239
+msgid "No Order"
+msgstr "Không có thứ tự"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:240
+msgid "Entry ID"
+msgstr "Nhập ID"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:241
+#: ../option-tree/includes/ot-functions-admin.php:3096
+#: ../option-tree/includes/ot-meta-box-api.php:181
+#: ../option-tree/includes/ot-settings-api.php:582
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:242
+msgid "Date Added"
+msgstr "Ngày thêm"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:243
+msgid "Specified Order Setting"
+msgstr "Thiết lập thứ tự quy định"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:244
+msgid "Random Order"
+msgstr "Random Order"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:255
+msgid "Ascending"
+msgstr "Tăng dần"
+
+#: ../code/testimonials/classes/class-woothemes-widget-testimonials.php:256
+msgid "Descending"
+msgstr "Giảm dần"
+
+#: ../code/wordpress-importer/parsers.php:42
+#: ../code/wordpress-importer/parsers.php:72
+#: ../code/wordpress-importer/parsers.php:80
+msgid "There was an error when reading this WXR file"
+msgstr "Có lỗi khi đọc tập tin này WXR"
+
+#: ../code/wordpress-importer/parsers.php:43
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+"Các chi tiết được trình bày ở trên. Các nhà nhập khẩu sẽ thử lại với một cú "
+"pháp khác nhau ..."
+
+#: ../code/wordpress-importer/parsers.php:84
+#: ../code/wordpress-importer/parsers.php:89
+#: ../code/wordpress-importer/parsers.php:279
+#: ../code/wordpress-importer/parsers.php:468
+msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+"Điều này dường như không có một tập tin WXR, mất tích / WXR sai số của phiên "
+"bản"
+
+#: ../code/wordpress-importer/wordpress-importer.php:131
+#: ../code/wordpress-importer/wordpress-importer.php:140
+#: ../code/wordpress-importer/wordpress-importer.php:192
+#: ../code/wordpress-importer/wordpress-importer.php:196
+#: ../code/wordpress-importer/wordpress-importer.php:205
+msgid "Sorry, there has been an error."
+msgstr "Xin lỗi, đã có một lỗi."
+
+#: ../code/wordpress-importer/wordpress-importer.php:132
+msgid "The file does not exist, please try again."
+msgstr "Các tập tin không tồn tại, vui lòng thử lại."
+
+#: ../code/wordpress-importer/wordpress-importer.php:176
+msgid "All done."
+msgstr "Tất cả được thực hiện."
+
+#: ../code/wordpress-importer/wordpress-importer.php:176
+msgid "Have fun!"
+msgstr "Chúc vui vẻ."
+
+#: ../code/wordpress-importer/wordpress-importer.php:197
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that this "
+"was caused by a permissions problem."
+msgstr ""
+"Các tập tin xuất khẩu không thể được tìm thấy tại <code> %s </ code>. Nó có "
+"khả năng rằng điều này đã được gây ra bởi một vấn đề quyền."
+
+#: ../code/wordpress-importer/wordpress-importer.php:213
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+"Tập WXR này (phiên bản %s ) có thể không được hỗ trợ bởi phiên bản này của các "
+"nhà nhập khẩu. Hãy xem xét cập nhật."
+
+#: ../code/wordpress-importer/wordpress-importer.php:238
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current user."
+msgstr ""
+"Không thể nhập khẩu giả %s . Bài viết của họ sẽ được quy cho những người dùng "
+"hiện tại."
+
+#: ../code/wordpress-importer/wordpress-importer.php:264
+msgid "Assign Authors"
+msgstr "Gán các tác giả"
+
+#: ../code/wordpress-importer/wordpress-importer.php:265
+msgid ""
+"To make it easier for you to edit and save the imported content, you may want "
+"to reassign the author of the imported item to an existing user of this site. "
+"For example, you may want to import all the entries as <code>admin</code>s "
+"entries."
+msgstr ""
+"Để làm cho nó dễ dàng hơn cho bạn để chỉnh sửa và lưu các nội dung nhập khẩu, "
+"bạn có thể muốn gán tác giả của hàng nhập khẩu đến một người dùng hiện tại của "
+"trang web này. Ví dụ, bạn có thể muốn nhập khẩu tất cả các mục như <code> "
+"admin </ code> s mục."
+
+#: ../code/wordpress-importer/wordpress-importer.php:267
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+"Nếu một người dùng mới được tạo ra bởi WordPress, một mật khẩu mới sẽ được tạo "
+"ra một cách ngẫu nhiên và người sử dụng mới & # 8217; vai trò của sẽ được "
+"thiết lập như là %s . Thủ công thay đổi người sử dụng mới & # 8217; s chi tiết "
+"sẽ là cần thiết."
+
+#: ../code/wordpress-importer/wordpress-importer.php:277
+msgid "Import Attachments"
+msgstr "Attachments nhập khẩu"
+
+#: ../code/wordpress-importer/wordpress-importer.php:280
+msgid "Download and import file attachments"
+msgstr "Tải về tập tin và nhập file đính kèm"
+
+#: ../code/wordpress-importer/wordpress-importer.php:297
+msgid "Import author:"
+msgstr "Nhập tác giả:"
+
+#: ../code/wordpress-importer/wordpress-importer.php:308
+msgid "or create new user with login name:"
+msgstr "hoặc tạo người dùng mới với tên đăng nhập:"
+
+#: ../code/wordpress-importer/wordpress-importer.php:311
+msgid "as a new user:"
+msgstr "như một người dùng mới:"
+
+#: ../code/wordpress-importer/wordpress-importer.php:319
+msgid "assign posts to an existing user:"
+msgstr "gán gởi đến một người dùng hiện có:"
+
+#: ../code/wordpress-importer/wordpress-importer.php:321
+msgid "or assign posts to an existing user:"
+msgstr "hoặc giao bài cho một người sử dụng hiện có:"
+
+#: ../code/wordpress-importer/wordpress-importer.php:322
+msgid "- Select -"
+msgstr "- Chọn -"
+
+#: ../code/wordpress-importer/wordpress-importer.php:372
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+"Không thể tạo người dùng mới cho %s . Bài viết của họ sẽ được quy cho những "
+"người dùng hiện tại."
+
+#: ../code/wordpress-importer/wordpress-importer.php:423
+#, php-format
+msgid "Failed to import category %s"
+msgstr "Không để nhập khẩu loại %s"
+
+#: ../code/wordpress-importer/wordpress-importer.php:463
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr "Không thể nhập bài tag %s"
+
+#: ../code/wordpress-importer/wordpress-importer.php:509
+#: ../code/wordpress-importer/wordpress-importer.php:650
+#, php-format
+msgid "Failed to import %s %s"
+msgstr "Không thể nhập %s %s"
+
+#: ../code/wordpress-importer/wordpress-importer.php:535
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr "Không thể nhập & # 8220; %s & # 8221 ;: không hợp lệ loại bài %s"
+
+#: ../code/wordpress-importer/wordpress-importer.php:616
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr "Không thể nhập %s & # 8220; %s & # 8221;"
+
+#: ../code/wordpress-importer/wordpress-importer.php:781
+msgid "Menu item skipped due to missing menu slug"
+msgstr "Menu mục bị bỏ qua vì thiếu đơn sên"
+
+#: ../code/wordpress-importer/wordpress-importer.php:788
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr "Menu mục bị bỏ qua vì đơn sên không hợp lệ: %s"
+
+#: ../code/wordpress-importer/wordpress-importer.php:851
+msgid "Fetching attachments is not enabled"
+msgstr "Lấy file đính kèm không được kích hoạt"
+
+#: ../code/wordpress-importer/wordpress-importer.php:864
+msgid "Invalid file type"
+msgstr "Loại tập tin không hợp lệ"
+
+#: ../code/wordpress-importer/wordpress-importer.php:908
+msgid "Remote server did not respond"
+msgstr "Máy chủ từ xa đã không trả lời"
+
+#: ../code/wordpress-importer/wordpress-importer.php:914
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr "Máy chủ từ xa trở về lỗi phản ứng %1$d %2$s"
+
+#: ../code/wordpress-importer/wordpress-importer.php:921
+msgid "Remote file is incorrect size"
+msgstr "Tập tin từ xa có kích thước không chính xác"
+
+#: ../code/wordpress-importer/wordpress-importer.php:926
+msgid "Zero size file downloaded"
+msgstr "Tập tin kích cỡ bằng không tải"
+
+#: ../code/wordpress-importer/wordpress-importer.php:932
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr "Tập tin từ xa là quá lớn, giới hạn là %s"
+
+#: ../code/wordpress-importer/wordpress-importer.php:1031
+msgid "Import WordPress"
+msgstr "Nhập WordPress"
+
+#: ../code/wordpress-importer/wordpress-importer.php:1038
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+"Một phiên bản mới của nhà nhập khẩu này là có sẵn. Vui lòng cập nhật lên phiên "
+"bản %s để đảm bảo khả năng tương thích với các tập tin xuất khẩu mới."
+
+#: ../code/wordpress-importer/wordpress-importer.php:1053
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this site."
+msgstr ""
+"Howdy! Tải WordPress của bạn eXtended RSS (WXR) tập tin và chúng tôi & # 8217; "
+"sẽ nhập khẩu các bài viết, các trang, các ý kiến, các trường tùy chỉnh danh "
+"mục, và các thẻ vào trang web này."
+
+#: ../code/wordpress-importer/wordpress-importer.php:1054
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+"Chọn một WXR (.xml) tập tin tải lên, sau đó nhấp vào tập tin tải lên, nhập "
+"khẩu."
+
+#: ../code/wordpress-importer/wordpress-importer.php:1128
+msgid ""
+"Import <strong>posts, pages, comments, custom fields, categories, and tags</"
+"strong> from a WordPress export file."
+msgstr ""
+"Nhập <strong> bài viết, các trang, các ý kiến, các trường tùy chỉnh danh mục, "
+"và các thẻ </ strong> từ một tập tin xuất khẩu WordPress."
+
+#: ../option-tree/includes/ot-functions-admin.php:88
+msgid "The Colorpicker only allows valid hexadecimal values."
+msgstr "Các ColorPicker chỉ cho phép các giá trị thập lục phân hợp lệ."
+
+#: ../option-tree/includes/ot-functions-admin.php:168
+msgid "Send to OptionTree"
+msgstr "Gửi cho OptionTree"
+
+#: ../option-tree/includes/ot-functions-admin.php:169
+#: ../option-tree/includes/ot-functions-option-types.php:152
+#: ../option-tree/includes/ot-functions-option-types.php:1765
+msgid "Remove Media"
+msgstr "Tháo Truyền thông"
+
+#: ../option-tree/includes/ot-functions-admin.php:170
+msgid "Are you sure you want to reset back to the defaults?"
+msgstr "Bạn có chắc chắn muốn reset về mặc định?"
+
+#: ../option-tree/includes/ot-functions-admin.php:171
+msgid "You can't remove this! But you can edit the values."
+msgstr "Bạn không thể loại bỏ điều này! Nhưng bạn có thể chỉnh sửa các giá trị."
+
+#: ../option-tree/includes/ot-functions-admin.php:172
+msgid "Are you sure you want to remove this?"
+msgstr "Bạn có chắc chắn muốn loại bỏ điều này?"
+
+#: ../option-tree/includes/ot-functions-admin.php:173
+msgid "Are you sure you want to activate this layout?"
+msgstr "Bạn có chắc chắn muốn kích hoạt bố trí này?"
+
+#: ../option-tree/includes/ot-functions-admin.php:174
+msgid "Sorry, you can't have settings three levels deep."
+msgstr "Xin lỗi, bạn không thể có các cài đặt sâu ba cấp độ."
+
+#: ../option-tree/includes/ot-functions-admin.php:220
+msgid "Option Tree"
+msgstr "Lựa chọn Tree"
+
+#: ../option-tree/includes/ot-functions-admin.php:356
+msgid "General"
+msgstr "Chung"
+
+#: ../option-tree/includes/ot-functions-admin.php:362
+msgid "Sample Text Field Label"
+msgstr "Sample Text Field Label"
+
+#: ../option-tree/includes/ot-functions-admin.php:363
+msgid "Description for the sample text field."
+msgstr "Mô tả cho các lĩnh vực văn bản mẫu."
+
+#: ../option-tree/includes/ot-functions-admin.php:1515
+msgid "Layout activated."
+msgstr "Bố trí kích hoạt."
+
+#: ../option-tree/includes/ot-functions-admin.php:1528
+msgid "Settings updated."
+msgstr "Cài đặt cập nhật."
+
+#: ../option-tree/includes/ot-functions-admin.php:1532
+msgid "Settings could not be saved."
+msgstr "Cài đặt không thể được cứu."
+
+#: ../option-tree/includes/ot-functions-admin.php:1540
+msgid "Settings Imported."
+msgstr "Cài đặt nhập khẩu."
+
+#: ../option-tree/includes/ot-functions-admin.php:1544
+msgid "Settings could not be imported."
+msgstr "Cài đặt không thể nhập được."
+
+#: ../option-tree/includes/ot-functions-admin.php:1551
+msgid "Data Imported."
+msgstr "Dữ liệu nhập khẩu."
+
+#: ../option-tree/includes/ot-functions-admin.php:1555
+msgid "Data could not be imported."
+msgstr "Dữ liệu không thể nhập được."
+
+#: ../option-tree/includes/ot-functions-admin.php:1563
+msgid "Layouts Imported."
+msgstr "Layouts nhập khẩu."
+
+#: ../option-tree/includes/ot-functions-admin.php:1567
+msgid "Layouts could not be imported."
+msgstr "Bố trí không thể nhập được."
+
+#: ../option-tree/includes/ot-functions-admin.php:1575
+msgid "Layouts Updated."
+msgstr "Layouts cập nhật."
+
+#: ../option-tree/includes/ot-functions-admin.php:1579
+msgid "Layouts could not be updated."
+msgstr "Bố trí không thể được cập nhật."
+
+#: ../option-tree/includes/ot-functions-admin.php:2130
+msgid "Left Sidebar"
+msgstr "Left Sidebar"
+
+#: ../option-tree/includes/ot-functions-admin.php:2135
+msgid "Right Sidebar"
+msgstr "Sidebar bên phải"
+
+#: ../option-tree/includes/ot-functions-admin.php:2140
+msgid "Full Width (no sidebar)"
+msgstr "Full Width (không có sidebar)"
+
+#: ../option-tree/includes/ot-functions-admin.php:2145
+msgid "Dual Sidebar"
+msgstr "Sidebar kép"
+
+#: ../option-tree/includes/ot-functions-admin.php:2150
+msgid "Left Dual Sidebar"
+msgstr "Left kép Sidebar"
+
+#: ../option-tree/includes/ot-functions-admin.php:2155
+msgid "Right Dual Sidebar"
+msgstr "Ngay Sidebar kép"
+
+#: ../option-tree/includes/ot-functions-admin.php:2196
+#: ../option-tree/includes/ot-functions-admin.php:2252
+msgid "Link"
+msgstr "Liên kết"
+
+#: ../option-tree/includes/ot-functions-admin.php:2207
+#: ../option-tree/includes/ot-functions-admin.php:2258
+#: ../option-tree/includes/ot-functions-docs-page.php:43
+#: ../option-tree/includes/ot-functions-docs-page.php:367
+#: ../option-tree/includes/ot-functions-docs-page.php:417
+msgid "Description"
+msgstr "Mô tả"
+
+#: ../option-tree/includes/ot-functions-admin.php:2730
+msgid "edit"
+msgstr "chỉnh sửa"
+
+#: ../option-tree/includes/ot-functions-admin.php:2733
+#: ../option-tree/includes/ot-functions-admin.php:2734
+#: ../option-tree/includes/ot-functions-admin.php:2801
+#: ../option-tree/includes/ot-functions-admin.php:2802
+#: ../option-tree/includes/ot-functions-admin.php:2937
+#: ../option-tree/includes/ot-functions-admin.php:2938
+#: ../option-tree/includes/ot-functions-admin.php:3003
+#: ../option-tree/includes/ot-functions-admin.php:3004
+#: ../option-tree/includes/ot-functions-admin.php:3062
+#: ../option-tree/includes/ot-functions-admin.php:3063
+#: ../option-tree/includes/ot-functions-admin.php:3131
+#: ../option-tree/includes/ot-functions-admin.php:3132
+msgid "Delete"
+msgstr "Xóa"
+
+#: ../option-tree/includes/ot-functions-admin.php:2740
+msgid ""
+"<strong>Section Title</strong>: Displayed as a menu item on the Theme Options "
+"page."
+msgstr ""
+"<Strong> Mục Tiêu đề </ strong>: hiển thị như là một mục menu trên trang "
+"Options Theme."
+
+#: ../option-tree/includes/ot-functions-admin.php:2748
+msgid ""
+"<strong>Section ID</strong>: A unique lower case alphanumeric string, "
+"underscores allowed."
+msgstr ""
+"<Strong> Phần ID </ strong>: Một trường hợp thấp hơn chuỗi chữ số duy nhất, "
+"gạch dưới cho phép."
+
+#: ../option-tree/includes/ot-functions-admin.php:2808
+msgid ""
+"<strong>Label</strong>: Displayed as the label of a form element on the Theme "
+"Options page."
+msgstr ""
+"<Strong> Nhãn </ strong>: hiển thị như các nhãn của một yếu tố hình thức trên "
+"trang Tùy chọn Theme."
+
+#: ../option-tree/includes/ot-functions-admin.php:2816
+#: ../option-tree/includes/ot-functions-admin.php:3018
+msgid ""
+"<strong>ID</strong>: A unique lower case alphanumeric string, underscores "
+"allowed."
+msgstr ""
+"<Strong> ID </ strong>: Một trường hợp thấp hơn chuỗi chữ số duy nhất, gạch "
+"dưới cho phép."
+
+#: ../option-tree/includes/ot-functions-admin.php:2824
+msgid ""
+"<strong>Type</strong>: Choose one of the available option types from the "
+"dropdown."
+msgstr ""
+"<Strong> Loại </ strong>: Chọn một trong các loại tùy chọn có sẵn từ trình đơn "
+"thả xuống."
+
+#: ../option-tree/includes/ot-functions-admin.php:2835
+msgid ""
+"<strong>Description</strong>: Enter a detailed description for the users to "
+"read on the Theme Options page, HTML is allowed. This is also where you enter "
+"content for both the Textblock & Textblock Titled option types."
+msgstr ""
+"<Strong> Mô tả </ strong>: Nhập một mô tả chi tiết cho người dùng đọc trên "
+"trang Tùy chọn Theme, HTML được phép. Đây cũng là nơi bạn nhập nội dung với "
+"nhiều lựa chọn cả TextBlock & TextBlock tiêu đề."
+
+#: ../option-tree/includes/ot-functions-admin.php:2843
+msgid ""
+"<strong>Choices</strong>: This will only affect the following option types: "
+"Checkbox, Radio, Select & Select Image."
+msgstr ""
+"<Strong> Lựa chọn </ strong>: Điều này chỉ ảnh hưởng đến các loại tùy chọn sau "
+"đây: Checkbox, Radio, Select & Chọn Image."
+
+#: ../option-tree/includes/ot-functions-admin.php:2848
+msgid "Add Choice"
+msgstr "Thêm Choice"
+
+#: ../option-tree/includes/ot-functions-admin.php:2854
+msgid ""
+"<strong>Settings</strong>: This will only affect the List Item option type."
+msgstr ""
+"<Strong> Cài đặt </ strong>: Điều này sẽ chỉ ảnh hưởng đến Danh mục lựa chọn "
+"kiểu."
+
+#: ../option-tree/includes/ot-functions-admin.php:2859
+#: ../option-tree/includes/ot-functions-settings-page.php:93
+msgid "Add Setting"
+msgstr "Thêm Thiết"
+
+#: ../option-tree/includes/ot-functions-admin.php:2865
+msgid ""
+"<strong>Standard</strong>: Setting the standard value for your option only "
+"works for some option types. Read the <code>OptionTree->Documentation</code> "
+"for more information on which ones."
+msgstr ""
+"<Strong> chuẩn </ strong>: Thiết lập các giá trị tiêu chuẩn cho lựa chọn của "
+"bạn chỉ hoạt động đối với một số loại tùy chọn. Đọc <code> OptionTree-> Tài "
+"liệu </ code> để biết thêm thông tin về những người thân."
+
+#: ../option-tree/includes/ot-functions-admin.php:2873
+msgid ""
+"<strong>Rows</strong>: Enter a numeric value for the number of rows in your "
+"textarea. This will only affect the following option types: CSS, Textarea, & "
+"Textarea Simple."
+msgstr ""
+"<Strong> Hàng </ strong>: Nhập một giá trị số cho số hàng trong textarea của "
+"bạn. Điều này sẽ chỉ ảnh hưởng đến các loại tùy chọn sau đây: CSS, Textarea, & "
+"Textarea đơn giản."
+
+#: ../option-tree/includes/ot-functions-admin.php:2881
+msgid ""
+"<strong>Post Type</strong>: Add a comma separated list of post type like 'post,"
+"page'. This will only affect the following option types: Custom Post Type "
+"Checkbox, & Custom Post Type Select."
+msgstr ""
+"<strong>Loại bài viết</strong>: Thêm một danh sách phân cách nhau bởi dấu phẩy "
+"của các bài kiểu như 'post,page'. Điều này sẽ chỉ ảnh hưởng đến các loại tùy "
+"chọn sau đây: Custom Post Type Checkbox, & Custom Post Type Select."
+
+#: ../option-tree/includes/ot-functions-admin.php:2889
+msgid ""
+"<strong>Taxonomy</strong>: Add a comma separated list of any registered "
+"taxonomy like 'category,post_tag'. This will only affect the following option "
+"types: Taxonomy Checkbox, & Taxonomy Select."
+msgstr ""
+"<strong>Phân loại</strong>: Thêm một dấu phẩy tách ra danh sách của bất kỳ "
+"phân loại đăng ký như 'category,post_tag'. Điều này sẽ chỉ ảnh hưởng đến các "
+"loại tùy chọn sau đây: Taxonomy Checkbox, & Taxonomy Select."
+
+#: ../option-tree/includes/ot-functions-admin.php:2897
+msgid "<strong>CSS Class</strong>: Add and optional class to this option type."
+msgstr ""
+"<Strong> CSS Class </ strong>: Thêm và lớp tùy chọn để loại tuỳ chọn này."
+
+#: ../option-tree/includes/ot-functions-admin.php:2944
+#: ../option-tree/includes/ot-functions-docs-page.php:29
+msgid "Label"
+msgstr "Nhăn"
+
+#: ../option-tree/includes/ot-functions-admin.php:2954
+msgid "Value"
+msgstr "Giá trị"
+
+#: ../option-tree/includes/ot-functions-admin.php:2964
+msgid "Image Source (Radio Image only)"
+msgstr "Hình ảnh Nguồn (Radio chỉ hình ảnh)"
+
+#: ../option-tree/includes/ot-functions-admin.php:3010
+msgid ""
+"<strong>Title</strong>: Displayed as a contextual help menu item on the Theme "
+"Options page."
+msgstr ""
+"<Strong> Title </ strong>: hiển thị như là một mục trợ giúp trình đơn ngữ cảnh "
+"trên các trang tùy chọn Theme."
+
+#: ../option-tree/includes/ot-functions-admin.php:3026
+msgid ""
+"<strong>Content</strong>: Enter the HTML content about this contextual help "
+"item displayed on the Theme Option page for end users to read."
+msgstr ""
+"<Strong> Nội dung </ strong>: Nhập nội dung HTML về việc trợ giúp theo ngữ "
+"cảnh mục này hiển thị trên trang Tùy chọn Theme cho người dùng cuối để đọc."
+
+#: ../option-tree/includes/ot-functions-admin.php:3057
+msgid "Layout"
+msgstr "Giao diện"
+
+#: ../option-tree/includes/ot-functions-admin.php:3228
+msgid "New Layout"
+msgstr "Giao diện mới"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:30
+msgid ""
+"The Label field should be a short but descriptive block of text 100 characters "
+"or less with no HTML."
+msgstr ""
+"Các lĩnh vực Label phải là một khối ngắn nhưng mô tả của văn bản 100 ký tự "
+"hoặc ít hơn không có HTML."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:32
+msgid "ID"
+msgstr "MÃ SỐ"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:33
+msgid ""
+"The ID field is a unique alphanumeric key used to differentiate each theme "
+"option (underscores are acceptable). Also, the plugin will change all text you "
+"write in this field to lowercase and replace spaces and special characters "
+"with an underscore automatically."
+msgstr ""
+"Các trường ID là một phím chữ và số độc đáo dùng để phân biệt từng tùy chọn "
+"theme (gạch chân là chấp nhận được). Ngoài ra, các plugin sẽ thay đổi tất cả "
+"các văn bản bạn viết trong lĩnh vực này thành chữ thường và thay thế không "
+"gian và ký tự đặc biệt bằng một gạch tự động."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:36
+msgid ""
+"You are required to choose one of the supported option types when creating a "
+"new option. Here is a list of the available option types. For more information "
+"about each type click the <code>Option Types</code> tab to the left."
+msgstr ""
+"Bạn được yêu cầu chọn một trong những loại tuỳ chọn hỗ trợ khi tạo ra một lựa "
+"chọn mới. Dưới đây là một danh sách các loại tùy chọn có sẵn. Để biết thêm "
+"thông tin về từng loại kích <code> Lựa chọn các loại </ code> tab bên trái."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:44
+msgid ""
+"Enter a detailed description for the users to read on the Theme Options page, "
+"HTML is allowed. This is also where you enter content for both the Textblock & "
+"Textblock Titled option types."
+msgstr ""
+"Nhập một mô tả chi tiết cho người dùng đọc trên trang Tùy chọn Theme, HTML "
+"được phép. Đây cũng là nơi bạn nhập nội dung với nhiều lựa chọn cả TextBlock & "
+"TextBlock tiêu đề."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:46
+msgid "Choices"
+msgstr "Lự}a chọ}n"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:47
+msgid ""
+"Click the \"Add Choice\" button to add an item to the choices array. This will "
+"only affect the following option types: Checkbox, Radio, Select & Select Image."
+msgstr ""
+"Nhấp vào nút \"Thêm lựa chọn\" để thêm một mục vào mảng lựa chọn. Điều này sẽ "
+"chỉ ảnh hưởng đến các loại tùy chọn sau đây: Checkbox, Radio, Select & Select "
+"Image."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:49
+#: ../option-tree/includes/ot-ui-admin.php:30
+#: ../option-tree/includes/ot-ui-admin.php:31
+#: ../option-tree/includes/ot-ui-admin.php:74
+#: ../option-tree/includes/ot-ui-admin.php:98
+msgid "Settings"
+msgstr "Cài đặt"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:50
+msgid ""
+"Click the \"Add Setting\" button found inside a newly created setting to add "
+"an item to the settings array. This will only affect the List Item type."
+msgstr ""
+"Nhấp vào nút \"Thêm Thiết lập\" tìm thấy bên trong một thiết lập mới được tạo "
+"ra để thêm một mục vào mảng thiết lập. Điều này sẽ chỉ ảnh hưởng đến các loại "
+"List Item."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:52
+msgid "Standard"
+msgstr "Tiêu chuẩn"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:53
+msgid ""
+"Setting the standard value for your option only works for some option types. "
+"Those types are one that have a single string value saved to them and not an "
+"array of values."
+msgstr ""
+"Thiết lập các giá trị tiêu chuẩn cho lựa chọn của bạn chỉ hoạt động đối với "
+"một số loại tùy chọn. Những loại là một trong đó có một giá trị chuỗi duy nhất "
+"để cứu họ và không phải là một mảng các giá trị."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:55
+msgid "Rows"
+msgstr "Số luồng"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:56
+msgid ""
+"Enter a numeric value for the number of rows in your textarea. This will only "
+"affect the following option types: CSS, Textarea, & Textarea Simple."
+msgstr ""
+"Nhập một giá trị số cho số hàng trong textarea của bạn. Điều này sẽ chỉ ảnh "
+"hưởng đến các loại tùy chọn sau đây: CSS, Textarea, & Textarea đơn giản."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:58
+msgid "Post Type"
+msgstr "Loại bài viết"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:59
+msgid ""
+"Add a comma separated list of post type like <code>post,page</code>. This will "
+"only affect the following option types: Custom Post Type Checkbox, & Custom "
+"Post Type Select. Below are the default post types available with WordPress "
+"and that are also compatible with OptionTree. You can also add your own custom "
+"<code>post_type</code>. At this time <code>any</code> does not seem to return "
+"results properly and is something I plan on looking into."
+msgstr ""
+"Thêm một danh sách phân cách nhau bởi dấu phẩy của các bài kiểu như <code> bài "
+"viết, trang </ code>. Điều này sẽ chỉ ảnh hưởng đến các loại tùy chọn sau đây: "
+"Tuỳ chỉnh bài viết Loại Checkbox, & Custom bài Type Select. Dưới đây là các "
+"bài mặc định loại có sẵn với WordPress và cũng tương thích với OptionTree. Bạn "
+"cũng có thể thêm các tùy chỉnh của riêng bạn <code> post_type </ code>. Tại "
+"thời điểm này <code> nào </ code> dường như không trả lại kết quả đúng và là "
+"một cái gì đó tôi có kế hoạch xem xét."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:67
+msgid "Taxonomy"
+msgstr "Phân loại tư duy"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:68
+msgid ""
+"Add a comma separated list of any registered taxonomy like <code>category,"
+"post_tag</code>. This will only affect the following option types: Taxonomy "
+"Checkbox, & Taxonomy Select."
+msgstr ""
+"Thêm một dấu phẩy tách ra danh sách của bất kỳ phân loại đăng ký như <code> "
+"thể loại, post_tag </ code>. Điều này sẽ chỉ ảnh hưởng đến các loại tùy chọn "
+"sau đây: Phân loại Checkbox, phân loại tư duy & Select."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:98
+msgid "Background"
+msgstr "Bối cảnh"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:99
+msgid ""
+"The Background option type is for adding background styles to your theme "
+"either dynamically via the CSS option type below or manually with "
+"<code>ot_get_option()</code>. Background has filters that allow you to change "
+"the defaults. For example, you can filter on "
+"<code>ot_recognized_background_repeat</code>, "
+"<code>ot_recognized_background_attachment</code>, and "
+"<code>ot_recognized_background_position</code>. These filters allow you to "
+"fine tune the select lists for your specific CSS needs."
+msgstr ""
+"Các loại tuỳ chọn nền là để thêm phong cách nền với chủ đề của bạn, hoặc tự "
+"động thông qua các tùy chọn kiểu CSS bên dưới hoặc bằng tay với <code> "
+"ot_get_option () </ code>. Bối cảnh có bộ lọc cho phép bạn thay đổi giá trị "
+"mặc định. Ví dụ, bạn có thể lọc trên <code> ot_recognized_background_repeat </ "
+"code>, <code> ot_recognized_background_attachment </ code>, và <code> "
+"ot_recognized_background_position </ code>. Các bộ lọc này cho phép bạn tinh "
+"chỉnh các danh sách chọn cho các nhu cầu cụ thể CSS của bạn."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:101
+msgid "Category Select"
+msgstr "Category Chọn"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:102
+msgid ""
+"The Category Select option type displays a list of category IDs. It allows the "
+"user to select only one category ID and will return that value for use in a "
+"custom function or loop."
+msgstr ""
+"Thể loại Chọn tùy chọn kiểu hiển thị một danh sách các ID danh mục. Nó cho "
+"phép người dùng lựa chọn chỉ có một loại ID và sẽ trở lại giá trị sử dụng "
+"trong một chức năng tùy chỉnh hoặc vòng lặp."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:104
+msgid "Category Checkbox"
+msgstr "Category Checkbox"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:105
+msgid ""
+"The Category Checkbox option type displays a list of category IDs. It allows "
+"the user to check multiple category IDs and will return that value as an array "
+"for use in a custom function or loop."
+msgstr ""
+"Thể loại Checkbox tùy chọn kiểu hiển thị một danh sách các ID danh mục. Nó cho "
+"phép người sử dụng để kiểm tra nhiều loại ID và sẽ trả lại giá trị đó như là "
+"một mảng để sử dụng trong một chức năng tùy chỉnh hoặc vòng lặp."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:107
+msgid "Checkbox"
+msgstr "Checkbox"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:108
+msgid ""
+"The Checkbox option type is fairly self explanatory. Typically used to ask "
+"questions. For example, \"Do you want to activate asynchronous Google "
+"analytics?\" would be a single checkbox with a value of yes. You could have "
+"more complex usages but the idea is that you can easily grab the value of the "
+"checkbox and use it in you theme. In this situation you would test if the "
+"checkbox has a value and execute a block of code if it does and do nothing if "
+"it doesn't."
+msgstr ""
+"Các tùy chọn Checkbox loại là khá tự giải thích. Thường được dùng để đặt câu "
+"hỏi. Ví dụ, \"Bạn có muốn kích hoạt các phân tích không đồng bộ Google? \" Sẽ "
+"là một checkbox với một giá trị của yes. Bạn có thể có tập quán phức tạp hơn "
+"nhưng ý tưởng là bạn có thể dễ dàng lấy các giá trị của hộp kiểm và sử dụng nó "
+"trong bạn theme. Trong tình huống này, bạn sẽ kiểm tra nếu hộp có một giá trị "
+"và thực thi một khối mã nếu nó làm gì và phải làm gì nếu nó không."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:110
+msgid "Colorpicker"
+msgstr "ColorPicker"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:111
+msgid ""
+"The Colorpicker option type saves a hexadecimal color code for use in CSS. Use "
+"it to modify the color of something in your theme."
+msgstr ""
+"Các ColorPicker lựa chọn loại tiết kiệm một mã màu thập lục phân để sử dụng "
+"trong CSS. Sử dụng nó để thay đổi màu sắc của một cái gì đó trong chủ đề của "
+"bạn."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:113
+msgid "CSS"
+msgstr "CSS"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:114
+msgid ""
+"The CSS option type is a textarea that when used properly can add dynamic CSS "
+"to your theme from within OptionTree. Unfortunately, due server limitations "
+"you will need to create a file named <code>dynamic.css</code> at the root "
+"level of your theme and change permissions using chmod so the server can write "
+"to the file. I have had the most success setting this single file to 0777 but "
+"feel free to play around with permissions until everything is working. A good "
+"starting point is 0666. When the server can save to the file CSS will "
+"automatically be updated each time you save your theme options."
+msgstr ""
+"Các loại tuỳ chọn CSS là một textarea mà khi được sử dụng đúng cách có thể "
+"thêm CSS động đến chủ đề của bạn từ bên trong OptionTree. Thật không may, "
+"những giới hạn máy chủ do bạn sẽ cần phải tạo một tập tin có tên <code> "
+"dynamic.css </ code> ở cấp độ gốc của chủ đề và thay đổi quyền truy cập của "
+"bạn bằng cách sử dụng chmod để các máy chủ có thể ghi vào tập tin. Tôi đã có "
+"những thành công nhất thiết tập tin duy nhất này để 0777 nhưng cảm thấy tự do "
+"để chơi xung quanh với các điều khoản cho đến khi tất cả mọi thứ đang làm "
+"việc. Một điểm khởi đầu tốt là 0666. Khi các máy chủ có thể lưu vào tập tin "
+"CSS sẽ được tự động cập nhật mỗi khi bạn lưu các lựa chọn chủ đề của bạn."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:116
+msgid ""
+"An example of the CSS option type: This assumes you have an option with the ID "
+"of <code>custom_background_css</code> which will display the saved values for "
+"that option."
+msgstr ""
+"Một ví dụ về các loại lựa chọn CSS: Điều này giả định bạn có một tùy chọn với "
+"các ID của <code> custom_background_css </ code> Nó sẽ hiển thị các giá trị đã "
+"lưu cho tùy chọn đó."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:118
+msgid "Input"
+msgstr "Nhập"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:124
+msgid "Output"
+msgstr "Kết quả"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:132
+msgid "Custom Post Type Select"
+msgstr "Tuỳ chỉnh bài Type Select"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:133
+msgid ""
+"The Custom Post Type Select option type displays a list of IDs from any "
+"available WordPress post type or custom post type. It will return a single "
+"post ID for use in a custom function or loop. Requires at least one valid "
+"<code>post_type</code> when created in the settings. For some reason "
+"<code>any</code> does not work correctly and will looked into in future "
+"version."
+msgstr ""
+"Custom bài Type Select lựa chọn kiểu hiển thị một danh sách các ID từ bất kỳ "
+"có sẵn WordPress loại bài hay bài tùy loại. Nó sẽ trả về một bài ID duy nhất "
+"để sử dụng trong một chức năng tùy chỉnh hoặc vòng lặp. Yêu cầu ít nhất một "
+"giá trị <code> post_type </ code> khi được tạo ra trong các thiết lập. Đối với "
+"một số lý do <code> nào </ code> không làm việc một cách chính xác và sẽ nhìn "
+"vào trong phiên bản tương lai."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:135
+msgid "Custom Post Type Checkbox"
+msgstr "Tuỳ chỉnh bài viết Loại Checkbox"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:136
+msgid ""
+"The Custom Post Type Select option type displays a list of IDs from any "
+"available WordPress post type or custom post type. It allows the user to check "
+"multiple post IDs for use in a custom function or loop. Requires at least one "
+"valid <code>post_type</code> when created in the settings. For some reason "
+"<code>any</code> does not work correctly and will looked into in future "
+"version."
+msgstr ""
+"Custom bài Type Select lựa chọn kiểu hiển thị một danh sách các ID từ bất kỳ "
+"có sẵn WordPress loại bài hay bài tùy loại. Nó cho phép người sử dụng để kiểm "
+"tra bài nhiều ID để sử dụng trong một chức năng tùy chỉnh hoặc vòng lặp. Yêu "
+"cầu ít nhất một giá trị <code> post_type </ code> khi được tạo ra trong các "
+"thiết lập. Đối với một số lý do <code> nào </ code> không làm việc một cách "
+"chính xác và sẽ nhìn vào trong phiên bản tương lai."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:138
+msgid "List Item"
+msgstr "Danh sách Item"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:139
+msgid ""
+"The list Item replaced the old Slider option type. It allows for a great deal "
+"of customization. You can add settings to the List Item and those settings "
+"will be displayed to the user when they add a new List Item. Typical use is "
+"for creating sliding content or blocks of code for custom layouts."
+msgstr ""
+"Các danh mục thay thế cái cũ Slider tùy loại. Nó cho phép một lượng lớn khách "
+"hàng. Bạn có thể thêm các thiết lập lại danh sách Item và những thiết lập này "
+"sẽ được hiển thị cho người dùng khi họ thêm một danh sách mới Item. Sử dụng "
+"điển hình cho việc tạo nội dung trượt hoặc các khối mã bố trí tùy chỉnh."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:141
+msgid "Measurement"
+msgstr "Sự đo lường"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:142
+msgid ""
+"The Measurement option type is a mix of input and select fields. The text "
+"input excepts a value and the select lets you choose the unit of measurement "
+"to add to that value. Currently the default units are <code>px</code>, <code>"
+"%</code>, <code>em</code>, <code>pt</code>. However, you can change them with "
+"the <code>ot_measurement_unit_types</code> filter."
+msgstr ""
+"Các loại tuỳ chọn Đo lường là một kết hợp của đầu vào và chọn các lĩnh vực. "
+"Các văn bản nhập vào excepts một giá trị và các lựa chọn cho phép bạn chọn các "
+"đơn vị đo lường để thêm vào giá trị đó. Hiện nay các đơn vị mặc định là <code> "
+"px </ code>, <code>% </ code>, <code> em </ code>, <code> pt </ code>. Tuy "
+"nhiên, bạn có thể thay đổi chúng với <code> ot_measurement_unit_types </ code> "
+"lọc."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:144
+msgid ""
+"Example filter to add new units to the Measurement option type. Added to "
+"<code>functions.php</code>."
+msgstr ""
+"Ví dụ bộ lọc để thêm các đơn vị mới để lựa chọn loại Đo lường. Thêm vào <code> "
+"functions.php </ code>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:157
+msgid ""
+"Example filter to completely change the units in the Measurement option type. "
+"Added to <code>functions.php</code>."
+msgstr ""
+"Ví dụ bộ lọc để thay đổi hoàn toàn các đơn vị trong các tùy chọn loại Đo "
+"lường. Thêm vào <code> functions.php </ code>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:172
+msgid "Page Select"
+msgstr "Chọn trang"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:173
+msgid ""
+"The Page Select option type displays a list of page IDs. It will return a "
+"single page ID for use in a custom function or loop."
+msgstr ""
+"Trang Chọn tùy chọn kiểu hiển thị một danh sách các trang ID. Nó sẽ trả về một "
+"ID trang duy nhất để sử dụng trong một chức năng tùy chỉnh hoặc vòng lặp."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:175
+msgid "Page Checkbox"
+msgstr "Trang Checkbox"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:176
+msgid ""
+"The Page Select option type displays a list of page IDs. It allows the user to "
+"check multiple page IDs for use in a custom function or loop."
+msgstr ""
+"Trang Chọn tùy chọn kiểu hiển thị một danh sách các trang ID. Nó cho phép "
+"người sử dụng để kiểm tra nhiều ID trang để sử dụng trong một chức năng tùy "
+"chỉnh hoặc vòng lặp."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:178
+msgid "Post Select"
+msgstr "Chọn bài"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:179
+msgid ""
+"The Post Select option type displays a list of post IDs. It will return a "
+"single post ID for use in a custom function or loop."
+msgstr ""
+"Các bài viết Chọn tùy chọn kiểu hiển thị một danh sách các bài viết ID. Nó sẽ "
+"trả về một bài ID duy nhất để sử dụng trong một chức năng tùy chỉnh hoặc vòng "
+"lặp."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:181
+msgid "Post Checkbox"
+msgstr "Bài Checkbox"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:182
+msgid ""
+"The Post Select option type displays a list of post IDs. It allows the user to "
+"check multiple post IDs for use in a custom function or loop."
+msgstr ""
+"Các bài viết Chọn tùy chọn kiểu hiển thị một danh sách các bài viết ID. Nó cho "
+"phép người sử dụng để kiểm tra bài nhiều ID để sử dụng trong một chức năng tùy "
+"chỉnh hoặc vòng lặp."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:184
+msgid "Radio"
+msgstr "Radio"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:185
+msgid ""
+"The Radio option type could ask a question. For example, \"Do you want to "
+"activate the custom navigation?\" could require a yes or no answer with a "
+"radio option. In this situation you would test if the radio has a value of "
+"'yes' and execute a block of code, or if it's 'no' execute a different block "
+"of code."
+msgstr ""
+"Đài phát thanh tùy chọn loại có thể đặt một câu hỏi. Ví dụ, \"Bạn có muốn kích "
+"hoạt các menu tùy chỉnh? \" Có thể đòi hỏi một câu trả lời có hoặc không có "
+"một tùy chọn radio. Trong tình huống này, bạn sẽ kiểm tra nếu các đài phát "
+"thanh có một giá trị của 'yes' và thực thi một khối mã, hoặc nếu nó là 'không' "
+"thực thi một khối mã khác nhau."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:187
+msgid "Radio Image"
+msgstr "Đài phát thanh hình ảnh"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:188
+msgid ""
+"the Radio Images option type is primarily used for layouts. However, you can "
+"filter the image list using <code>ot_radio_images</code>. As well, you can add "
+"your own custom images using the choices array."
+msgstr ""
+"Đài phát thanh tùy chọn hình ảnh loại được sử dụng chủ yếu cho bố cục. Tuy "
+"nhiên, bạn có thể lọc các danh sách hình ảnh bằng cách sử dụng <code> "
+"ot_radio_images </ code>. Đồng thời, bạn có thể thêm hình ảnh tùy chỉnh của "
+"riêng bạn bằng cách sử dụng mảng lựa chọn."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:190
+msgid ""
+"This example executes the <code>ot_radio_images</code> filter on layout images "
+"attached to the <code>my_radio_images</code> field. Added to <code>functions."
+"php</code>."
+msgstr ""
+"Ví dụ này thực thi <code> ot_radio_images </ code> bộ lọc hình ảnh bố trí gắn "
+"liền với <code> my_radio_images </ code> trường. Thêm vào <code> functions.php "
+"</ code>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:214
+msgid "Select"
+msgstr "Chọn"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:215
+msgid ""
+"The Select option type is used to list anything you want that would be chosen "
+"from a select list."
+msgstr ""
+"Chọn tùy chọn loại được sử dụng để liệt kê bất cứ điều gì bạn muốn mà có thể "
+"được lựa chọn từ một danh sách lựa chọn."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:217
+msgid "Slider"
+msgstr "Slider"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:218
+msgid ""
+"The Slider option type is technically deprecated. Use the List Item option "
+"type instead, as it's infinitely more customizable. Typical use is for "
+"creating sliding image content."
+msgstr ""
+"Các tùy chọn loại Slider là kỹ thuật phản đối. Sử dụng danh sách mục tùy chọn "
+"loại thay vào đó, vì nó là vô hạn tùy biến hơn. Sử dụng điển hình cho việc tạo "
+"trượt nội dung hình ảnh."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:220
+msgid "Tag Checkbox"
+msgstr "Tag Checkbox"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:221
+msgid ""
+"The Tag Checkbox option type displays a list of tag IDs. It allows the user to "
+"check multiple tag IDs and will return that value as an array for use in a "
+"custom function or loop."
+msgstr ""
+"Các Tag Checkbox tùy chọn kiểu hiển thị một danh sách các ID tag. Nó cho phép "
+"người sử dụng để kiểm tra nhiều ID tag và sẽ trả lại giá trị đó như là một "
+"mảng để sử dụng trong một chức năng tùy chỉnh hoặc vòng lặp."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:223
+msgid "Tag Select"
+msgstr "Tag Chọn"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:224
+msgid ""
+"The Tag Select option type displays a list of tag IDs. It allows the user to "
+"select only one tag ID and will return that value for use in a custom function "
+"or loop."
+msgstr ""
+"Các Tag Chọn tùy chọn kiểu hiển thị một danh sách các ID tag. Nó cho phép "
+"người dùng lựa chọn chỉ có một thẻ ID và sẽ trở lại giá trị sử dụng trong một "
+"chức năng tùy chỉnh hoặc vòng lặp."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:226
+msgid "Taxonomy Checkbox"
+msgstr "Phân loại tư duy Checkbox"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:227
+msgid ""
+"The Taxonomy Checkbox option type displays a list of taxonomy IDs. It allows "
+"the user to check multiple taxonomy IDs and will return that value as an array "
+"for use in a custom function or loop."
+msgstr ""
+"Danh mục phân loại Checkbox tùy chọn kiểu hiển thị một danh sách các ID phân "
+"loại. Nó cho phép người sử dụng để kiểm tra nhiều ID phân loại và sẽ trả lại "
+"giá trị đó như là một mảng để sử dụng trong một chức năng tùy chỉnh hoặc vòng "
+"lặp."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:229
+msgid "Taxonomy Select"
+msgstr "Phân loại tư duy Chọn"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:230
+msgid ""
+"The Taxonomy Select option type displays a list of taxonomy IDs. It allows the "
+"user to select only one taxonomy ID and will return that value for use in a "
+"custom function or loop."
+msgstr ""
+"Danh mục phân loại Chọn tùy chọn kiểu hiển thị một danh sách các ID phân loại. "
+"Nó cho phép người dùng lựa chọn chỉ có một nguyên tắc phân loại ID và sẽ trở "
+"lại giá trị sử dụng trong một chức năng tùy chỉnh hoặc vòng lặp."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:232
+msgid "Text (Input)"
+msgstr "Text (Input)"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:233
+msgid ""
+"The Text option type would be used to save a string value. For example, a link "
+"to feedburner, your Twitter username, or Google Analytics ID are all good "
+"candidates. Any optional or required text that is of reasonably short "
+"character length."
+msgstr ""
+"Các loại tuỳ chọn Text sẽ được sử dụng để lưu một giá trị chuỗi. Ví dụ, một "
+"liên kết để Feedburner, tên người dùng Twitter của bạn, hoặc Google Analytics "
+"ID là tất cả các ứng viên tốt. Bất kỳ văn bản tùy chọn hoặc yêu cầu đó là "
+"chiều dài vật lý ngắn."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:235
+msgid "Textarea"
+msgstr "Ô văn bản"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:236
+msgid ""
+"The Textarea option type is a large string value used for custom code or text "
+"in the theme. The new Textarea has a WYSIWYG editor that can be filtered to "
+"change the buttons shown. For example, you can filter on <code>wpautop</code>, "
+"<code>media_buttons</code>, <code>tinymce</code>, and <code>quicktags</code>."
+msgstr ""
+"Các loại tuỳ chọn Textarea là một chuỗi giá trị lớn được sử dụng cho các mã "
+"tùy chỉnh hoặc văn bản trong các chủ đề. Các Textarea mới có một trình soạn "
+"thảo WYSIWYG có thể được lọc để thay đổi các nút hiển thị. Ví dụ, bạn có thể "
+"lọc trên <code> wpautop </ code>, <code> media_buttons </ code>, <code> "
+"TinyMCE </ code>, và <code> quicktags </ code>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:238
+msgid ""
+"Example filters to alter the Textarea option type. Added to <code>functions."
+"php</code>."
+msgstr ""
+"Ví dụ bộ lọc để thay đổi các tùy chọn loại Textarea. Thêm vào <code> functions."
+"php </ code>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:240
+msgid ""
+"This example keeps WordPress from executing the <code>wpautop</code> filter on "
+"the line breaks. The default is <code>true</code> which means it wraps line "
+"breaks with an HTML <code>p</code> tag."
+msgstr ""
+"Ví dụ này giữ WordPress từ thực hiện các <code> wpautop </ code> bộ lọc trên "
+"các ngắt dòng. Mặc định là <code> đúng </ code> có nghĩa là nó kết thúc tốt "
+"đẹp ngắt dòng với một HTML <code> p </ code>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:253
+msgid ""
+"This example keeps WordPress from executing the <code>media_buttons</code> "
+"filter on the textarea WYSIWYG. The default is <code>true</code> which means "
+"show the buttons."
+msgstr ""
+"Ví dụ này giữ WordPress từ thực hiện các <code> media_buttons </ code> bộ lọc "
+"trên WYSIWYG textarea. Mặc định là <code> đúng </ code> có nghĩa là hiển thị "
+"các nút."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:266
+msgid ""
+"This example keeps WordPress from executing the <code>tinymce</code> filter on "
+"the textarea WYSIWYG. The default is <code>true</code> which means show the "
+"tinymce."
+msgstr ""
+"Ví dụ này giữ WordPress từ thực hiện các <code> TinyMCE </ code> bộ lọc trên "
+"WYSIWYG textarea. Mặc định là <code> đúng </ code> có nghĩa là hiển thị các "
+"TinyMCE."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:279
+msgid ""
+"This example alters the <code>quicktags</code> filter on the textarea WYSIWYG. "
+"The default is <code>array( 'buttons' => 'strong,em,link,block,del,ins,img,ul,"
+"ol,li,code,spell,close' )</code> which means show those quicktags. It also "
+"means you can filter in your own custom quicktags."
+msgstr ""
+"Ví dụ này làm thay đổi <code> quicktags </ code> bộ lọc trên WYSIWYG textarea. "
+"Mặc định là <code> array ('nút' => 'mạnh mẽ, em, liên kết, khối, del, in, img, "
+"ul, ol, li, mã số, đánh vần, gần') </ code> có nghĩa là hiển thị những "
+"quicktags . Nó cũng có nghĩa là bạn có thể lọc trong quicktags tùy chỉnh của "
+"riêng bạn."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:294
+msgid "Textarea Simple"
+msgstr "Textarea Simple"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:295
+msgid ""
+"The Textarea Simple option type is a large string value used for custom code "
+"or text in the theme. The new Textarea Simple does not have a WYSIWYG editor. "
+"But you can still filter on <code>wpautop</code>."
+msgstr ""
+"Các Textarea đơn giản lựa chọn loại là một chuỗi giá trị lớn được sử dụng cho "
+"các mã tùy chỉnh hoặc văn bản trong các chủ đề. Các Textarea Simple mới không "
+"có một trình soạn thảo WYSIWYG. Nhưng bạn vẫn có thể lọc trên <code> wpautop "
+"</ code>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:297
+msgid ""
+"This example tells WordPress to execute the <code>wpautop</code> filter on the "
+"line breaks. The default is <code>false</code> which means it does not wraps "
+"line breaks with an HTML <code>p</code> tag. Added to <code>functions.php</"
+"code>."
+msgstr ""
+"Ví dụ này cho WordPress để thực hiện <code> wpautop </ code> bộ lọc trên các "
+"ngắt dòng. Mặc định là <code> false </ code> có nghĩa là nó không kết thúc tốt "
+"đẹp ngắt dòng với một HTML <code> p </ code>. Thêm vào <code> functions.php </ "
+"code>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:310
+msgid "Textblock"
+msgstr "TextBlock"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:311
+msgid ""
+"The Textblock option type is used only on the Theme Option page. It will allow "
+"you to create & display HTML on your Theme Options page but has no title above "
+"the text block. You can then use the Textblock to add a more detailed set of "
+"instruction on how the options are used in your theme. You would NEVER use "
+"this in your themes template files as it does not save a value."
+msgstr ""
+"TextBlock lựa chọn loại chỉ được sử dụng trên các trang Theme Option. Nó sẽ "
+"cho phép bạn tạo ra và hiển thị trên trang HTML chọn Theme của bạn, nhưng "
+"không có tên ở trên khối văn bản. Sau đó bạn có thể sử dụng các TextBlock để "
+"thêm một tập chi tiết hơn về hướng dẫn về cách các tùy chọn được sử dụng trong "
+"các chủ đề của bạn. Bạn không bao giờ có thể sử dụng điều này trong các chủ đề "
+"file mẫu của bạn như nó không lưu lại một giá trị."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:313
+msgid "Textblock Titled"
+msgstr "TextBlock tiêu đề"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:314
+msgid ""
+"The Textblock Titled option type is used only on the Theme Option page. It "
+"will allow you to create & display HTML on your Theme Options page and has a "
+"title above the text block. You can then use the Textblock Titled to add a "
+"more detailed set of instruction on how the options are used in your theme. "
+"You would NEVER use this in your themes template files as it does not save a "
+"value."
+msgstr ""
+"TextBlock tùy chọn tiêu đề loại chỉ được sử dụng trên các trang Theme Option. "
+"Nó sẽ cho phép bạn tạo ra và hiển thị trên trang HTML chọn Theme của bạn và có "
+"một cái tên ở trên khối văn bản. Sau đó bạn có thể sử dụng các TextBlock tiêu "
+"đề để thêm một tập chi tiết hơn về hướng dẫn về cách các tùy chọn được sử dụng "
+"trong các chủ đề của bạn. Bạn không bao giờ có thể sử dụng điều này trong các "
+"chủ đề file mẫu của bạn như nó không lưu lại một giá trị."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:316
+msgid "Typography"
+msgstr "Kiểu trình bày bản in"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:317
+msgid ""
+"The Typography option type is for adding typographic styles to your theme "
+"either dynamically via the CSS option type below or manually with "
+"<code>ot_get_option()</code>. Typography has filters that allow you to change "
+"the defaults. For example, you can filter on <code>ot_recognized_font_styles</"
+"code>, <code>ot_recognized_font_weights</code>, "
+"<code>ot_recognized_font_variants</code>, and "
+"<code>ot_recognized_font_families</code>. These filters allow you to fine tune "
+"the select lists for your specific CSS needs. The most important one though is "
+"<code>ot_recognized_font_families</code> as you can add your Google Fonts to "
+"create custom font stacks."
+msgstr ""
+"Các loại tuỳ chọn Typography là cho thêm style typographic đến chủ đề của bạn, "
+"hoặc tự động thông qua các tùy chọn kiểu CSS bên dưới hoặc bằng tay với <code> "
+"ot_get_option () </ code>. Typography có bộ lọc cho phép bạn thay đổi giá trị "
+"mặc định. Ví dụ, bạn có thể lọc trên <code> ot_recognized_font_styles </ "
+"code>, <code> ot_recognized_font_weights </ code>, <code> "
+"ot_recognized_font_variants </ code>, và <code> ot_recognized_font_families </ "
+"code>. Các bộ lọc này cho phép bạn tinh chỉnh các danh sách chọn cho các nhu "
+"cầu cụ thể CSS của bạn. Điều quan trọng nhất mặc dù là <code> "
+"ot_recognized_font_families </ code> như bạn có thể thêm Google Fonts của bạn "
+"để tạo ngăn xếp tùy chỉnh font."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:319
+msgid ""
+"This example would filter <code>ot_recognized_font_families</code> to build "
+"your own font stack. Added to <code>functions.php</code>."
+msgstr ""
+"Ví dụ này sẽ lọc <code> ot_recognized_font_families </ code> để xây dựng phông "
+"chữ của bạn ngăn xếp riêng. Thêm vào <code> functions.php </ code>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:336
+msgid "Upload"
+msgstr "Tải lên"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:337
+msgid ""
+"The Upload option type is used to upload any WordPress supported media. After "
+"uploading, users are required to press the \"Send to OptionTree\" button in "
+"order to populate the input with the URI of that media. There is one caveat of "
+"this feature. If you import the theme options and have uploaded media on one "
+"site the old URI will not reflect the URI of your new site. You'll have to re-"
+"upload or FTP any media to your new server and change the URIs if necessary."
+msgstr ""
+"Tải lên tùy chọn loại được sử dụng để tải lên bất kỳ phương tiện truyền thông "
+"hỗ trợ WordPress. Sau khi upload, người dùng được yêu cầu phải nhấn \"Gửi tới "
+"OptionTree \" nút để cư đầu vào với các URI của phương tiện truyền thông đó. "
+"Có một sự báo trước của tính năng này. Nếu bạn nhập khẩu các tùy chọn chủ đề "
+"và phương tiện truyền thông đã đăng tải trên một trang web URI cũ sẽ không "
+"phản ánh các URI của trang web mới của bạn. Bạn sẽ phải tải lên FTP hoặc bất "
+"kỳ phương tiện truyền thông với máy chủ mới của bạn và thay đổi URI nếu cần "
+"thiết."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:369
+msgid ""
+"This function returns a value from the \"option_tree\" array of saved values "
+"or the default value supplied. The returned value would be mixed. Meaning it "
+"could be a string, integer, boolean, or array."
+msgstr ""
+"Hàm này trả về một giá trị từ \"option_tree\" mảng các giá trị được lưu hoặc "
+"các giá trị mặc định được cung cấp. Giá trị trả về sẽ được trộn lẫn. Có nghĩa "
+"là nó có thể là một chuỗi, số nguyên, boolean, hoặc mảng."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:371
+#: ../option-tree/includes/ot-functions-docs-page.php:421
+msgid "Usage"
+msgstr "Dùng cho"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:375
+#: ../option-tree/includes/ot-functions-docs-page.php:425
+msgid "Parameters"
+msgstr "Thông số"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:379
+#: ../option-tree/includes/ot-functions-docs-page.php:383
+#: ../option-tree/includes/ot-functions-docs-page.php:429
+msgid "string"
+msgstr "Xâu"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:379
+#: ../option-tree/includes/ot-functions-docs-page.php:429
+msgid "required"
+msgstr "cần thiết"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:379
+msgid "Enter the options unique identifier."
+msgstr "Nhập các tùy chọn định danh duy nhất."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:379
+#: ../option-tree/includes/ot-functions-docs-page.php:429
+msgid "Default:"
+msgstr "Mặc định:"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:379
+#: ../option-tree/includes/ot-functions-docs-page.php:383
+#: ../option-tree/includes/ot-functions-docs-page.php:429
+#: ../option-tree/includes/ot-functions-docs-page.php:433
+msgid "None"
+msgstr "Không"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:383
+#: ../option-tree/includes/ot-functions-docs-page.php:433
+#: ../option-tree/includes/ot-functions-docs-page.php:437
+#: ../option-tree/includes/ot-functions-docs-page.php:441
+#: ../option-tree/includes/ot-functions-docs-page.php:445
+msgid "optional"
+msgstr "không bắt buộc"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:383
+msgid ""
+"Enter a default return value. This is just incase the request returns null."
+msgstr ""
+"Nhập một giá trị trả về mặc định. Đây là chỉ trong trường hợp yêu cầu trả về "
+"null."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:383
+#: ../option-tree/includes/ot-functions-docs-page.php:433
+#: ../option-tree/includes/ot-functions-docs-page.php:437
+#: ../option-tree/includes/ot-functions-docs-page.php:441
+#: ../option-tree/includes/ot-functions-docs-page.php:445
+msgid "Default"
+msgstr "Mặc định"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:413
+msgid ""
+"This function has been deprecated. That means it has been replaced by a new "
+"function or is no longer supported, and may be removed from future versions. "
+"All code that uses this function should be converted to use its replacement."
+msgstr ""
+"Chức năng này đã bị phản đối. Điều đó có nghĩa là nó đã được thay thế bởi một "
+"chức năng mới hoặc không còn được hỗ trợ, và có thể được gỡ bỏ từ các phiên "
+"bản trong tương lai. Tất cả các mã có sử dụng chức năng này phải được chuyển "
+"đổi sang sử dụng thay thế của nó."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:415
+msgid "Use"
+msgstr "Dùng"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:415
+msgid "instead"
+msgstr "thay thế"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:419
+msgid ""
+"This function returns, or echos if asked, a value from the \"option_tree\" "
+"array of saved values."
+msgstr ""
+"Chức năng này trả về, hoặc dội nếu hỏi một giá trị từ \"option_tree\" mảng các "
+"giá trị lưu."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:429
+msgid "Enter a unique Option Key to get a returned value or array."
+msgstr "Nhập Key Lựa chọn duy nhất để có được một giá trị trả lại hoặc mảng."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:433
+msgid "array"
+msgstr "mảng"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:433
+msgid "Used to cut down on database queries in template files."
+msgstr ""
+"Được sử dụng để cắt giảm xuống trên các truy vấn cơ sở dữ liệu trong file "
+"template."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:437
+#: ../option-tree/includes/ot-functions-docs-page.php:441
+msgid "boolean"
+msgstr "Lô-gic"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:437
+msgid "Echo the output."
+msgstr "Echo ra."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:441
+msgid "Used to indicate the $item_id is an array of values."
+msgstr "Được sử dụng để chỉ ra $ item_id là một mảng các giá trị."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:445
+msgid "integer"
+msgstr "số nguyên"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:445
+msgid ""
+"Numeric offset key for the $item_id array, -1 will return all values (an array "
+"starts at 0)."
+msgstr ""
+"Số bù đắp quan trọng cho các mảng item_id $, -1 sẽ trả lại tất cả các giá trị "
+"(một mảng bắt đầu từ 0)."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:473
+msgid ""
+"If you're using the plugin version of OptionTree it is highly recommended to "
+"include a <code>function_exists</code> check in your code, as described in the "
+"examples below. If you've integrated OptionTree directly into your themes root "
+"directory, you will <strong>not</strong> need to wrap your code with "
+"<code>function_exists</code>, as you're guaranteed to have the "
+"<code>ot_get_option()</code> function available."
+msgstr ""
+"Nếu bạn đang sử dụng phiên bản plugin của OptionTree nó rất cao nên để bao gồm "
+"một <code> function_exists </ code> kiểm tra trong mã của bạn, như được mô tả "
+"trong các ví dụ dưới đây. Nếu bạn đã tích hợp trực tiếp vào thư mục OptionTree "
+"chủ đề gốc của bạn, bạn sẽ <strong> không </ strong> cần phải bọc mã của bạn "
+"với <code> function_exists </ code>, như bạn sẽ được bảo đảm để có <code> "
+"ot_get_option () </ code> chức năng có sẵn."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:475
+msgid "String Examples"
+msgstr "Ví dụ chuỗi"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:477
+msgid "Returns the value of <code>test_input</code>."
+msgstr "Trả về giá trị của <code> test_input </ code>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:483
+msgid ""
+"Returns the value of <code>test_input</code>, but also has a default value if "
+"it returns empty."
+msgstr ""
+"Trả về giá trị của <code> test_input </ code>, nhưng cũng có một giá trị mặc "
+"định nếu nó trả về rỗng."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:489
+msgid "Array Examples"
+msgstr "Ví dụ mảng"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:491
+msgid ""
+"Assigns the value of <code>navigation_ids</code> to the variable <code>$ids</"
+"code>. It then echos an unordered list of links (navigation) using "
+"<code>wp_list_pages()</code>."
+msgstr ""
+"Gán giá trị của <code> navigation_ids </ code> để biến <code> $ id </ code>. "
+"Sau đó nó Echos một danh sách có thứ tự các liên kết (navigation) sử dụng "
+"<code> wp_list_pages () </ code>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:511
+msgid ""
+"The next two examples demonstrate how to use the <strong>Measurement</strong> "
+"option type. The Measurement option type is an array with two key/value pairs. "
+"The first is the value of measurement and the second is the unit of "
+"measurement."
+msgstr ""
+"Hai ví dụ tiếp theo chứng minh làm thế nào để sử dụng các <strong> đo </ "
+"strong> tùy chọn loại. Các loại tuỳ chọn Đo lường là một mảng với hai cặp "
+"khóa / giá trị. Đầu tiên là các giá trị đo lường và thứ hai là các đơn vị đo "
+"lường."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:537
+msgid "This example displays a very basic slider loop."
+msgstr "Ví dụ này hiển thị một vòng trượt rất cơ bản."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:582
+msgid "It's Super Simple"
+msgstr "Đó là siêu đơn giản"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:584
+msgid ""
+"Layouts make your theme awesome! With theme options data that you can save/"
+"import/export you can package themes with different color variations, or make "
+"it easy to do A/B testing on text and so much more. Basically, you save a "
+"snapshot of your data as a layout."
+msgstr ""
+"Bố trí làm cho chủ đề của bạn tuyệt vời! Với lựa chọn chủ đề dữ liệu mà bạn có "
+"thể lưu / nhập khẩu / xuất khẩu, bạn có thể đóng gói các chủ đề với các biến "
+"thể màu sắc khác nhau, hoặc làm cho nó dễ dàng để làm thử nghiệm A / B trên "
+"văn bản và nhiều hơn nữa. Về cơ bản, bạn lưu một bản chụp của dữ liệu của bạn "
+"như là một cách bố trí."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:586
+msgid ""
+"Once you have created all your different layouts, or theme variations, you can "
+"save them to a separate text file for repackaging with your theme. "
+"Alternatively, you could just make different variations for yourself and "
+"change your theme with the click of a button, all without deleting your "
+"previous options data."
+msgstr ""
+"Một khi bạn đã tạo ra tất cả các bố trí khác nhau của bạn, hoặc các biến chủ "
+"đề, bạn có thể lưu chúng vào một tập tin văn bản riêng biệt cho đóng gói lại "
+"với chủ đề của bạn. Ngoài ra, bạn chỉ có thể làm cho các biến khác nhau cho "
+"bản thân và thay đổi chủ đề của bạn với các bấm vào một nút, tất cả mà không "
+"xóa dữ liệu tùy chọn trước đó của bạn."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:588
+msgid ""
+" Adding a layout is ridiculously easy, follow these steps and you'll be on "
+"your way to having a WordPress super theme."
+msgstr ""
+" Thêm một layout là ridiculously dễ dàng, hãy làm theo các bước sau và bạn sẽ "
+"được trên con đường của bạn để có một siêu theme WordPress."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:590
+msgid "For Developers"
+msgstr "Đối với phát triển"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:593
+#: ../option-tree/includes/ot-functions-docs-page.php:623
+msgid "Creating a Layout"
+msgstr "Tạo một Layout"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:595
+#: ../option-tree/includes/ot-functions-docs-page.php:602
+#: ../option-tree/includes/ot-functions-docs-page.php:608
+msgid "Go to the <code>OptionTre->Settings->Layouts</code> tab."
+msgstr "Tới các <code> OptionTre-> Settings-> Bố cục </ code> tab."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:596
+msgid ""
+"Enter a name for your layout in the text field and hit \"Save Layouts\", "
+"you've created your first layout."
+msgstr ""
+"Nhập tên cho bố trí của bạn trong lĩnh vực văn bản và nhấn \"Save Layouts\", "
+"bạn đã tạo ra bố trí đầu tiên của bạn."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:597
+#: ../option-tree/includes/ot-functions-docs-page.php:627
+msgid "Adding a new layout is as easy as repeating the steps above."
+msgstr "Thêm một bố cục mới là dễ dàng như lặp đi lặp lại các bước trên."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:600
+#: ../option-tree/includes/ot-functions-docs-page.php:630
+msgid "Activating a Layout"
+msgstr "Kích hoạt một Layout"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:603
+msgid "Click on the activate layout button in the actions list."
+msgstr "Nhấn vào nút kích hoạt bố trí trong danh sách hành động."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:606
+#: ../option-tree/includes/ot-functions-docs-page.php:636
+msgid "Deleting a Layout"
+msgstr "Xóa một Layout"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:609
+msgid "Click on the delete layout button in the actions list."
+msgstr "Nhấn vào nút bố trí xóa trong danh sách hành động."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:612
+#: ../option-tree/includes/ot-functions-docs-page.php:641
+msgid "Edit Layout Data"
+msgstr "Edit Layout dữ liệu"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:614
+#: ../option-tree/includes/ot-functions-docs-page.php:625
+#: ../option-tree/includes/ot-functions-docs-page.php:632
+msgid "Go to the <code>Appearance->Theme Options</code> page."
+msgstr "Tới các <code> Appearance-> Theme Options </ code> trang."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:615
+#: ../option-tree/includes/ot-functions-docs-page.php:644
+msgid ""
+"Modify and save your theme options and the layout will be updated "
+"automatically."
+msgstr ""
+"Sửa đổi và lưu tùy chọn chủ đề của bạn và bố trí này sẽ được cập nhật tự động."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:616
+#: ../option-tree/includes/ot-functions-docs-page.php:645
+msgid ""
+"Saving theme options data will update the currently active layout, so before "
+"you start saving make sure you want to modify the current layout."
+msgstr ""
+"Lưu dữ liệu tùy chọn chủ đề sẽ cập nhật các bố trí hiện nay đang hoạt động, vì "
+"vậy trước khi bạn bắt đầu tiết kiệm chắc chắn rằng bạn muốn thay đổi cách bố "
+"trí hiện nay."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:617
+msgid ""
+"If you want to edit a new layout, first create it then save your theme options."
+msgstr ""
+"Nếu bạn muốn chỉnh sửa một cách bố trí mới, đầu tiên tạo ra sau đó nó tiết "
+"kiệm được lựa chọn chủ đề của bạn."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:620
+msgid "End-Users Mode"
+msgstr "End-Users Chế độ"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:626
+msgid ""
+"Enter a name for your layout in the text field and hit \"New Layout\", you've "
+"created your first layout."
+msgstr ""
+"Nhập tên cho bố trí của bạn trong lĩnh vực văn bản và nhấn \"New Layout\", bạn "
+"đã tạo ra bố trí đầu tiên của bạn."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:633
+msgid ""
+"Choose a layout from the select list and click the \"Activate Layout\" button."
+msgstr "Chọn một bố trí từ danh sách lựa chọn và nhấn nút \"Activate Layout\"."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:638
+msgid "End-Users mode does not allow deleting layouts."
+msgstr "Chế độ End-Users không cho phép xóa các layout."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:643
+msgid "Go to the <code>Appearance->Theme Options</code> tab."
+msgstr "Tới các <code> Appearance-> Theme Options </ code> tab."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:674
+#: ../option-tree/includes/ot-functions-docs-page.php:756
+msgid "How-to-guide"
+msgstr "Làm thế nào-to-guide"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:676
+msgid ""
+"There are a few simple steps you need to take in order to use OptionTree's "
+"built in Meta Box API. In the code below I'll show you a basic demo of how to "
+"create your very own custom meta box using any number of the option types you "
+"have at your disposal. If you would like to see some demo code, there is a "
+"directory named <code>theme-mode</code> inside the <code>assets</code> "
+"directory that contains a file named <code>demo-meta-boxes.php</code> you can "
+"reference."
+msgstr ""
+"Có một vài bước đơn giản, bạn cần phải thực hiện để sử dụng được xây dựng "
+"trong Meta Box API của OptionTree. Trong đoạn mã dưới đây, tôi sẽ cho bạn thấy "
+"một bản demo cơ bản về cách tạo hộp tùy chỉnh meta rất riêng của bạn bằng cách "
+"sử dụng bất kỳ số lượng các loại tùy chọn mà bạn có lúc xử lý của bạn. Nếu bạn "
+"muốn xem một số code demo, có một thư mục có tên là <code> theme-mode </ code> "
+"trong <code> tài </ code> thư mục có chứa một tập tin có tên <code> demo-meta-"
+"ô. php </ code> bạn có thể tham khảo."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:678
+msgid ""
+"It's important to note that Meta Boxes do not support WYSIWYG editors at this "
+"time and if you set one of your options to Textarea it will automatically "
+"revert to a Textarea Simple until a valid solution is found. WordPress "
+"released this statement regarding the wp_editor() function:"
+msgstr ""
+"Điều quan trọng cần lưu ý là Meta Hộp không hỗ trợ biên tập WYSIWYG tại thời "
+"điểm này và nếu bạn đặt một trong những lựa chọn của bạn để textarea nó sẽ tự "
+"động chuyển đến một Textarea đơn giản cho đến một giải pháp hợp lệ được tìm "
+"thấy. WordPress phát hành báo cáo này về wp_editor () chức năng:"
+
+#: ../option-tree/includes/ot-functions-docs-page.php:680
+msgid ""
+"Once instantiated, the WYSIWYG editor cannot be moved around in the DOM. What "
+"this means in practical terms, is that you cannot put it in meta-boxes that "
+"can be dragged and placed elsewhere on the page."
+msgstr ""
+"Sau khi khởi tạo, biên tập WYSIWYG không thể di chuyển xung quanh trong DOM. "
+"Điều này có nghĩa là trong thực tế, đó là bạn không thể đặt nó trong meta-hộp "
+"có thể được kéo và đặt ở những nơi khác trên trang."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:682
+msgid "Create and include your custom meta boxes file."
+msgstr "Tạo và tùy chỉnh bao gồm hộp meta tập tin của bạn."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:684
+msgid ""
+"Create a file and name it anything you want, maybe <code>meta-boxes.php</code>."
+msgstr ""
+"Tạo một tập tin và đặt tên nó là bất cứ điều gì bạn muốn, có thể <code> meta-"
+"boxes.php </ code>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:685
+msgid ""
+"As well, you'll probably want to create a directory named <code>includes</"
+"code> to put your <code>meta-boxes.php</code> into which will help keep you "
+"file structure nice and tidy."
+msgstr ""
+"Cũng như vậy, có thể bạn sẽ muốn tạo một thư mục có tên là <code> có </ code> "
+"để đưa bạn <code> meta-boxes.php </ code> vào đó sẽ giúp giữ cho bạn tập tin "
+"cấu trúc đẹp và gọn gàng."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:686
+#: ../option-tree/includes/ot-functions-docs-page.php:797
+msgid "Add the following code to your <code>functions.php</code>."
+msgstr "Thêm mã sau vào <code> functions.php </ code>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:696
+msgid ""
+"Add a variation of the following code to your <code>meta-boxes.php</code>. "
+"You'll obviously need to fill it in with all your custom array values. It's "
+"important to note here that we use the <code>admin_init</code> filter because "
+"if you were to call the <code>ot_register_meta_box</code> function before "
+"OptionTree was loaded the sky would fall on your head."
+msgstr ""
+"Thêm một biến thể của mã sau vào <code> meta-boxes.php </ code>. Bạn rõ ràng "
+"sẽ cần phải điền vào nó với tất cả các giá trị mảng tùy chỉnh của bạn. Điều "
+"quan trọng cần lưu ý ở đây là chúng ta sử dụng <code> admin_init </ code> lọc "
+"vì nếu bạn đã gọi <code> ot_register_meta_box </ code> chức năng trước khi "
+"OptionTree đã được nạp bầu trời sẽ rơi vào đầu bạn."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:758
+msgid ""
+"There are a few simple steps you need to take in order to use OptionTree as a "
+"theme included module. In the code below I'll show you a basic demo of how to "
+"include the entire plugin as a module, which will allow you to have the most "
+"up-to-date version of OptionTree without ever needing to hack the core of the "
+"plugin. If you would like to see some demo code, there is a directory named "
+"<code>theme-mode</code> inside the <code>assets</code> directory that contains "
+"a file named <code>demo-theme-options.php</code> you can reference."
+msgstr ""
+"Có một vài bước đơn giản, bạn cần phải thực hiện để sử dụng OptionTree như một "
+"chủ đề bao gồm module. Trong đoạn mã dưới đây, tôi sẽ cho bạn thấy một bản "
+"demo cơ bản về cách để bao gồm toàn bộ plugin như là một mô-đun, mà sẽ cho "
+"phép bạn có phiên bản nhất up-to-ngày OptionTree mà không bao giờ cần để hack "
+"là cốt lõi của các plugin. Nếu bạn muốn xem một số code demo, có một thư mục "
+"có tên là <code> theme-mode </ code> trong <code> tài </ code> thư mục có chứa "
+"một tập tin có tên <code> demo-theme-options. php </ code> bạn có thể tham "
+"khảo."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:760
+msgid "Step 1: Include the plugin & turn on theme mode."
+msgstr "Bước 1: Bao gồm các plugin và bật chế độ chủ đề."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:762
+msgid ""
+"Download the latest version of <a href=\"http://wordpress.org/extend/plugins/"
+"option-tree/\" rel=\"nofollow\" target=\"_blank\">OptionTree</a>."
+msgstr ""
+"Tải về phiên bản mới nhất của <a href=\"http://wordpress.org/extend/plugins/"
+"option-tree/\" rel=\"nofollow\" target=\"_blank\"> OptionTree </a>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:763
+msgid "Unpack the ZIP archive."
+msgstr "Giải nén kho lưu trữ ZIP."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:764
+msgid ""
+"Put the <code>option-tree</code> directory in the root of your theme. For "
+"example, the server path would be <code>/wp-content/themes/theme-name/option-"
+"tree/</code>."
+msgstr ""
+"Đặt <code> tùy chọn cây </ code> thư mục trong thư mục gốc của chủ đề của bạn. "
+"Ví dụ, đường dẫn máy chủ sẽ là <code> / wp-content / themes / theme-name / tùy "
+"chọn cây / </ code>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:765
+msgid ""
+"Add the following code to the beginning of your <code>functions.php</code>."
+msgstr "Thêm mã sau đây để bắt đầu của bạn <code> functions.php </ code>."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:791
+msgid ""
+"It's that simple! You now have OptionTree built into your theme and anytime "
+"there's an update to the plugin you just replace the old version and you're "
+"good to go.."
+msgstr ""
+"Nó đơn giản mà! Bây giờ bạn có OptionTree xây dựng thành chủ đề của bạn và bất "
+"cứ lúc nào có một cập nhật cho các plugin mà bạn chỉ cần thay thế các phiên "
+"bản cũ và bạn tốt để đi .."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:793
+msgid "Step 2: Create Theme Options without using the UI Builder."
+msgstr "Bước 2: Tạo tùy chọn Theme mà không sử dụng UI Builder."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:795
+msgid ""
+"Create a file and name it anything you want, maybe <code>theme-options.php</"
+"code>, or use the built in file export to create it for you. Remember, you "
+"should always check the file for errors before including it in your theme."
+msgstr ""
+"Tạo một tập tin và đặt tên cho nó bất cứ điều gì bạn muốn, có thể <code> theme-"
+"options.php </ code>, hoặc sử dụng được xây dựng trong tập tin xuất khẩu để "
+"tạo ra nó cho bạn. Hãy nhớ rằng, bạn nên luôn luôn kiểm tra các tập tin lỗi "
+"trước khi đưa nó vào chủ đề của bạn."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:796
+msgid ""
+"As well, you'll probably want to create a directory named <code>includes</"
+"code> to put your <code>theme-options.php</code> into which will help keep you "
+"file structure nice and tidy."
+msgstr ""
+"Cũng như vậy, có thể bạn sẽ muốn tạo một thư mục có tên là <code> có </ code> "
+"để đưa bạn <code> theme-options.php </ code> vào đó sẽ giúp giữ cho bạn tập "
+"tin cấu trúc đẹp và gọn gàng."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:807
+msgid ""
+"Add a variation of the following code to your <code>theme-options.php</code>. "
+"You'll obviously need to fill it in with all your custom array values for "
+"contextual help (optional), sections (required), and settings (required)."
+msgstr ""
+"Thêm một biến thể của mã sau vào <code> theme-options.php </ code>. Bạn rõ "
+"ràng sẽ cần phải điền vào nó với tất cả các giá trị mảng tùy chỉnh của bạn để "
+"được giúp đỡ theo ngữ cảnh (tùy chọn), phần (bắt buộc), và cài đặt (bắt buộc)."
+
+#: ../option-tree/includes/ot-functions-docs-page.php:810
+msgid ""
+"The code below is a boilerplate to get your started. For a full list of the "
+"available option types click the \"Option Types\" tab above. Also a quick "
+"note, you don't need to put OptionTree in theme mode to manually create "
+"options but you will want to hide the docs and settings as each time you load "
+"the admin area the settings be be written over with the code below if they've "
+"changed in any way. However, this ensures your settings do not get tampered "
+"with by the end-user."
+msgstr ""
+"Đoạn code dưới đây là một soạn để bắt đầu của bạn. Đối với một danh sách đầy "
+"đủ của các loại tùy chọn có sẵn nhấp vào  \"Các loại Lựa chọn\" tab trên. Cũng "
+"là một ghi chú nhanh, bạn không cần phải đặt ở chế độ OptionTree theme tự tạo "
+"ra các lựa chọn nhưng bạn sẽ muốn ẩn các tài liệu và các thiết lập như mỗi khi "
+"bạn tải các khu vực admin các thiết lập được thể hiện rõ trên với mã dưới đây, "
+"nếu họ đã thay đổi trong bất kỳ cách nào. Tuy nhiên, điều này đảm bảo các "
+"thiết lập của bạn không bị giả mạo bởi người dùng cuối."
+
+#: ../option-tree/includes/ot-functions-option-types.php:46
+msgid "Sorry, this function does not exist"
+msgstr "Xin lỗi, chức năng này không tồn tại"
+
+#: ../option-tree/includes/ot-functions-option-types.php:107
+msgid "background-repeat"
+msgstr "background-repeat"
+
+#: ../option-tree/includes/ot-functions-option-types.php:116
+msgid "background-attachment"
+msgstr "background-attachment"
+
+#: ../option-tree/includes/ot-functions-option-types.php:125
+msgid "background-position"
+msgstr "background-position"
+
+#: ../option-tree/includes/ot-functions-option-types.php:140
+#: ../option-tree/includes/ot-functions-option-types.php:1753
+msgid "Add Media"
+msgstr "Thêm Media"
+
+#: ../option-tree/includes/ot-functions-option-types.php:210
+#: ../option-tree/includes/ot-functions-option-types.php:264
+msgid "No Categories Found"
+msgstr "Không có loại được tìm thấy"
+
+#: ../option-tree/includes/ot-functions-option-types.php:259
+#: ../option-tree/includes/ot-functions-option-types.php:518
+#: ../option-tree/includes/ot-functions-option-types.php:757
+#: ../option-tree/includes/ot-functions-option-types.php:941
+#: ../option-tree/includes/ot-functions-option-types.php:1195
+#: ../option-tree/includes/ot-functions-option-types.php:1311
+#: ../option-tree/includes/ot-functions-option-types.php:1863
+msgid "Choose One"
+msgstr "Chọn Một"
+
+#: ../option-tree/includes/ot-functions-option-types.php:466
+#: ../option-tree/includes/ot-functions-option-types.php:524
+#: ../option-tree/includes/ot-functions-option-types.php:892
+#: ../option-tree/includes/ot-functions-option-types.php:947
+msgid "No Posts Found"
+msgstr "Chưa có nhận xét"
+
+#: ../option-tree/includes/ot-functions-option-types.php:595
+#: ../option-tree/includes/ot-functions-option-types.php:834
+msgid "Add New"
+msgstr "Thêm mới"
+
+#: ../option-tree/includes/ot-functions-option-types.php:598
+#: ../option-tree/includes/ot-functions-option-types.php:837
+msgid "You can re-order with drag & drop, the order will update after saving."
+msgstr ""
+"Bạn có thể đặt hàng lại với chức năng kéo & thả, thứ tự sẽ cập nhật sau khi "
+"tiết kiệm."
+
+#: ../option-tree/includes/ot-functions-option-types.php:708
+#: ../option-tree/includes/ot-functions-option-types.php:763
+msgid "No Pages Found"
+msgstr "Không tìm thấy trang"
+
+#: ../option-tree/includes/ot-functions-option-types.php:1146
+#: ../option-tree/includes/ot-functions-option-types.php:1200
+msgid "No Tags Found"
+msgstr "Không tìm thấy khóa"
+
+#: ../option-tree/includes/ot-functions-option-types.php:1259
+#: ../option-tree/includes/ot-functions-option-types.php:1316
+msgid "No Taxonomies Found"
+msgstr "Không có nguyên tắc phân loại Found"
+
+#: ../option-tree/includes/ot-functions-settings-page.php:35
+msgid "Warning!"
+msgstr "Cảnh báo!"
+
+#: ../option-tree/includes/ot-functions-settings-page.php:36
+#, php-format
+msgid ""
+"Go to the %s page if you want to save data, this page is for adding settings."
+msgstr "Tới các %s trang nếu bạn muốn lưu dữ liệu, trang này để thêm cài đặt."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:37
+#, php-format
+msgid ""
+"If you're unsure or not completely positive that you should be editing these "
+"settings, you should read the %s first."
+msgstr ""
+"Nếu bạn không chắc chắn hoặc không hoàn toàn tích cực mà bạn nên chỉnh sửa các "
+"thiết lập này, bạn nên đọc %s đầu tiên."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:38
+msgid ""
+"Things could break or be improperly displayed to the end-user if you do one of "
+"the following:"
+msgstr ""
+"Những thứ có thể phá vỡ hoặc bị không đúng cách hiển thị cho người sử dụng "
+"cuối cùng, nếu bạn làm một trong những điều sau đây:"
+
+#: ../option-tree/includes/ot-functions-settings-page.php:39
+msgid ""
+"Give two sections the same ID, give two settings the same ID, give two "
+"contextual help content areas the same ID, don't create any settings, or have "
+"a section at the end of the settings list."
+msgstr ""
+"Cho hai phần cùng một ID, cho hai thiết lập cùng một ID, cho hai lĩnh vực nội "
+"dung trợ giúp theo ngữ cảnh cùng một ID, không tạo ra bất kỳ cài đặt, hoặc có "
+"một phần ở phía cuối danh sách các thiết lập."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:40
+msgid ""
+"You can create as many settings as your project requires and use them how you "
+"see fit. When you add a setting here, it will be available on the Theme "
+"Options page for use in your theme. To separate your settings into sections, "
+"click the \"Add Section\" button, fill in the input fields, and a new "
+"navigation menu item will be created."
+msgstr ""
+"Bạn có thể tạo nhiều thiết lập như dự án của bạn yêu cầu và sử dụng chúng như "
+"thế nào bạn thấy phù hợp. Khi bạn thêm một khung cảnh ở đây, nó sẽ có sẵn trên "
+"các trang tùy chọn Theme để sử dụng trong chủ đề của bạn. Để tách các thiết "
+"lập của bạn vào phần, bấm vào nút \"Add Section\", điền vào các trường đầu "
+"vào, và một mục menu mới sẽ được tạo ra."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:41
+msgid ""
+"All of the settings can be sorted and rearranged to your liking with Drag & "
+"Drop. Don't worry about the order in which you create your settings, you can "
+"always reorder them."
+msgstr ""
+"Tất cả các thiết lập có thể được sắp xếp và bố trí lại theo ý thích của bạn "
+"với Drag & Drop. Đừng lo lắng về thứ tự mà bạn tạo ra các thiết lập của bạn, "
+"bạn luôn có thể sắp xếp lại chúng."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:92
+msgid "Add Section"
+msgstr "Thêm Mục"
+
+#: ../option-tree/includes/ot-functions-settings-page.php:94
+#: ../option-tree/includes/ot-functions-settings-page.php:133
+#: ../option-tree/includes/ot-ui-theme-options.php:41
+msgid "Save Changes"
+msgstr "Save Changes"
+
+#: ../option-tree/includes/ot-functions-settings-page.php:99
+msgid "Contextual Help"
+msgstr "Theo ngữ cảnh giúp"
+
+#: ../option-tree/includes/ot-functions-settings-page.php:103
+msgid "Contextual Help Sidebar"
+msgstr "Theo ngữ cảnh giúp Sidebar"
+
+#: ../option-tree/includes/ot-functions-settings-page.php:103
+msgid ""
+"If you decide to add contextual help to the Theme Option page, enter the "
+"optional \"Sidebar\" HTML here. This would be an extremely useful place to add "
+"links to your themes documentation or support forum. Only after you've added "
+"some content below will this display to the user."
+msgstr ""
+"Nếu bạn có thêm những trợ giúp theo ngữ cảnh để trang Tùy chọn Theme, nhập tùy "
+"chọn \"Sidebar\" HTML ở đây. Đây sẽ là một nơi cực kỳ hữu ích để thêm liên kết "
+"đến các tài liệu chủ đề của bạn hoặc diễn đàn hỗ trợ. Chỉ sau khi bạn đã thêm "
+"một số nội dung dưới đây sẽ hiển thị này cho người sử dụng."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:132
+msgid "Add Contextual Help Content"
+msgstr "Thêm Contextual Help Content"
+
+#: ../option-tree/includes/ot-functions-settings-page.php:168
+msgid ""
+"This import method has been deprecated. That means it has been replaced by a "
+"new method and is no longer supported, and may be removed from future "
+"versions. All themes that use this import method should be converted to use "
+"its replacement below."
+msgstr ""
+"Phương pháp nhập khẩu này đã bị phản đối. Điều đó có nghĩa là nó đã được thay "
+"thế bằng một phương pháp mới và không còn được hỗ trợ, và có thể được gỡ bỏ từ "
+"các phiên bản trong tương lai. Tất cả các chủ đề mà sử dụng phương pháp nhập "
+"khẩu này phải được chuyển đổi sang sử dụng thay thế của nó dưới đây."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:170
+msgid ""
+"If you were given a Theme Options XML file with a premium or free theme, "
+"locate it on your hard drive and upload that file by clicking the blue upload "
+"button. A popup window will appear, upload the XML file and click \"Send to "
+"OptionTree\". The file URL should be in the upload input, if it is click "
+"\"Import XML\"."
+msgstr ""
+"Nếu bạn đã được trao một tập tin XML Theme tùy chọn với một phí bảo hiểm hoặc "
+"chủ đề miễn phí, định vị nó trên ổ đĩa cứng của bạn và tải lên các tập tin đó "
+"bằng cách nhấn vào nút tải lên xanh. Một cửa sổ popup sẽ xuất hiện, tải lên "
+"các tập tin XML và nhấp vào \"Gửi tới OptionTree\". Các URL tập tin nên được ở "
+"đầu vào tải lên, nếu nó là nhấn \"Import XML\"."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:173
+msgid "Import XML"
+msgstr "Import XML"
+
+#: ../option-tree/includes/ot-functions-settings-page.php:189
+msgid "Add XML"
+msgstr "Thêm XML"
+
+#: ../option-tree/includes/ot-functions-settings-page.php:226
+msgid ""
+"To import your Settings copy and paste what appears to be a random string of "
+"alpha numeric characters into this textarea and press the \"Import Settings\" "
+"button."
+msgstr ""
+"Để nhập Cài đặt của bạn sao chép và dán những gì dường như là một chuỗi ngẫu "
+"nhiên của alpha ký tự số vào textarea này và nhấn nút \"Import Settings\"."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:229
+msgid "Import Settings"
+msgstr "Import Settings"
+
+#: ../option-tree/includes/ot-functions-settings-page.php:271
+msgid ""
+"Only after you've imported the Settings should you try and update your Theme "
+"Options."
+msgstr ""
+"Chỉ sau khi bạn đã nhập khẩu các thiết lập, bạn nên cố gắng và cập nhật tùy "
+"chọn Theme của bạn."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:273
+msgid ""
+"To import your Theme Options copy and paste what appears to be a random string "
+"of alpha numeric characters into this textarea and press the \"Import Theme "
+"Options\" button."
+msgstr ""
+"Để nhập Tùy chọn Theme của bạn sao chép và dán những gì dường như là một chuỗi "
+"ngẫu nhiên của alpha ký tự số vào textarea này và nhấn nút \"Tùy chọn Import "
+"Theme\"."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:276
+msgid "Import Theme Options"
+msgstr "Tùy chọn Import Theme"
+
+#: ../option-tree/includes/ot-functions-settings-page.php:318
+msgid ""
+"Only after you've imported the Settings should you try and update your Layouts."
+msgstr ""
+"Chỉ sau khi bạn đã nhập khẩu các thiết lập, bạn nên cố gắng và cập nhật "
+"Layouts của bạn."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:320
+msgid ""
+"To import your Layouts copy and paste what appears to be a random string of "
+"alpha numeric characters into this textarea and press the \"Import Layouts\" "
+"button. Keep in mind that when you import your layouts, the active layout's "
+"saved data will write over the current data set for your Theme Options."
+msgstr ""
+"Để nhập Layouts của bạn sao chép và dán những gì dường như là một chuỗi ngẫu "
+"nhiên của alpha ký tự số vào textarea này và nhấn nút \"Import Layouts\". Hãy "
+"nhớ rằng khi bạn nhập bố trí của bạn, dữ liệu lưu các sơ đồ hoạt động của sẽ "
+"viết trên tập dữ liệu hiện tại cho Tùy chọn Theme của bạn."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:323
+msgid "Import Layouts"
+msgstr "Nhập Layouts"
+
+#: ../option-tree/includes/ot-functions-settings-page.php:366
+#, php-format
+msgid ""
+"Export your Settings into a fully functional <code>theme-options.php</code> "
+"file by clicking this button. For more information on how to use this file "
+"read the theme mode %s. Remember, you should always check the file for errors "
+"before including it in your theme."
+msgstr ""
+"Xuất Cài đặt của bạn thành một đầy đủ chức năng <code> theme-options.php </ "
+"code> tập tin bằng cách nhấn vào nút này. Để biết thêm thông tin về cách sử "
+"dụng tập tin này đọc các chế độ theme %s . Hãy nhớ rằng, bạn nên luôn luôn "
+"kiểm tra các tập tin lỗi trước khi đưa nó vào chủ đề của bạn."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:373
+msgid "Export Settings File"
+msgstr "Cài đặt Export File"
+
+#: ../option-tree/includes/ot-functions-settings-page.php:403
+msgid ""
+"Export your Settings by highlighting this text and doing a copy/paste into a "
+"blank .txt file. Then save the file for importing into another install of "
+"WordPress later. Alternatively, you could just paste it into the "
+"<code>OptionTree->Settings->Import</code> <strong>Settings</strong> textarea "
+"on another web site."
+msgstr ""
+"Xuất Cài đặt của bạn bằng cách làm nổi bật văn bản này và làm sao chép / dán "
+"vào một tập tin .txt trống. Sau đó lưu các tập tin để nhập vào một cài đặt của "
+"WordPress sau này. Ngoài ra, bạn có thể chỉ cần dán nó vào <code> OptionTree-> "
+"Settings-> Import </ code> <strong> Cài đặt </ strong> textarea trên một trang "
+"web khác."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:439
+msgid ""
+"Export your Theme Options data by highlighting this text and doing a copy/"
+"paste into a blank .txt file. Then save the file for importing into another "
+"install of WordPress later. Alternatively, you could just paste it into the "
+"<code>OptionTree->Settings->Import</code> <strong>Theme Options</strong> "
+"textarea on another web site."
+msgstr ""
+"Xuất Tùy chọn Theme dữ liệu của bạn bằng cách làm nổi bật văn bản này và làm "
+"sao chép / dán vào một tập tin .txt trống. Sau đó lưu các tập tin để nhập vào "
+"một cài đặt của WordPress sau này. Ngoài ra, bạn có thể chỉ cần dán nó vào "
+"<code> OptionTree-> Settings-> Import </ code> <strong> Options Theme </ "
+"strong> textarea trên một trang web khác."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:475
+msgid ""
+"Export your Layouts by highlighting this text and doing a copy/paste into a "
+"blank .txt file. Then save the file for importing into another install of "
+"WordPress later. Alternatively, you could just paste it into the "
+"<code>OptionTree->Settings->Import</code> <strong>Layouts</strong> textarea on "
+"another web site."
+msgstr ""
+"Xuất Layouts của bạn bằng cách làm nổi bật văn bản này và làm sao chép / dán "
+"vào một tập tin .txt trống. Sau đó lưu các tập tin để nhập vào một cài đặt của "
+"WordPress sau này. Ngoài ra, bạn có thể chỉ cần dán nó vào <code> OptionTree-> "
+"Settings-> Import </ code> <strong> Bố cục </ strong> textarea trên một trang "
+"web khác."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:517
+msgid ""
+"To add a new layout enter a unique lower case alphanumeric string (dashes "
+"allowed) in the text field and click \"Save Layouts\"."
+msgstr ""
+"Để thêm một bố cục mới nhập một trường hợp thấp hơn chuỗi duy nhất tự (dấu "
+"gạch ngang cho phép) trong các lĩnh vực văn bản và nhấp vào \"Save Layouts\"."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:518
+msgid ""
+"As well, you can activate, remove, and drag & drop the order; all situations "
+"require you to click \"Save Layouts\" for the changes to be applied."
+msgstr ""
+"Đồng thời, bạn có thể kích hoạt, loại bỏ, và kéo và thả các trật tự; tất cả "
+"các tình huống yêu cầu bạn phải nhấn \"Save Layouts\" để các thay đổi được áp "
+"dụng."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:519
+msgid ""
+"When you create a new layout it will become active and any changes made to the "
+"Theme Options will be applied to it. If you switch back to a different layout "
+"immediately after creating a new layout that new layout will have a snapshot "
+"of the current Theme Options data attached to it."
+msgstr ""
+"Khi bạn tạo ra một bố cục mới, nó sẽ trở nên năng động và bất kỳ thay đổi nào "
+"trong các tùy chọn Theme sẽ được áp dụng cho nó. Nếu bạn chuyển về một bố cục "
+"khác nhau ngay sau khi tạo một layout mới mà bố trí mới sẽ có một bản chụp của "
+"các dữ liệu tùy chọn Theme hiện tại gắn liền với nó."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:520
+msgid ""
+"Visit <code>OptionTree->Documentation->Layouts Overview</code> to see a more "
+"in-depth description of what layouts are and how to use them."
+msgstr ""
+"Truy cập <code> OptionTree-> Documentation-> Bố cục Tổng quan </ code> để xem "
+"một mô tả sâu hơn về những gì đang có và bố trí như thế nào để sử dụng chúng."
+
+#: ../option-tree/includes/ot-functions-settings-page.php:557
+msgid "Save Layouts"
+msgstr "Lưu Layouts"
+
+#: ../option-tree/includes/ot-settings-api.php:353
+msgid "Reset Options"
+msgstr "Tùy chọn thiết lập lại"
+
+#: ../option-tree/includes/ot-ui-admin.php:19
+#: ../option-tree/includes/ot-ui-admin.php:20
+msgid "OptionTree"
+msgstr "OptionTree"
+
+#: ../option-tree/includes/ot-ui-admin.php:36
+#: ../option-tree/includes/ot-ui-admin.php:131
+#: ../option-tree/includes/ot-ui-theme-options.php:39
+msgid "Theme Options updated."
+msgstr "Tùy chọn chủ đề cập nhật."
+
+#: ../option-tree/includes/ot-ui-admin.php:37
+#: ../option-tree/includes/ot-ui-admin.php:132
+#: ../option-tree/includes/ot-ui-theme-options.php:40
+msgid "Theme Options reset."
+msgstr "Tùy chọn chủ đề thiết lập lại."
+
+#: ../option-tree/includes/ot-ui-admin.php:38
+#: ../option-tree/includes/ot-ui-admin.php:133
+msgid "Save Settings"
+msgstr "Save Settings"
+
+#: ../option-tree/includes/ot-ui-admin.php:44
+msgid "Theme Options UI"
+msgstr "Tùy chọn chủ đề giao diện người dùng"
+
+#: ../option-tree/includes/ot-ui-admin.php:48
+msgid "Import"
+msgstr "Nhập khẩu"
+
+#: ../option-tree/includes/ot-ui-admin.php:52
+msgid "Export"
+msgstr "Xuất khẩu"
+
+#: ../option-tree/includes/ot-ui-admin.php:56
+#: ../option-tree/includes/ot-ui-admin.php:86
+#: ../option-tree/includes/ot-ui-admin.php:110
+msgid "Layouts"
+msgstr "Bố trí"
+
+#: ../option-tree/includes/ot-ui-admin.php:62
+msgid "Theme Options UI Builder"
+msgstr "Tùy chọn chủ đề UI Builder"
+
+#: ../option-tree/includes/ot-ui-admin.php:68
+msgid "Settings XML"
+msgstr "Cài đặt XML"
+
+#: ../option-tree/includes/ot-ui-admin.php:80
+#: ../option-tree/includes/ot-ui-admin.php:104
+#: ../option-tree/includes/ot-ui-theme-options.php:33
+#: ../option-tree/includes/ot-ui-theme-options.php:34
+msgid "Theme Options"
+msgstr "Tùy chọn Giao diện"
+
+#: ../option-tree/includes/ot-ui-admin.php:92
+msgid "Settings PHP File"
+msgstr "Cài đặt PHP File"
+
+#: ../option-tree/includes/ot-ui-admin.php:116
+msgid "Add, Activate, & Remove Layouts"
+msgstr "Thêm, Kích hoạt, và xóa Layouts"
+
+#: ../option-tree/includes/ot-ui-admin.php:125
+#: ../option-tree/includes/ot-ui-admin.php:126
+msgid "Documentation"
+msgstr "Tài liệu"
+
+#: ../option-tree/includes/ot-ui-admin.php:139
+msgid "Creating Options"
+msgstr "Tạo Tùy chọn"
+
+#: ../option-tree/includes/ot-ui-admin.php:143
+msgid "Option Types"
+msgstr "Các loại tùy chọn"
+
+#: ../option-tree/includes/ot-ui-admin.php:147
+msgid "Function References"
+msgstr "Tài liệu tham khảo chức năng"
+
+#: ../option-tree/includes/ot-ui-admin.php:151
+#: ../option-tree/includes/ot-ui-admin.php:193
+msgid "Theme Mode"
+msgstr "Theme Chế độ"
+
+#: ../option-tree/includes/ot-ui-admin.php:155
+#: ../option-tree/includes/ot-ui-admin.php:199
+msgid "Meta Boxes"
+msgstr "Meta Hộp"
+
+#: ../option-tree/includes/ot-ui-admin.php:159
+msgid "Code Examples"
+msgstr "Ví dụ về Mã"
+
+#: ../option-tree/includes/ot-ui-admin.php:163
+msgid "Layouts Overview"
+msgstr "Layouts Tổng quan"
+
+#: ../option-tree/includes/ot-ui-admin.php:169
+msgid "Overview of available Theme Option fields."
+msgstr "Tổng quan về các lĩnh vực có sẵn Theme Option."
+
+#: ../option-tree/includes/ot-ui-admin.php:175
+msgid "Option types in alphabetical order & hooks to filter them."
+msgstr "Loại tùy chọn thứ tự chữ cái & móc để lọc chúng."
+
+#: ../option-tree/includes/ot-ui-admin.php:181
+msgid "Function Reference:ot_get_option()"
+msgstr "Chức năng tham khảo: ot_get_option ()"
+
+#: ../option-tree/includes/ot-ui-admin.php:187
+msgid "Function Reference:get_option_tree()"
+msgstr "Chức năng tham khảo: get_option_tree ()"
+
+#: ../option-tree/includes/ot-ui-admin.php:205
+msgid "Code examples for front-end development."
+msgstr "Mã số ví dụ cho sự phát triển front-end."
+
+#: ../option-tree/includes/ot-ui-admin.php:211
+msgid "What's a layout anyhow?"
+msgstr "Bố trí anyhow là gì?"
+
+#: ../woocommerce/archive-product.php:117 ../woocommerce/cart/cart-empty.php:22
+msgid "Return To Shop"
+msgstr "Quay trở lại Để Shop"
+
+#: ../woocommerce/single-product-reviews.php:38
+msgid "out of 5"
+msgstr "trong 5"
+
+#: ../woocommerce/single-product-reviews.php:40
+#, php-format
+msgid "%s review for %s"
+msgid_plural "%s reviews for %s"
+msgstr[0] "%s đánh giá cho %s"
+msgstr[1] "%s đánh giá cho %s"
+
+#: ../woocommerce/single-product-reviews.php:46
+msgid "Reviews"
+msgstr "Đánh giá"
+
+#: ../woocommerce/single-product-reviews.php:62
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Trước"
+
+#: ../woocommerce/single-product-reviews.php:63
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Tiếp theo <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../woocommerce/single-product-reviews.php:68
+msgid "Add a review"
+msgstr "Thêm đánh giá"
+
+#: ../woocommerce/single-product-reviews.php:72
+msgid "Be the first to review"
+msgstr "Hãy là người đầu tiên nhận xét"
+
+#: ../woocommerce/single-product-reviews.php:74
+msgid ""
+"There are no reviews yet, would you like to <a href=\"#review_form\" class="
+"\"inline show_review_form\">submit yours</a>?"
+msgstr ""
+"Chưa có đánh giá nào, bạn muốn <a href=\"#review_form\" class=\"inline "
+"show_review_form\">viết đánh giá</a> của bạn?"
+
+#: ../woocommerce/single-product-reviews.php:92
+msgid "Submit Review"
+msgstr "Gửi nhận xét"
+
+#: ../woocommerce/single-product-reviews.php:99
+msgid "Rating"
+msgstr "Đánh giá"
+
+#: ../woocommerce/single-product-reviews.php:100
+msgid "Rate&hellip;"
+msgstr "Tỷ lệ &hellip;"
+
+#: ../woocommerce/single-product-reviews.php:101
+msgid "Perfect"
+msgstr "Hoàn hảo"
+
+#: ../woocommerce/single-product-reviews.php:102
+msgid "Good"
+msgstr "Tốt"
+
+#: ../woocommerce/single-product-reviews.php:103
+msgid "Average"
+msgstr "Trung bình"
+
+#: ../woocommerce/single-product-reviews.php:104
+msgid "Not that bad"
+msgstr "Không phải là xấu"
+
+#: ../woocommerce/single-product-reviews.php:105
+msgid "Very Poor"
+msgstr "Rất kém"
+
+#: ../woocommerce/single-product-reviews.php:110
+msgid "Your Review"
+msgstr "Đánh giá của bạn"
+
+#: ../woocommerce/cart/cart-totals.php:16
+msgid "Cart Totals"
+msgstr "Tổng giỏ hàng"
+
+#: ../woocommerce/cart/cart-totals.php:21
+#: ../woocommerce/checkout/review-order.php:52
+msgid "Cart Subtotal"
+msgstr "Tổng cộng"
+
+#: ../woocommerce/cart/cart-totals.php:27 ../woocommerce/cart/cart-totals.php:67
+#: ../woocommerce/checkout/review-order.php:58
+#: ../woocommerce/checkout/review-order.php:98
+msgid "Coupon:"
+msgstr "Coupon:"
+
+#: ../woocommerce/cart/cart-totals.php:75
+#: ../woocommerce/checkout/review-order.php:106
+msgid "Order Total"
+msgstr "Thành tiền"
+
+#: ../woocommerce/cart/cart-totals.php:87
+#, php-format
+msgid " (taxes estimated for %s)"
+msgstr " (Thuế ước tính cho %s )"
+
+#: ../woocommerce/cart/cart-totals.php:90
+#, php-format
+msgid ""
+"Note: Shipping and taxes are estimated%s and will be updated during checkout "
+"based on your billing and shipping information."
+msgstr ""
+"Lưu ý: Vận chuyển và thuế ước tính %s và sẽ được cập nhật trong quá trình "
+"thanh toán trên cơ sở thanh toán và thông tin vận chuyển thực tế."
+
+#: ../woocommerce/cart/cart-totals.php:97
+msgid "Proceed to Checkout"
+msgstr "Thanh toán"
+
+#: ../woocommerce/cart/cart.php:23 ../woocommerce/checkout/form-pay.php:19
+#: ../woocommerce/checkout/review-order.php:18
+#: ../woocommerce/order/order-details.php:20
+msgid "Product"
+msgstr "Sản phẩm"
+
+#: ../woocommerce/cart/cart.php:24
+msgid "Price"
+msgstr "Giá bán"
+
+#: ../woocommerce/cart/cart.php:26 ../woocommerce/checkout/review-order.php:19
+#: ../woocommerce/myaccount/my-orders.php:35
+#: ../woocommerce/order/order-details.php:21
+msgid "Total"
+msgstr "Thành tiền"
+
+#: ../woocommerce/cart/cart.php:61
+msgid "Available on backorder"
+msgstr "Có sẵn trên backorder"
+
+#: ../woocommerce/cart/cart.php:117
+msgid "Coupon"
+msgstr "Phiếu giảm giá"
+
+#: ../woocommerce/cart/cart.php:117
+msgid "Apply Coupon"
+msgstr "Áp dụng Mã giảm giá"
+
+#: ../woocommerce/cart/cart.php:124
+msgid "Update Cart"
+msgstr "Cập nhật giỏ hàng"
+
+#: ../woocommerce/cart/cross-sells.php:35
+msgid "You may be interested in&hellip;"
+msgstr "Bạn có thể quan tâm &hellip;"
+
+#: ../woocommerce/cart/shipping-calculator.php:22
+msgid "Calculate Shipping"
+msgstr "Tính Vận Chuyển"
+
+#: ../woocommerce/cart/shipping-calculator.php:28
+msgid "Select a country&hellip;"
+msgstr "Chọn một quốc gia &hellip;"
+
+#: ../woocommerce/cart/shipping-calculator.php:45
+#: ../woocommerce/cart/shipping-calculator.php:51
+#: ../woocommerce/cart/shipping-calculator.php:63
+msgid "State / county"
+msgstr "Quận"
+
+#: ../woocommerce/cart/shipping-calculator.php:52
+msgid "Select a state&hellip;"
+msgstr "Chọn một Quận &hellip;"
+
+#: ../woocommerce/cart/shipping-calculator.php:72
+msgid "City"
+msgstr "Quận/Huyện"
+
+#: ../woocommerce/cart/shipping-calculator.php:80
+msgid "Postcode / Zip"
+msgstr "Mã bưu điện / Zip"
+
+#: ../woocommerce/cart/shipping-calculator.php:85
+msgid "Update Totals"
+msgstr "Cập nhật tổng tiền"
+
+#: ../woocommerce/checkout/_form-shipping.php:24
+#: ../woocommerce/checkout/form-checkout.php:127
+#: ../woocommerce/myaccount/form-edit-address.php:14
+#: ../woocommerce/myaccount/my-address.php:20
+#: ../woocommerce/order/order-details.php:133
+msgid "Shipping Address"
+msgstr "Địa chỉ Vận chuyển"
+
+#: ../woocommerce/checkout/_form-shipping.php:27
+msgid "Ship to billing address?"
+msgstr "Ship đến địa chỉ thanh toán?"
+
+#: ../woocommerce/checkout/_form-shipping.php:51
+#: ../woocommerce/single-product/tabs/additional-information.php:14
+msgid "Additional Information"
+msgstr "Các thông tin khác"
+
+#: ../woocommerce/checkout/form-billing.php:15
+msgid "Billing &amp; Shipping"
+msgstr "Thanh toán &amp; Vận Chuyển"
+
+#: ../woocommerce/checkout/form-billing.php:19
+#: ../woocommerce/checkout/form-checkout.php:117
+#: ../woocommerce/myaccount/form-edit-address.php:14
+#: ../woocommerce/myaccount/my-address.php:19
+#: ../woocommerce/myaccount/my-address.php:25
+#: ../woocommerce/order/order-details.php:118
+msgid "Billing Address"
+msgstr "Địa chỉ thanh toán"
+
+#: ../woocommerce/checkout/form-billing.php:38
+#: ../woocommerce/checkout/form-checkout.php:79
+msgid "Create an account?"
+msgstr "Tạo một tài khoản?"
+
+#: ../woocommerce/checkout/form-billing.php:49
+msgid ""
+"Create an account by entering the information below. If you are a returning "
+"customer please login at the top of the page."
+msgstr ""
+"Tạo một tài khoản bằng cách nhập các thông tin dưới đây. Nếu bạn là một khách "
+"hàng cũ xin vui lòng đăng nhập ở phía trên cùng của trang."
+
+#: ../woocommerce/checkout/form-checkout.php:27
+msgid "Checkout Method"
+msgstr "Phương pháp kiểm tra"
+
+#: ../woocommerce/checkout/form-checkout.php:31
+msgid "New Customers"
+msgstr "Khách hàng mới"
+
+#: ../woocommerce/checkout/form-checkout.php:36
+msgid "Checkout as Guest"
+msgstr "Checkout Guest"
+
+#: ../woocommerce/checkout/form-checkout.php:42
+#: ../woocommerce/checkout/form-checkout.php:73
+msgid "Create an Account"
+msgstr "Tạo một tài khoản"
+
+#: ../woocommerce/checkout/form-checkout.php:47
+#: ../woocommerce/checkout/form-checkout.php:100
+#: ../woocommerce/checkout/form-checkout.php:120
+#: ../woocommerce/checkout/form-checkout.php:130
+msgid "Continue"
+msgstr "Tiếp tục"
+
+#: ../woocommerce/checkout/form-checkout.php:50
+msgid "Returning Customers"
+msgstr "Khách hàng thân thiết"
+
+#: ../woocommerce/checkout/form-checkout.php:54
+msgid "You must be logged in to checkout."
+msgstr "Bạn phải đăng nhập để kiểm tra."
+
+#: ../woocommerce/checkout/form-checkout.php:88
+msgid ""
+"Create an account by entering the information below. If you are a returning "
+"customer please login with your username at the top of the page."
+msgstr ""
+"Tạo một tài khoản bằng cách nhập các thông tin dưới đây. Nếu bạn là một khách "
+"hàng cũ xin vui lòng đăng nhập với tên truy cập của bạn ở trên cùng của trang."
+
+#: ../woocommerce/checkout/form-checkout.php:137
+#: ../woocommerce/checkout/form-checkout.php:139
+msgid "Your order"
+msgstr "Đơn hàng của bạn"
+
+#: ../woocommerce/checkout/form-login.php:16
+msgid ""
+"If you have shopped with us before, please enter your details in the boxes "
+"below. If you are a new customer please proceed to the Billing &amp; Shipping "
+"section."
+msgstr ""
+"Chào mừng bạn đã ghé thăm thegioiphukienso Shop, xin vui lòng đăng nhập để mua sắm và "
+"làm đẹp cùng chúng tôi!"
+
+#: ../woocommerce/checkout/form-login.php:19
+#: ../woocommerce/myaccount/form-lost-password.php:24
+msgid "Username or email"
+msgstr "Tên đăng nhập hoặc email"
+
+#: ../woocommerce/checkout/form-login.php:23
+msgid "Password"
+msgstr "Mật khẩu"
+
+#: ../woocommerce/checkout/form-login.php:30
+#: ../woocommerce/myaccount/form-login.php:25
+#: ../woocommerce/myaccount/form-login.php:46
+msgid "Login"
+msgstr "Đăng nhập"
+
+#: ../woocommerce/checkout/form-login.php:32
+#: ../woocommerce/myaccount/form-login.php:45
+msgid "Lost Password?"
+msgstr "Bạn quên mật khẩu?"
+
+#: ../woocommerce/checkout/form-pay.php:21
+msgid "Totals"
+msgstr "Tổng số"
+
+#: ../woocommerce/checkout/form-pay.php:54
+msgid "Payment"
+msgstr "Thanh toán"
+
+#: ../woocommerce/checkout/form-pay.php:79
+msgid ""
+"Sorry, it seems that there are no available payment methods for your location. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+"Xin lỗi, có vẻ như không có phương thức thanh toán có sẵn cho vị trí của bạn. "
+"Hãy liên hệ với chúng tôi nếu bạn cần trợ giúp hoặc muốn sắp xếp thay thế."
+
+#: ../woocommerce/checkout/form-pay.php:89
+msgid "Pay for order"
+msgstr "Thanh toán cho đơn đặt hàng"
+
+#: ../woocommerce/checkout/review-order.php:150
+msgid "Please fill in your details above to see available payment methods."
+msgstr ""
+"Xin vui lòng điền thông tin của bạn trên để xem phương thức thanh toán có sẵn."
+
+#: ../woocommerce/checkout/review-order.php:152
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+"Xin lỗi, có vẻ như không có phương thức thanh toán có sẵn cho khu vực của bạn. "
+"Vui lòng liên hệ với chúng tôi nếu bạn cần trợ giúp hoặc muốn sắp xếp thay thế."
+
+#: ../woocommerce/checkout/review-order.php:161
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the <em>Update Totals</em> button before placing your order. "
+"You may be charged more than the amount stated above if you fail to do so."
+msgstr ""
+"Kể từ khi trình duyệt của bạn không hỗ trợ JavaScript, hoặc nó bị tắt, hãy đảm "
+"bảo bạn nhấp vào nút <em> Totals Cập nhật </ em> nút trước khi đặt hàng của "
+"bạn. Bạn có thể bị tính phí nhiều hơn so với số liệu công bố trên nếu bạn "
+"không làm như vậy."
+
+#: ../woocommerce/checkout/review-order.php:161
+msgid "Update totals"
+msgstr "Cập nhật tổng tiền"
+
+#: ../woocommerce/checkout/review-order.php:168
+msgid "Place order"
+msgstr "Đặt hàng"
+
+#: ../woocommerce/checkout/review-order.php:177
+msgid "I have read and accept the"
+msgstr "Tôi đã đọc và chấp nhận"
+
+#: ../woocommerce/checkout/review-order.php:177
+msgid "terms &amp; conditions"
+msgstr "các điều khoản &amp; điều kiện"
+
+#: ../woocommerce/global/quantity-input.php:14
+msgid "Qty:"
+msgstr "Số lượng:"
+
+#: ../woocommerce/global/quantity-input.php:16
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr "Số lượng"
+
+#: ../woocommerce/loop/orderby.php:21
+msgid "Default sorting"
+msgstr "Mặc định phân loại"
+
+#: ../woocommerce/loop/orderby.php:22
+msgid "Sort by popularity"
+msgstr "Sắp xếp theo phổ biến"
+
+#: ../woocommerce/loop/orderby.php:23
+msgid "Sort by average rating"
+msgstr "Sắp xếp theo giá trung bình"
+
+#: ../woocommerce/loop/orderby.php:24
+msgid "Sort by newness"
+msgstr "Sắp xếp theo sự mới mẻ"
+
+#: ../woocommerce/loop/orderby.php:25
+msgid "Sort by price: low to high"
+msgstr "Sắp xếp theo giá: thấp đến cao"
+
+#: ../woocommerce/loop/orderby.php:26
+msgid "Sort by price: high to low"
+msgstr "Sắp xếp theo giá: cao đến thấp"
+
+#: ../woocommerce/loop/result-count.php:28
+msgid "Showing the single result"
+msgstr "Hiển thị các kết quả duy nhất"
+
+#: ../woocommerce/loop/result-count.php:30
+#, php-format
+msgid "Showing all %d results"
+msgstr "Hiển thị tất cả %d kết quả"
+
+#: ../woocommerce/loop/result-count.php:32
+#, php-format
+msgctxt "%1$d = first, %2$d = last, %3$d = total"
+msgid "Showing %1$d–%2$d of %3$d results"
+msgstr "Xếp %1$d - %2$d của %3$d kết quả"
+
+#: ../woocommerce/myaccount/form-change-password.php:20
+#: ../woocommerce/myaccount/form-lost-password.php:31
+msgid "New password"
+msgstr "Mật khẩu mới"
+
+#: ../woocommerce/myaccount/form-change-password.php:24
+#: ../woocommerce/myaccount/form-lost-password.php:35
+msgid "Re-enter new password"
+msgstr "Nhập lại mật khẩu mới"
+
+#: ../woocommerce/myaccount/form-change-password.php:29
+#: ../woocommerce/myaccount/form-lost-password.php:46
+msgid "Save"
+msgstr "Lưu"
+
+#: ../woocommerce/myaccount/form-edit-address.php:38
+msgid "Save Address"
+msgstr "Lưu địa chỉ"
+
+#: ../woocommerce/myaccount/form-login.php:30
+msgid "Already have an account?"
+msgstr "Bạn Đã Có Tài Khoản Chưa?"
+
+#: ../woocommerce/myaccount/form-login.php:31
+msgid "Please, log in to continue."
+msgstr "Xin vui lòng đăng nhập để tiếp tục."
+
+#: ../woocommerce/myaccount/form-login.php:34
+msgid "Enter your login"
+msgstr "Nhập tên đăng nhập của bạn"
+
+#: ../woocommerce/myaccount/form-login.php:53
+msgid "OR"
+msgstr "hoặc"
+
+#: ../woocommerce/myaccount/form-login.php:66
+msgid "Enter your full name"
+msgstr "Nhập tên đầy đủ của bạn"
+
+#: ../woocommerce/myaccount/form-lost-password.php:22
+msgid ""
+"Lost your password? Please enter your username or email address. You will "
+"receive a link to create a new password via email."
+msgstr ""
+"Mất mật khẩu? Vui lòng nhập tên đăng nhập của bạn hoặc địa chỉ email. Bạn sẽ "
+"nhận được một liên kết để tạo ra một mật khẩu mới qua email."
+
+#: ../woocommerce/myaccount/form-lost-password.php:28
+msgid "Enter a new password below."
+msgstr "Nhập mật khẩu mới dưới đây."
+
+#: ../woocommerce/myaccount/form-lost-password.php:46
+msgid "Reset Password"
+msgstr "Xóa mật khẩu"
+
+#: ../woocommerce/myaccount/my-account.php:19
+#, php-format
+msgid "Hello <strong>%1$s</strong> (not %1$s? <a href=\"%2$s\">Sign out</a>)."
+msgstr ""
+"Xin chào <strong>%1$s</strong> (không phải %1$s? <a href=\"%2$s\">Thoát</a>)."
+"<br />"
+
+#: ../woocommerce/myaccount/my-account.php:24
+#, php-format
+msgid ""
+"From your account dashboard you can view your recent orders, manage your "
+"shipping and billing addresses and <a href=\"%s\">edit your password and "
+"account details</a>."
+msgstr ""
+"Từ bảng điều khiển tài khoản của bạn, bạn có thể xem các đơn đặt hàng gần đây "
+"của bạn, quản lý địa chỉ vận chuyển và thanh toán của bạn và   <a href=\"%s"
+"\">chỉnh sửa mật khẩu và tài khoản của bạn</a>."
+
+#: ../woocommerce/myaccount/my-address.php:17
+msgid "My Addresses"
+msgstr "Địa chỉ của tôi"
+
+#: ../woocommerce/myaccount/my-address.php:23
+msgid "My Address"
+msgstr "Địa chỉ của tôi"
+
+#: ../woocommerce/myaccount/my-address.php:35
+msgid "The following addresses will be used on the checkout page by default."
+msgstr ""
+"Các địa chỉ sau đây sẽ được sử dụng trên các trang thanh toán theo mặc định."
+
+#: ../woocommerce/myaccount/my-address.php:64
+msgid "You have not set up this type of address yet."
+msgstr "Bạn chưa thiết lập loại địa chỉ được nêu ra."
+
+#: ../woocommerce/myaccount/my-orders.php:26
+msgid "Recent Orders"
+msgstr "Gần đây Đơn đặt hàng"
+
+#: ../woocommerce/myaccount/my-orders.php:32
+msgid "Order"
+msgstr "Đơn Hàng"
+
+#: ../woocommerce/myaccount/my-orders.php:33
+msgid "Date"
+msgstr "Ngày"
+
+#: ../woocommerce/myaccount/my-orders.php:62
+#, php-format
+msgid "%s for %s item"
+msgid_plural "%s for %s items"
+msgstr[0] "%s cho %s mục"
+msgstr[1] "%s cho %s mục"
+
+#: ../woocommerce/myaccount/my-orders.php:71
+msgid "Pay"
+msgstr "Thanh toán"
+
+#: ../woocommerce/myaccount/my-orders.php:78
+msgid "Cancel"
+msgstr "Hủy bỏ"
+
+#: ../woocommerce/myaccount/my-orders.php:84
+msgid "View"
+msgstr "Xem"
+
+#: ../woocommerce/order/form-tracking.php:17
+msgid ""
+"To track your order please enter your Order ID in the box below and press "
+"return. This was given to you on your receipt and in the confirmation email "
+"you should have received."
+msgstr ""
+"Để theo dõi đơn hàng của bạn xin vui lòng nhập Order ID của bạn vào ô dưới đây "
+"và nhấn return. Điều này đã được trao cho bạn trên biên lai và xác nhận trong "
+"email bạn sẽ nhận được."
+
+#: ../woocommerce/order/form-tracking.php:19
+msgid "Order ID"
+msgstr "Mã đơn hàng"
+
+#: ../woocommerce/order/form-tracking.php:19
+msgid "Found in your order confirmation email."
+msgstr "Tìm thấy trong email xác nhận đơn hàng của bạn."
+
+#: ../woocommerce/order/form-tracking.php:20
+msgid "Billing Email"
+msgstr "Thanh toán Email"
+
+#: ../woocommerce/order/form-tracking.php:20
+msgid "Email you used during checkout."
+msgstr "Gửi email bạn đã sử dụng trong quá trình thanh toán."
+
+#: ../woocommerce/order/form-tracking.php:23
+msgid "Track"
+msgstr "Theo dõi"
+
+#: ../woocommerce/order/order-details.php:16
+msgid "Order Details"
+msgstr "Đặt hàng Chi tiết"
+
+#: ../woocommerce/order/order-details.php:66
+#, php-format
+msgid "Download file%s"
+msgstr "Tải về tập tin %s"
+
+#: ../woocommerce/order/order-details.php:97
+msgid "Customer details"
+msgstr "Thông tin khách hàng"
+
+#: ../woocommerce/order/order-details.php:101
+msgid "Email:"
+msgstr "E-mail"
+
+#: ../woocommerce/order/order-details.php:102
+msgid "Telephone:"
+msgstr "Điện thoại:"
+
+#: ../woocommerce/order/order-details.php:122
+#: ../woocommerce/order/order-details.php:137
+msgid "N/A"
+msgstr "N / A"
+
+#: ../woocommerce/order/tracking.php:18
+#, php-format
+msgid "Order %s which was made %s has the status &ldquo;%s&rdquo;"
+msgstr "Đơn hàng %s đã được chuyển trạng thái từ %s sang &ldquo;%s&rdquo;"
+
+#: ../woocommerce/order/tracking.php:18
+msgid "ago"
+msgstr "trước"
+
+#: ../woocommerce/order/tracking.php:20
+msgid "and was completed"
+msgstr "và đã hoàn thành"
+
+#: ../woocommerce/order/tracking.php:20
+msgid " ago"
+msgstr " trước"
+
+#: ../woocommerce/order/tracking.php:31
+msgid "Order Updates"
+msgstr "Để cập nhật"
+
+#: ../woocommerce/order/tracking.php:37
+msgid "l jS \\o\\f F Y, h:ia"
+msgstr "l jS \\o\\f F Y, h:ia"
+
+#: ../woocommerce/single-product/price.php:27
+msgid "SKU:"
+msgstr "Mã hàng:"
+
+#: ../woocommerce/single-product/price.php:35
+msgid "Availability:"
+msgstr "Sẵn có:"
+
+#: ../woocommerce/single-product/related.php:37
+msgid "Related Products"
+msgstr "Sản phẩm liên quan"
+
+#: ../woocommerce/single-product/short-description.php:19
+#: ../woocommerce/single-product/short-description.php:22
+msgid "SIZING GUIDE"
+msgstr "Cắt tinh HƯỚNG DẪN"
+
+#: ../woocommerce/single-product/up-sells.php:33
+msgid "You may also like&hellip;"
+msgstr "Bạn cũng có thể thích & hellip;"
+
+#: ../woocommerce/single-product/add-to-cart/variable.php:26
+msgid "Choose an option"
+msgstr "Chọn một tùy chọn"
+
+#: ../woocommerce/single-product/add-to-cart/variable.php:74
+msgid "Clear selection"
+msgstr "<span class=\"cuchuoi\">Xóa lựa chọn</span>"
+
+#: ../woocommerce/single-product/add-to-cart/variable.php:104
+msgid "This product is currently out of stock and unavailable."
+msgstr "Sản phẩm này hiện đang hết hàng và không có sẵn."
+
+#: ../woocommerce/single-product/tabs/description.php:14
+msgid "Product Description"
+msgstr "Mô tả sản phẩm"
