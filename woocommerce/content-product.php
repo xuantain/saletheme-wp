@@ -47,11 +47,11 @@
 	$product_sidebar = etheme_get_option('product_page_sidebar');
 
 	if($product_per_row == 4 && !$product_sidebar) {
-		$class .= ' span3';
+		$class .= 'span3';
 	} elseif($product_per_row == 4) {
-		$class .= ' span2';
+		$class .= 'span2';
 	} else {
-		$class .= ' span3';
+		$class .= 'span3';
 	}
 
 	if($product_page_productname == 0 && $product_page_price == 0 && $product_page_addocart == 0) {

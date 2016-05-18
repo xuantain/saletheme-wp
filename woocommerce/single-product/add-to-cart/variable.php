@@ -4,7 +4,7 @@
  *
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     2.1.0
+ * @version		 2.1.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -74,7 +74,7 @@ global $woocommerce, $product, $post;
 								echo '<a class="reset_variations" href="#reset">' . __( 'Clear selection', ETHEME_DOMAIN ) . '</a>';
 						?></td>
 					</tr>
-		        <?php endforeach;?>
+						<?php endforeach;?>
 			</tbody>
 		</table>
 

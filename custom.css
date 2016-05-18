@@ -1,6 +1,3 @@
-.container {
-		background-color: #f0f0ed;
-}
 .container.header-area {
 		background-color: transparent;
 }
@@ -480,14 +477,20 @@ ul.product_list_widget .widget-text {
 	padding: 0 5px 5px;
 }
 .woocommerce > div.row > div[class*="span"] > div > h3 {
+	display: inline-block;
 	margin-left: -5px;
 	margin-right: -5px;
 	padding: 5px;
-	line-height: 25px;
-	display: inline-block;
 	width: 100%;
+	line-height: 25px;
 	color: #fff;
-	background-color: #567fe8;
+	font-weight: 600;
+	text-align: center;
+	background-color: #006fa6;
+}
+.woocommerce > div.row > div[class*="span"] > div > h3 label {
+	font-size: 16px;
+	font-weight: 700;
 }
 ul.payment_methods li label {
 	display: inline-block;
@@ -502,9 +505,16 @@ ul.payment_methods li label {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 .table.checkout_cart th {
-	background-color: #567fe8;
+	background-color: #006fa6;
 	color: #fff;
+	font-weight: 600;
 	text-align: center;
+}
+.table.checkout_cart th:first-child {
+	padding-left: 10px;
+}
+.table.checkout_cart th:last-child {
+	padding-right: 10px;
 }
 .table.checkout_cart td {
 	padding: 3px 5px;
@@ -531,7 +541,9 @@ ul.payment_methods li label {
 }
 .btn-checkout {
 	width: 93%;
-	background-color: #567fe8;
+	font-size: 14px;
+	font-weight: 600;
+	background-color: #006fa6;
 }
 .regulation-side-bar li {
 	border-bottom: 1px solid #FFFEEE;

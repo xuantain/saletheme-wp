@@ -659,7 +659,6 @@ input.span1, textarea.span1, .uneditable-input.span1 {
 		width: 270px;
 }
 .product-information .btn-cont, .product-grid .btn-cont {
-		bottom: 0;
 		width: auto;
 }
 .variations_form table.variations tr select, .variations_form table.variations tr select:hover {

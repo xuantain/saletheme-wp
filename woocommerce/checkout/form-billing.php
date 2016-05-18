@@ -9,6 +9,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
+
 <div class="woocommerce-billing-fields">
 	<?php if ( WC()->cart->ship_to_billing_address_only() && WC()->cart->needs_shipping() ) : ?>
 
@@ -24,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 	<?php foreach ( $checkout->checkout_fields['billing'] as $key => $field ) : ?>
 
-		<?php woocommerce_form_field( $key, $field, $checkout->get_value( $key ) ); ?>
+			<?php woocommerce_form_field( $key, $field, $checkout->get_value( $key ) ); ?>
 
 	<?php endforeach; ?>
 

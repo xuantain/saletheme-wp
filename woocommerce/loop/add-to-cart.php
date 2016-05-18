@@ -26,15 +26,6 @@ $ajax_addtocart = etheme_get_option('ajax_addtocart');
 		),
 	$product );
 
-	echo apply_filters( 'woocommerce_loop_add_to_cart_link',
-		sprintf( '<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" class="button %s product_type_%s">%s</a>',
-			esc_url( $product->add_to_cart_url() ),
-			esc_attr( $product->id ),
-			esc_attr( $product->get_sku() ),
-			($product->is_purchasable() && $ajax_addtocart) ? ' etheme_add_to_cart_button' : '',
-			esc_attr( $product->product_type ),
-			esc_html( 'Mua nhanh' )
-		),
-	$product );
 	?>
+	<a href="./thanh-toan">Mua nhanh</a>
 </div>

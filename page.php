@@ -24,7 +24,7 @@ get_header();
 						<?php get_sidebar($sidebarname); ?>
 				</div>
 			<?php endif; ?>
-				<div class="<?php echo ($position)? 'span9':'span6'; ?> grid_content with-sidebar-<?php echo $position ?>">
+				<div class="<?php echo ($position)? 'span9':'span12'; ?> grid_content with-sidebar-<?php echo $position ?>">
 					<?php $post_id = $wp_query->get_queried_object_id();
 								$title = get_post_field( 'post_title', $post_id ); ?>
 						<h1 class="page-title"><?php echo $title; ?></h1>
