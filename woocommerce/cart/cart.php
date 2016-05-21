@@ -139,66 +139,66 @@ do_action( 'woocommerce_before_cart' );
 	<?php do_action( 'woocommerce_after_cart_table' ); ?>
 </form>
 
-<div class="row">
-<?php if ( sizeof($woocommerce->cart->get_cart()) > 0 ) : ?>
-		<div class="span4">
-				<!-- ----------------------------------------------- -->
-				<!-- ----------------- BILLING --------------------- -->
-				<!-- ----------------------------------------------- -->
-				<?php do_action('woocommerce_checkout_billing'); ?>
-		</div>
-		<div class="span4">
-				<!-- ----------------------------------------------- -->
-				<!-- ----------------- SHIPPING -------------------- -->
-				<!-- ----------------------------------------------- -->
-				<?php do_action('woocommerce_checkout_shipping'); ?>
-		</div>
-<?php endif; ?>
-
-		<div class="span4">
-			<div class="woocommerce-pay">
-				<h3><?php _e( 'Payment', ETHEME_DOMAIN ); ?></h3>
-				<ul class="payment_methods methods">
-					<?php
-						if ( $available_gateways = WC()->payment_gateways->get_available_payment_gateways() ) {
-							// Chosen Method
-							if ( sizeof( $available_gateways ) )
-								current( $available_gateways )->set_current();
-
-							foreach ( $available_gateways as $gateway ) {
-								?>
-								<li class="payment_method_<?php echo $gateway->id; ?>">
-									<input id="payment_method_<?php echo $gateway->id; ?>" type="radio" class="input-radio" name="payment_method" value="<?php echo esc_attr( $gateway->id ); ?>" <?php checked( $gateway->chosen, true ); ?> data-order_button_text="<?php echo esc_attr( $gateway->order_button_text ); ?>" />
-									<label for="payment_method_<?php echo $gateway->id; ?>"><?php echo $gateway->get_title(); ?> <?php echo $gateway->get_icon(); ?></label>
-									<?php
-										if ( $gateway->has_fields() || $gateway->get_description() ) {
-											echo '<div class="payment_box payment_method_' . $gateway->id . '" style="display:none;">';
-											$gateway->payment_fields();
-											echo '</div>';
-										}
-									?>
-								</li>
-								<?php
-							}
-						} else {
-							echo '<p>' . __( 'Sorry, it seems that there are no available payment methods for your location. Please contact us if you require assistance or wish to make alternate arrangements.', ETHEME_DOMAIN ) . '</p>';
-						}
-					?>
-				</ul>
+<form action="<?php echo esc_url( $get_checkout_url ); ?>" method="post">
+	<div class="row">
+	<?php if ( sizeof($woocommerce->cart->get_cart()) > 0 ) : ?>
+			<div class="span4">
+					<!-- ----------------------------------------------- -->
+					<!-- ----------------- BILLING --------------------- -->
+					<!-- ----------------------------------------------- -->
+					<?php do_action('woocommerce_checkout_billing'); ?>
 			</div>
-		</div>
-		<div class="span4 btn-group">
-			<?php if($isAccordion): ?>
-				<a class="button btn-checkout" href="../thanh-toan"><span><?php _e('Payment', ETHEME_DOMAIN) ?></span></a>
-			<?php endif; ?>
-		</div>
+			<div class="span4">
+					<!-- ----------------------------------------------- -->
+					<!-- ----------------- SHIPPING -------------------- -->
+					<!-- ----------------------------------------------- -->
+					<?php do_action('woocommerce_checkout_shipping'); ?>
+			</div>
+			<div class="span4">
+				<div class="woocommerce-pay">
+					<h3><?php _e( 'Payment', ETHEME_DOMAIN ); ?></h3>
+					<ul class="payment_methods methods">
+						<?php
+							if ( $available_gateways = WC()->payment_gateways->get_available_payment_gateways() ) {
+								// Chosen Method
+								if ( sizeof( $available_gateways ) )
+									current( $available_gateways )->set_current();
 
-<!-- <div class="cart-collaterals"> -->
-		<!-- <?php //woocommerce_cart_totals(); ?> -->
-		<!-- <?php //woocommerce_shipping_calculator(); ?> -->
-		<!-- <div class="clear"></div> -->
-<!-- </div> -->
-<!-- <?php //do_action('woocommerce_cart_collaterals'); ?> -->
+								foreach ( $available_gateways as $gateway ) {
+									?>
+									<li class="payment_method_<?php echo $gateway->id; ?>">
+										<input id="payment_method_<?php echo $gateway->id; ?>" type="radio" class="input-radio" name="payment_method" value="<?php echo esc_attr( $gateway->id ); ?>" <?php checked( $gateway->chosen, true ); ?> data-order_button_text="<?php echo esc_attr( $gateway->order_button_text ); ?>" />
+										<label for="payment_method_<?php echo $gateway->id; ?>"><?php echo $gateway->get_title(); ?> <?php echo $gateway->get_icon(); ?></label>
+										<?php
+											if ( $gateway->has_fields() || $gateway->get_description() ) {
+												echo '<div class="payment_box payment_method_' . $gateway->id . '" style="display:none;">';
+												$gateway->payment_fields();
+												echo '</div>';
+											}
+										?>
+									</li>
+									<?php
+								}
+							} else {
+								echo '<p>' . __( 'Sorry, it seems that there are no available payment methods for your location. Please contact us if you require assistance or wish to make alternate arrangements.', ETHEME_DOMAIN ) . '</p>';
+							}
+						?>
+					</ul>
+				</div>
+			</div>
+			<div class="span4 btn-group">
+				<?php if($isAccordion): ?>
+					<a class="button btn-checkout" href="../thanh-toan"><span><?php _e('Payment', ETHEME_DOMAIN) ?></span></a>
+				<?php endif; ?>
+			</div>
+	<?php endif; ?>
 
+	<!-- <div class="cart-collaterals"> -->
+			<!-- <?php //woocommerce_cart_totals(); ?> -->
+			<!-- <?php //woocommerce_shipping_calculator(); ?> -->
+			<!-- <div class="clear"></div> -->
+	<!-- </div> -->
+	<!-- <?php //do_action('woocommerce_cart_collaterals'); ?> -->
 
-</div>
+	</div>
+</form>

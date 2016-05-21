@@ -2010,7 +2010,7 @@ td.product-total{padding-right: 0 !important;}
 .cart_table_item .product-name .variation dt, .cart_table_item .product-name .variation dd, .checkout_table_item .product-name .variation dt, .checkout_table_item .product-name .variation dd{float: left;font-weight: 300!important;}
 .cart_table_item .product-name .variation dt, .checkout_table_item .product-name .variation dt{clear: both;box-sizing:border-box;padding-right: 10px;color: #444;text-align: right;font-size:12px;}
 .cart_table_item .product-name .variation dd, .checkout_table_item .product-name .variation dd{box-sizing:border-box;text-align: left;font-size: 12px;}
-.cart_table_item .product-name a, .checkout_table_item .product-name a{color:#444;text-transform:uppercase;font-weight:300;-webkit-transition-timing-function:ease;-webkit-transition-duration:.2s;-webkit-transition-property:color;}
+.cart_table_item .product-name a, .checkout_table_item .product-name a{color:#444;font-weight:300;-webkit-transition-timing-function:ease;-webkit-transition-duration:.2s;-webkit-transition-property:color;}
 .cart_table_item .product-name a:hover, .checkout_table_item .product-name a:hover{color: #fc5a5a;}
 .delete-btn{display:block;width:15px; height:15px;background: url(images/delete-btn-sprite.png) no-repeat;background-position: top center;}
 .cart_table_item .delete-btn{float: right;margin-right: 0;}

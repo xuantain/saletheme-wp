@@ -1,5 +1,3 @@
-
-
 <?php
 /**
  * Checkout Form
@@ -11,14 +9,14 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-
 global $woocommerce; $woocommerce_checkout = $woocommerce->checkout();
 $isAccordion = etheme_get_option('checkout_accordion');
 $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', WC()->cart->get_checkout_url() );
 
 wc_print_notices();
-
 ?>
+
+<?php do_action('woocommerce_before_checkout_form', $checkout ); ?>
 
 <div class="<?php if($isAccordion): ?>tabs accordion checkout-accordion<?php else: ?>checkout-default<?php endif; ?>">
 		<?php if(!is_user_logged_in()): ?>
@@ -51,7 +49,7 @@ wc_print_notices();
 								</div>
 								<div class="col-2 checkout-customers">
 										<h3><?php _e('Returning Customers', ETHEME_DOMAIN) ?></h3>
-										<?php do_action( 'woocommerce_before_checkout_form', $checkout );
+										<?php
 												// If checkout registration is disabled and not logged in, the user cannot checkout
 												if (get_option('woocommerce_enable_signup_and_login_from_checkout')=="no" && get_option('woocommerce_enable_guest_checkout')=="no" && !is_user_logged_in()) :
 													echo apply_filters('woocommerce_checkout_must_be_logged_in_message', __('You must be logged in to checkout.', ETHEME_DOMAIN));
@@ -113,28 +111,60 @@ wc_print_notices();
 				<?php if (sizeof($woocommerce_checkout->checkout_fields)>0) : ?>
 
 						<!-- ----------------------------------------------- -->
-						<!-- ----------------- BILLING --------------------- -->
-						<!-- ----------------------------------------------- -->
-						<?php if($isAccordion): ?><span><?php _e('Billing Address', ETHEME_DOMAIN) ?></span><?php endif; ?>
-						<div class="span4">
-								<?php do_action('woocommerce_checkout_billing'); ?>
-						</div>
-
-						<!-- ----------------------------------------------- -->
-						<!-- ----------------- SHIPPING -------------------- -->
-						<!-- ----------------------------------------------- -->
-						<?php if($isAccordion): ?><span><?php _e('Shipping Address', ETHEME_DOMAIN) ?></span><?php endif; ?>
-						<div class="span4">
-								<?php do_action('woocommerce_checkout_shipping'); ?>
-						</div>
-
-						<!-- ----------------------------------------------- -->
 						<!-- ------------------ ORDER ---------------------- -->
 						<!-- ----------------------------------------------- -->
-						<?php if($isAccordion): ?><span><?php _e('Your order', ETHEME_DOMAIN) ?></span><?php endif; ?>
-						<div class="span12">
-								<h3 id="order_review_heading"><?php _e('Your order', ETHEME_DOMAIN); ?></h3>
+						<div>
 								<?php do_action('woocommerce_checkout_order_review'); ?>
+						</div>
+
+						<div class="row">
+
+							<!-- ----------------------------------------------- -->
+							<!-- ----------------- BILLING --------------------- -->
+							<!-- ----------------------------------------------- -->
+							<div class="span4">
+									<?php do_action('woocommerce_checkout_billing'); ?>
+							</div>
+
+							<!-- ----------------------------------------------- -->
+							<!-- ----------------- SHIPPING -------------------- -->
+							<!-- ----------------------------------------------- -->
+							<div class="span4">
+									<?php do_action('woocommerce_checkout_shipping'); ?>
+							</div>
+
+							<!-- <?php //if ( ! $is_ajax ) : ?><div id="order_review"><?php //endif; ?> -->
+							<div class="span4 btn-group">
+
+								<?php do_action( 'woocommerce_review_order_before_payment' ); ?>
+
+										<noscript><?php _e( 'Since your browser does not support JavaScript, or it is disabled, please ensure you click the <em>Update Totals</em> button before placing your order. You may be charged more than the amount stated above if you fail to do so.', ETHEME_DOMAIN ); ?><br/><input type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php _e( 'Update totals', ETHEME_DOMAIN ); ?>" /></noscript>
+
+										<?php wp_nonce_field( 'woocommerce-process_checkout' ); ?>
+
+										<?php if ( wc_get_page_id( 'terms' ) > 0 && apply_filters( 'woocommerce_checkout_show_terms', true ) ) {
+											$terms_is_checked = apply_filters( 'woocommerce_terms_is_checked_default', isset( $_POST['terms'] ) );
+											?>
+											<p class="form-row terms">
+												<label for="terms" class="checkbox"><?php _e( 'I have read and accept the', ETHEME_DOMAIN ); ?> <a href="<?php echo esc_url( get_permalink(wc_get_page_id('terms')) ); ?>" target="_blank"><?php _e( 'terms &amp; conditions', ETHEME_DOMAIN ); ?></a></label>
+												<input type="checkbox" class="input-checkbox" name="terms" <?php checked( $terms_is_checked, true ); ?> id="terms" />
+											</p>
+										<?php } ?>
+
+										<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
+
+										<?php
+											$order_button_text = apply_filters( 'woocommerce_order_button_text', __( 'Place order', ETHEME_DOMAIN ) );
+											echo apply_filters( 'woocommerce_order_button_html', '<input type="submit" class="button btn-submit-order" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '" />' );
+										?>
+
+										<?php do_action( 'woocommerce_review_order_after_submit' ); ?>
+
+								<?php do_action( 'woocommerce_review_order_after_payment' ); ?>
+
+							</div>
+							<!-- <?php //if ( ! $is_ajax ) : ?></div><?php //endif; ?> -->
+
 						</div>
 
 				<?php endif; ?>

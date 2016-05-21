@@ -9,7 +9,9 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
+
 <div class="woocommerce-shipping-fields">
+
 	<?php if ( WC()->cart->needs_shipping_address() === true ) : ?>
 
 		<?php
@@ -65,4 +67,5 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	<?php endif; ?>
 
 	<?php do_action( 'woocommerce_after_order_notes', $checkout ); ?>
+
 </div>
