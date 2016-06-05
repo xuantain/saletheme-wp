@@ -29,14 +29,14 @@ wc_print_notices();
 								<div class="col-1 checkout-login">
 										<h3><?php _e('New Customers', ETHEME_DOMAIN) ?></h3>
 										<div class="checkout-methods">
-						<?php if ($checkout->enable_guest_checkout): ?>
+												<?php if ($checkout->enable_guest_checkout): ?>
 													<div class="method-radio">
 															<input type="radio" id="method1" name="method" value="1" />
 															<label for="method1"><?php _e('Checkout as Guest', ETHEME_DOMAIN); ?></label>
 															<div class="clear"></div>
 													</div>
-						<?php endif ?>
-						<?php if (get_option('woocommerce_enable_signup_and_login_from_checkout') != 'no'): ?>
+												<?php endif ?>
+												<?php if (get_option('woocommerce_enable_signup_and_login_from_checkout') != 'no'): ?>
 													<div class="method-radio">
 															<input type="radio" id="method2" name="method" value="2" <?php if (!$checkout->enable_guest_checkout): ?> checked <?php endif; ?> />
 															<label for="method2"><?php _e('Create an Account', ETHEME_DOMAIN); ?></label>
@@ -106,7 +106,7 @@ wc_print_notices();
 
 			<?php
 				// filter hook for include new pages inside the payment method
-				$get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce->cart->get_checkout_url() ); ?>
+				// $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce->cart->get_checkout_url() ); ?>
 
 				<?php if (sizeof($woocommerce_checkout->checkout_fields)>0) : ?>
 
@@ -133,32 +133,65 @@ wc_print_notices();
 									<?php do_action('woocommerce_checkout_shipping'); ?>
 							</div>
 
+							<div class="span4">
+								<div class="woocommerce-pay">
+									<h3><?php _e( 'Payment', ETHEME_DOMAIN ); ?></h3>
+									<ul class="payment_methods methods">
+										<?php
+											if ( $available_gateways = WC()->payment_gateways->get_available_payment_gateways() ) {
+												// Chosen Method
+												if ( sizeof( $available_gateways ) )
+													current( $available_gateways )->set_current();
+
+												foreach ( $available_gateways as $gateway ) {
+													?>
+													<li class="payment_method_<?php echo $gateway->id; ?>">
+														<input id="payment_method_<?php echo $gateway->id; ?>" type="radio" class="input-radio" name="payment_method" value="<?php echo esc_attr( $gateway->id ); ?>" <?php checked( $gateway->chosen, true ); ?> data-order_button_text="<?php echo esc_attr( $gateway->order_button_text ); ?>" />
+														<label for="payment_method_<?php echo $gateway->id; ?>"><?php echo $gateway->get_title(); ?> <?php echo $gateway->get_icon(); ?></label>
+														<?php
+															if ( $gateway->has_fields() || $gateway->get_description() ) {
+																echo '<div class="payment_box payment_method_' . $gateway->id . '" style="display:none;">';
+																$gateway->payment_fields();
+																echo '</div>';
+															}
+														?>
+													</li>
+													<?php
+												}
+											} else {
+												echo '<p>' . __( 'Sorry, it seems that there are no available payment methods for your location. Please contact us if you require assistance or wish to make alternate arrangements.', ETHEME_DOMAIN ) . '</p>';
+											}
+										?>
+									</ul>
+								</div>
+							</div>
+
 							<!-- <?php //if ( ! $is_ajax ) : ?><div id="order_review"><?php //endif; ?> -->
 							<div class="span4 btn-group">
 
 								<?php do_action( 'woocommerce_review_order_before_payment' ); ?>
 
-										<noscript><?php _e( 'Since your browser does not support JavaScript, or it is disabled, please ensure you click the <em>Update Totals</em> button before placing your order. You may be charged more than the amount stated above if you fail to do so.', ETHEME_DOMAIN ); ?><br/><input type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php _e( 'Update totals', ETHEME_DOMAIN ); ?>" /></noscript>
+								<noscript><?php _e( 'Since your browser does not support JavaScript, or it is disabled, please ensure you click the <em>Update Totals</em> button before placing your order. You may be charged more than the amount stated above if you fail to do so.', ETHEME_DOMAIN ); ?><br/><input type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php _e( 'Update totals', ETHEME_DOMAIN ); ?>" /></noscript>
 
-										<?php wp_nonce_field( 'woocommerce-process_checkout' ); ?>
+								<?php wp_nonce_field( 'woocommerce-process_checkout' ); ?>
 
-										<?php if ( wc_get_page_id( 'terms' ) > 0 && apply_filters( 'woocommerce_checkout_show_terms', true ) ) {
-											$terms_is_checked = apply_filters( 'woocommerce_terms_is_checked_default', isset( $_POST['terms'] ) );
-											?>
-											<p class="form-row terms">
-												<label for="terms" class="checkbox"><?php _e( 'I have read and accept the', ETHEME_DOMAIN ); ?> <a href="<?php echo esc_url( get_permalink(wc_get_page_id('terms')) ); ?>" target="_blank"><?php _e( 'terms &amp; conditions', ETHEME_DOMAIN ); ?></a></label>
-												<input type="checkbox" class="input-checkbox" name="terms" <?php checked( $terms_is_checked, true ); ?> id="terms" />
-											</p>
-										<?php } ?>
+								<?php if ( wc_get_page_id( 'terms' ) > 0 && apply_filters( 'woocommerce_checkout_show_terms', true ) ) {
+									$terms_is_checked = apply_filters( 'woocommerce_terms_is_checked_default', isset( $_POST['terms'] ) );
+									?>
+									<p class="form-row terms">
+										<label for="terms" class="checkbox"><?php _e( 'I have read and accept the', ETHEME_DOMAIN ); ?> <a href="<?php echo esc_url( get_permalink(wc_get_page_id('terms')) ); ?>" target="_blank"><?php _e( 'terms &amp; conditions', ETHEME_DOMAIN ); ?></a></label>
+										<input type="checkbox" class="input-checkbox" name="terms" <?php checked( $terms_is_checked, true ); ?> id="terms" />
+									</p>
+								<?php } ?>
 
-										<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
+								<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
 
-										<?php
-											$order_button_text = apply_filters( 'woocommerce_order_button_text', __( 'Place order', ETHEME_DOMAIN ) );
-											echo apply_filters( 'woocommerce_order_button_html', '<input type="submit" class="button btn-submit-order" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '" />' );
-										?>
+								<?php
+									$order_button_text = apply_filters( 'woocommerce_order_button_text', __( 'Place order', ETHEME_DOMAIN ) );
+									echo apply_filters( 'woocommerce_order_button_html', '<input type="submit" class="button btn-submit-order" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '" />' );
+								?>
 
-										<?php do_action( 'woocommerce_review_order_after_submit' ); ?>
+								<?php do_action( 'woocommerce_review_order_after_submit' ); ?>
 
 								<?php do_action( 'woocommerce_review_order_after_payment' ); ?>
 

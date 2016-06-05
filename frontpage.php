@@ -27,3 +27,22 @@
 </div><!-- .container -->
 
 <?php get_footer(); ?>
+
+<?php if ($current_page_id == '218') : ?>
+<script type="text/javascript">
+	function add_to_cart_redirect_ajax (_url) {
+		jQuery.ajax({
+			method: 'post',
+			url: _url,
+			success: function (res) {
+				if (res) {
+					window.location = './thanh-toan';
+				}
+			},
+			error: function (err) {
+				alert('Error: Cannot put to your card!');
+			}
+		})
+	}
+</script>
+<?php endif; ?>

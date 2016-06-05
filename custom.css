@@ -602,6 +602,12 @@ ul.payment_methods li label {
 	font-weight: bold;
 	text-align: center;
 }
+.button.emptycart span {
+	color: #006fa6 !important;
+}
+.button.emptycart:hover span {
+	color: #fff !important;
+}
 @media only screen and (max-width: 479px) {
 		.header-top-variant5, .header-top-variant5 .container {
 				height: 85px;

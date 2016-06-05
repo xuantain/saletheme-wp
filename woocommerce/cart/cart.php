@@ -20,8 +20,51 @@ woocommerce_checkout_coupon_form();
 
 do_action( 'woocommerce_before_cart' );
 ?>
-
-<form action="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>" method="post">
+<script type="text/javascript">
+		function do_something(e) {
+			var formData = {};
+			// var formData = jQuery('#cart-product-list').serializeArray();;
+			var qtys = jQuery(".<?php echo esc_attr( apply_filters('woocommerce_cart_table_item_class', 'cart_table_item', $values, $cart_item_key ) ); ?> td.product-quantity input.qty");
+			if (qtys) {
+				qtys.each(function() {
+					formData[jQuery(this).attr('name')] = jQuery(this).val();
+					// formData.append(jQuery(this).attr('name'),jQuery(this).val());
+				});
+			}
+			var coupon_code = jQuery("#coupon_code");
+			if (coupon_code) {
+				formData['coupon_code'] = jQuery(coupon_code).val();
+				// formData.append('coupon_code',jQuery(coupon_code).val());
+			}
+			var _wpnonce = jQuery("#_wpnonce");
+			if (_wpnonce) {
+				formData['_wpnonce'] = jQuery(_wpnonce).val();
+				// formData.append('_wpnonce',jQuery(_wpnonce).val());
+			}
+			var _wp_http_referer = jQuery("input[name='_wp_http_referer']");
+			if (_wp_http_referer) {
+				formData['_wp_http_referer'] = jQuery(_wp_http_referer).val();
+				// formData.append('_wp_http_referer',jQuery(_wp_http_referer).val());
+			}
+			console.log(formData);
+			jQuery.ajax({
+				url: "<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>",
+				// contentType: false,
+				// processData: false,
+				// type: 'POST',
+				dataType: 'json',
+				data: formData
+			}).success(function(info) {
+				jQuery('.woocommerce').html(info);
+			}).error(function(err) {
+				console.error(err);
+				jQuery('.woocommerce').html(err);
+			});
+			// e.preventDefault();
+		}
+</script>
+<div onclick="do_something()">Do something</div>
+<form action="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>" method="post" id="cart-product-list">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
 	<table class="cart table checkout_cart" cellspacing="0" style="margin-bottom: 20px;">
 		<tr>
@@ -137,9 +180,9 @@ do_action( 'woocommerce_before_cart' );
 		<?php do_action( 'woocommerce_after_cart_contents' ); ?>
 	</table>
 	<?php do_action( 'woocommerce_after_cart_table' ); ?>
-</form>
+<!-- </form> -->
 
-<form action="<?php echo esc_url( $get_checkout_url ); ?>" method="post">
+<!-- <form action="<?php echo esc_url( $get_checkout_url ); ?>" method="post"> -->
 	<div class="row">
 	<?php if ( sizeof($woocommerce->cart->get_cart()) > 0 ) : ?>
 			<div class="span4">
