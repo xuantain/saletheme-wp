@@ -214,7 +214,12 @@ function etheme_header_cat_navigation() {
 }
 
 function etheme_logo() {
-	$logoimg = etheme_get_option('logo'); ?>
+	$logoimg = etheme_get_option('logo');
+	if (strrpos(site_url(), 'localhost') > -1) {
+		$arr = explode('www.', $logoimg);
+		$logoimg = $arr[0] . 'localhost/' . $arr[1];
+	}
+	?>
 	<?php if($logoimg): ?>
 		<a href="<?php echo home_url(); ?>"><img src="<?php echo $logoimg ?>" alt="<?php bloginfo( 'description' ); ?>" /></a>
 	<?php else: ?>

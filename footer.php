@@ -87,4 +87,5 @@
 	wp_footer();
 ?>
 </body>
+<script lang="javascript">(function() {var pname = ( (document.title !='')? document.title : document.querySelector('meta[property="og:title"]').getAttribute('content') );var ga = document.createElement('script'); ga.type = 'text/javascript';ga.src = '//live.vnpgroup.net/js/web_client_box.php?hash=dfbf112c5b186183feb159a4ef4602a9&data=eyJzc29faWQiOjM4MjIzODAsImhhc2giOiJjYjdiMjVjY2RjOWJmZGM0Y2E5MDZiY2JjOTE1NmJkYyJ9&pname='+pname;var s = document.getElementsByTagName('script');s[0].parentNode.insertBefore(ga, s[0]);})();</script><noscript><a href="http://www.vatgia.com" title="vatgia.com" target="_blank">Tài trợ bởi vatgia.com</a></noscript><noscript><a href="http://vchat.vn" title="vchat.vn" target="_blank">Phát triển bởi vchat.vn</a></noscript>
 </html>

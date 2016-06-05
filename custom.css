@@ -383,7 +383,7 @@ p.woocommerce-result-count {
 		text-transform: none;
 }
 .btn-cont a:first-child {
-	margin-right: 5px;
+	margin-right: 10px;
 }
 .slider .slide.product-slide {
 	width: 235px;
@@ -581,8 +581,11 @@ ul.payment_methods li label {
 .current-page {
 	background-color: #FFFEEE;
 }
-.product-information .btn-cont,
-.product-information .addtocont {
+.product-information .addtocont .btn-cont {
+	margin-left: -10px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 	bottom: 10px;
 }
 .product-grid.span3 {
@@ -596,9 +599,10 @@ ul.payment_methods li label {
 	height: 25px;
 	line-height: 25px;
 	border-radius: 5px;
-	border: 1px solid #e27e27;
+	border: 1px solid #ffa800;
 	background-color: #ffa800;
 	color: #fff !important;
+	font-size: 1.3em;
 	font-weight: bold;
 	text-align: center;
 }
@@ -607,6 +611,9 @@ ul.payment_methods li label {
 }
 .button.emptycart:hover span {
 	color: #fff !important;
+}
+#submit:hover, .button:hover {
+	background-color: #fff !important;
 }
 @media only screen and (max-width: 479px) {
 		.header-top-variant5, .header-top-variant5 .container {
