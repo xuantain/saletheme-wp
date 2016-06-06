@@ -1,21 +1,21 @@
 jQuery(document).ready(function(){
 	/* Promo banner in admin panel */
-	
+
 	jQuery('.promo-text-wrapper .close-btn').click(function(){
-		
+
 		var confirmIt = confirm('Are you sure?');
-		
+
 		if(!confirmIt) return;
-		
+
 		var widgetBlock = jQuery(this).parent();
-	
+
 		var data =  {
 			'action':'et_close_promo',
 			'close': widgetBlock.attr('data-etag')
 		};
-		
+
 		widgetBlock.hide();
-		
+
 		jQuery.ajax({
 			url: ajaxurl,
 			data: data,
@@ -28,28 +28,28 @@ jQuery(document).ready(function(){
 			}
 		});
 	});
-	
+
 	/* UNLIMITED SIDEBARS */
-	
+
 	var delSidebar = '<div class="delete-sidebar">delelte</div>';
-	
+
 	jQuery('.sidebar-etheme_custom_sidebar').find('.sidebar-name-arrow').before(delSidebar);
-	
+
 	jQuery('.delete-sidebar').click(function(){
-		
+
 		var confirmIt = confirm('Are you sure?');
-		
+
 		if(!confirmIt) return;
-		
+
 		var widgetBlock = jQuery(this).parent().parent();
-	
+
 		var data =  {
 			'action':'etheme_delete_sidebar',
 			'etheme_sidebar_name': jQuery(this).parent().find('h3').text()
 		};
-		
+
 		widgetBlock.hide();
-		
+
 		jQuery.ajax({
 			url: ajaxurl,
 			data: data,
@@ -63,16 +63,16 @@ jQuery(document).ready(function(){
 			}
 		});
 	});
-	
-	
+
+
 	/* end sidebars */
-    
+
     var theme_settings = jQuery('#prima-theme-settings');
     // Only show the background color input when the background color option type is Color (Hex)
     jQuery('.background-option-types').each(function() {
         showHideHexColor(jQuery(this));
         jQuery(this).change( function() {
-            showHideHexColor( jQuery(this) ) 
+            showHideHexColor( jQuery(this) )
         });
     });
     // Add color picker to color input boxes.
@@ -103,11 +103,11 @@ jQuery(document).ready(function(){
     var sidebarCkeck = jQuery('#product_page_sidebar');
     var defaultSidebar = sidebarCkeck.is(':checked');
     var labelText = sidebarCkeck.next().text();
-    
+
     function checkState(element,defaultSidebar){
         changedVal = element.val();
-        
-        if(changedVal == 3){                
+
+        if(changedVal == 3){
             sidebarCkeck.css('opacity',0.5).attr('checked',true).removeAttr("disabled");
             sidebarCkeck.next().text('Sidebar is always enabled for 3 products');
         }else if(changedVal == 6){
@@ -119,37 +119,37 @@ jQuery(document).ready(function(){
         }
     }
     jQuery('#prodcuts_per_row').change(function(){
-        checkState(jQuery(this),defaultSidebar);        
+        checkState(jQuery(this),defaultSidebar);
     });
-    
+
     checkState(jQuery('#prodcuts_per_row'),defaultSidebar);
-    
+
     jQuery('.importBtn').toggle(function(){
 	    jQuery(this).next().show();
     },function(){
 	    jQuery(this).next().hide();
     });
-    
+
     jQuery('.use-global').click(function() {
 	    var related = jQuery(this).data('related');
 	    var value   = jQuery(this).attr('checked');
 	    var selector = '.' + related;
-	    
-	    
+
+
 	    if(value == 'checked') {
 		    jQuery(selector).addClass('option-disabled');
 	    }else{
 		    jQuery(selector).removeClass('option-disabled');
 	    }
     });
-    
+
     var importBtn = jQuery('#install_demo_pages');
-    
+
 	importBtn.click(function(e){
 		e.preventDefault();
-		
-		importBtn.before('<div id="floatingCirclesG" class="loading"><div class="f_circleG" id="frotateG_01"></div><div class="f_circleG" id="frotateG_02"></div><div class="f_circleG" id="frotateG_03"></div><div class="f_circleG" id="frotateG_04"></div><div class="f_circleG" id="frotateG_05"></div><div class="f_circleG" id="frotateG_06"></div><div class="f_circleG" id="frotateG_07"></div><div class="f_circleG" id="frotateG_08"></div></div>');
-		
+
+		importBtn.before('<div id="floatingCirclesG" class="loading"></div>');
+
 		jQuery.ajax({
 			type: "POST",
 			url: ajaxurl,
@@ -157,16 +157,15 @@ jQuery(document).ready(function(){
 				'action':'etheme_import_ajax'
 			},
 			success: function(data){
-				
 				jQuery('#option-tree-sub-header').before('<div id="setting-error-settings_updated" class="updated settings-error">' + data + '</div>');
 			},
 			complete: function(){
 				jQuery('#floatingCirclesG').remove();
 			}
 		});
-	
+
 	});
-	
+
 });
 
 
@@ -192,13 +191,13 @@ jQuery(document).ready(function(){
         tb_show( prima_title, 'media-upload.php?post_id='+formID+'&type=image&amp;TB_iframe=1');
         return false;
       });
-            
+
       window.original_send_to_editor = window.send_to_editor;
       window.send_to_editor = function(html) {
         if (formfield) {
           if ( $(html).html(html).find('img').length > 0 ) {
           	itemurl = $(html).html(html).find('img').attr('src');
-          } 
+          }
 		  else {
           	var htmlBits = html.split("'");
           	itemurl = htmlBits[1];
@@ -227,7 +226,7 @@ jQuery(document).ready(function(){
   $(document).ready(function () {
 	  uploadOption.init();
       // Remove Uploaded Image
-      $('.remove').live('click', function(event) { 
+      $('.remove').live('click', function(event) {
         $(this).hide();
         $(this).parents().prev().prev('.upload').attr('value', '');
         $(this).parents('.screenshot').slideUp();

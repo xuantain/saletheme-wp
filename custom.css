@@ -355,6 +355,12 @@ p.woocommerce-result-count {
 		display: block;
 		margin: 8px auto 3px;
 }
+.icondetail-map {
+		background-position: -135px 0;
+		width: 24px;
+		height: 24px;
+		margin: -5px auto 0px;
+}
 .icondetail-accessories {
 		background-position: -50px 0;
 		width: 21px;
@@ -614,6 +620,18 @@ ul.payment_methods li label {
 }
 #submit:hover, .button:hover {
 	background-color: #fff !important;
+}
+ul.product_list_widget .widget-text a {
+	padding-right: 5px;
+}
+ul.product_list_widget .widget-text a span {
+	font-size: 13px;
+}
+del span {
+	font-weight: 300;
+}
+.show-up {
+	color: #006fa6;
 }
 @media only screen and (max-width: 479px) {
 		.header-top-variant5, .header-top-variant5 .container {

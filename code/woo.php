@@ -58,85 +58,78 @@ class Etheme_WooCommerce_Widget_Cart extends WP_Widget {
 
 		$title = apply_filters('widget_title', empty( $instance['title'] ) ? __('Shopping Cart', ETHEME_DOMAIN) : $instance['title'], $instance, $this->id_base );
 		$hide_if_empty = empty( $instance['hide_if_empty'] )	? 0 : 1;
-
-
-?>
-		<a href="<?php echo $woocommerce->cart->get_cart_url(); ?>"><?php if ( $title ) echo $title ; ?><?php echo '<span> - </span>' ?><span><?php echo $woocommerce->cart->get_cart_subtotal(); ?></span></a>
-		<div class="cart-popup-container">
-		<div class="cart-popup" style="display: none; ">
+	?>
+		<a href="<?php echo $woocommerce->cart->get_cart_url(); ?>">
+			<?php if ( $title ) echo $title ; ?><?php echo '<span> - </span>' ?>
+			<span><?php echo $woocommerce->cart->get_cart_subtotal(); ?></span>
+		</a>
+		<!-- <div class="cart-popup-container">
+			<div class="cart-popup" style="display: none; ">
+				<?php /* if ( sizeof( $woocommerce->cart->get_cart() ) > 0 ) { ?>
+					<p class="recently-added"><?php echo __('Recently added item(s)', ETHEME_DOMAIN); ?></p>
+					<div class="products-small">
 				<?php
-
-		if ( sizeof( $woocommerce->cart->get_cart() ) > 0 ) {
-			?>
-						<p class="recently-added"><?php echo __('Recently added item(s)', ETHEME_DOMAIN); ?></p>
-						<div class="products-small">
-					<?php
 						$counter = 0;
-			foreach ( $woocommerce->cart->get_cart() as $cart_item_key => $cart_item ) {
-				$counter++;
-								if($counter > 3) continue;
-				$_product = $cart_item['data'];
+						foreach ( $woocommerce->cart->get_cart() as $cart_item_key => $cart_item ) {
+							$counter++;
+							if($counter > 3) {
+								continue;
+							}
+							$_product = $cart_item['data'];
 
-				if ( ! apply_filters('woocommerce_widget_cart_item_visible', true, $cart_item, $cart_item_key ) )
-					continue;
+							if ( ! apply_filters('woocommerce_widget_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
+								continue;
+							}
 
-				if ( $_product->exists() && $cart_item['quantity'] > 0 ) {
+							if ( $_product->exists() && $cart_item['quantity'] > 0 ) {
+		 						$product_price = get_option( 'woocommerce_display_cart_prices_excluding_tax' ) == 'yes' || $woocommerce->customer->is_vat_exempt() ? $_product->get_price_excluding_tax() : $_product->get_price();
+								$product_price = apply_filters( 'woocommerce_cart_item_price_html', woocommerce_price( $product_price ), $cart_item, $cart_item_key );
+								?>
+						<div class="product-item">
+								<a href="<?php echo get_permalink( $cart_item['product_id'] ); ?>" class="product-image">
+										<?php echo get_the_post_thumbnail( $cart_item['product_id'], apply_filters( 'single_product_small_thumbnail_size', 'shop_thumbnail'	) ) ?>
+								</a>
 
-		 				$product_price = get_option( 'woocommerce_display_cart_prices_excluding_tax' ) == 'yes' || $woocommerce->customer->is_vat_exempt() ? $_product->get_price_excluding_tax() : $_product->get_price();
+								<?php echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="delete-btn" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remove this item', ETHEME_DOMAIN) ), $cart_item_key ); ?>
 
-					$product_price = apply_filters( 'woocommerce_cart_item_price_html', woocommerce_price( $product_price ), $cart_item, $cart_item_key );
+								<h5><a href="<?php echo get_permalink( $cart_item['product_id'] ); ?>"><?php echo apply_filters('woocommerce_widget_cart_product_title', $_product->get_title(), $_product ) ?></a></h5>
 
+								<div class="qty">
+										<span class="price"><span class="pricedisplay"><?php echo $product_price; ?></span></span><br />
+										<span class="quanity-span"><?php echo __('Qty', ETHEME_DOMAIN); ?>:</span> <?php echo $cart_item['quantity']; ?>
+								</div>
+
+								<?php echo $woocommerce->cart->get_item_data( $cart_item ); ?>
+
+								<div class="clear"></div>
+						</div>
+					<?php
+						}
+					}
 				?>
-										<div class="product-item">
-												<a href="<?php echo get_permalink( $cart_item['product_id'] ); ?>" class="product-image">
-														<?php echo get_the_post_thumbnail( $cart_item['product_id'], apply_filters( 'single_product_small_thumbnail_size', 'shop_thumbnail'	) ) ?>
-												</a>
-												<?php
-							echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="delete-btn" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remove this item', ETHEME_DOMAIN) ), $cart_item_key );
-						?>
-												<h5><a href="<?php echo get_permalink( $cart_item['product_id'] ); ?>"><?php echo apply_filters('woocommerce_widget_cart_product_title', $_product->get_title(), $_product ) ?></a></h5>
-
-												<div class="qty">
-														<span class="price"><span class="pricedisplay"><?php echo $product_price; ?></span></span><br />
-														<span class="quanity-span"><?php echo __('Qty', ETHEME_DOMAIN); ?>:</span> <?php echo $cart_item['quantity']; ?>
-												</div>
-												<?php echo $woocommerce->cart->get_item_data( $cart_item ); ?>
-
-												<div class="clear"></div>
-										</div>
-								<?php
-								}
-			}
-			?>
 				</div>
-
-				<?php
+	<?php
 		} else {
 			echo '<p class="empty">' . __('No products in the cart.', ETHEME_DOMAIN) . '</p>';
 		}
 
-
 		if ( sizeof( $woocommerce->cart->get_cart() ) > 0 ) {
 			?>
-						<div class="totals">
-								<?php echo __('Total:', ETHEME_DOMAIN); ?> <span class="price"><span class="pricedisplay"><?php echo $woocommerce->cart->get_cart_subtotal(); ?></span></span>
-						</div>
-					<?php
+				<div class="totals">
+						<?php echo __('Total:', ETHEME_DOMAIN); ?> <span class="price"><span class="pricedisplay"><?php echo $woocommerce->cart->get_cart_subtotal(); ?></span></span>
+				</div>
+			<?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); ?>
+				<a href="<?php echo $woocommerce->cart->get_cart_url(); ?>" class="button emptycart"><span><?php echo __('View Cart', ETHEME_DOMAIN); ?></span></a>
 
-			do_action( 'woocommerce_widget_shopping_cart_before_buttons' );
-						?>
-								<a href="<?php echo $woocommerce->cart->get_cart_url(); ?>" class="button emptycart"><span><?php echo __('View Cart', ETHEME_DOMAIN); ?></span></a>
+				<a href="<?php echo $woocommerce->cart->get_checkout_url(); ?>" class="button active fl-r"><span><?php echo __('Checkout', ETHEME_DOMAIN); ?></span></a>
 
-								<a href="<?php echo $woocommerce->cart->get_checkout_url(); ?>" class="button active fl-r"><span><?php echo __('Checkout', ETHEME_DOMAIN); ?></span></a>
-
-						<?php
-
+			<?php
 		}
-		?>
-		</div>
-		</div>
-				<?php
+		*/?>
+			</div>
+		</div> -->
 
+	<?php
 	}
 
 	/** @see WP_Widget->update */

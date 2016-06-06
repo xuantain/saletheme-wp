@@ -598,7 +598,7 @@ jQuery(document).ready(function() {
 
 						$thisbutton.removeClass('added');
 						$thisbutton.parent().parent().parent().parent().addClass('loading');
-						$thisbutton.after('<div id="floatingCirclesG"><div class="f_circleG" id="frotateG_01"></div><div class="f_circleG" id="frotateG_02"></div><div class="f_circleG" id="frotateG_03"></div><div class="f_circleG" id="frotateG_04"></div><div class="f_circleG" id="frotateG_05"></div><div class="f_circleG" id="frotateG_06"></div><div class="f_circleG" id="frotateG_07"></div><div class="f_circleG" id="frotateG_08"></div></div>');
+						$thisbutton.after('<div id="floatingCirclesG"></div>');
 
 						var data = {
 								action: 'woocommerce_add_to_cart',
@@ -737,7 +737,7 @@ jQuery(document).ready(function() {
 						jQuery('*').css({
 								'cursor': 'progress'
 						});
-						jQuery('#default_products_page_container .product-grid').addClass('loading').prepend('<div id="floatingCirclesG"><div class="f_circleG" id="frotateG_01"></div><div class="f_circleG" id="frotateG_02"></div><div class="f_circleG" id="frotateG_03"></div><div class="f_circleG" id="frotateG_04"></div><div class="f_circleG" id="frotateG_05"></div><div class="f_circleG" id="frotateG_06"></div><div class="f_circleG" id="frotateG_07"></div><div class="f_circleG" id="frotateG_08"></div></div>');
+						jQuery('#default_products_page_container .product-grid').addClass('loading').prepend('<div id="floatingCirclesG"></div>');
 
 						ajaxProductLoad(url, blockId);
 						event.stopPropagation();

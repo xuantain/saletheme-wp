@@ -37,6 +37,7 @@
 
 	?>
 	</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,400italic,500italic,300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="<?php etheme_option('favicon',true) ?>" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
