@@ -844,7 +844,7 @@ div.pp_woocommerce div.ppt{width: 240px !important;}
 .header-type-variant4 #main-nav, .header-type-variant5 #main-nav{border:none !important;background: none !important;width: auto;}
 .header-type-default .logo, .header-type-variant3 .logo, .header-type-variant5 .logo{max-width: 85%;text-align: left;float: left !important;font-size: 38px;line-height: 44px;}
 .et-menu-title i.icon-reorder{color: #ccc;font-size: 36px;-webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-ms-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
-.et-menu-title i.icon-reorder:hover{color: #fc5a5a;}
+.et-menu-title i.icon-reorder:hover{color: #008ACF;}
 
 .header-type-default .header,
 .header-type-variant3 .header{margin-bottom: 0;padding-top: 20px;padding-bottom: 20px;}

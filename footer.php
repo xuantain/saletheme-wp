@@ -62,7 +62,8 @@
 			</div>
 			<?php if(etheme_get_option('to_top') != 'disable'): ?>
 				<div id="back-to-top" class="btn-style-<?php etheme_option('to_top') ?>">
-					<a href="#top" id="top-link"><span><?php _e('Back to top',ETHEME_DOMAIN) ?></span></a>
+					<a href="#top" id="top-link">
+						<!-- <span><?php //_e('Back to top',ETHEME_DOMAIN) ?></span></a> -->
 				</div>
 			<?php endif ;?>
 		</div>

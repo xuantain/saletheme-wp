@@ -72,7 +72,7 @@
  }
  
  h3.theme-tittle span {
-    color:#fc5a5a;
+    color:#008ACF;
  }
  
 #option-tree-sub-header .theme-version {
@@ -93,7 +93,7 @@
 .wrap.settings-wrap .ui-tabs-nav li a i  { color: rgb(83, 83, 83); margin-right:8px; font-size: 18px; line-height: 8px;}
 .wrap.settings-wrap .ui-tabs-nav li a:hover,
 .wrap.settings-wrap .ui-tabs-nav li.ui-state-active a { color: #525252; }
-.wrap.settings-wrap .ui-tabs-nav li.ui-state-active a i { color: #fc5a5a; }
+.wrap.settings-wrap .ui-tabs-nav li.ui-state-active a i { color: #008ACF; }
 .wrap.settings-wrap .ui-tabs-panel    { clear: both; }
 
 /* -------------------------------------------------- 

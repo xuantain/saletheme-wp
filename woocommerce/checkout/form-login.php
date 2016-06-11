@@ -13,7 +13,7 @@ if ( is_user_logged_in() || 'no' == get_option( 'woocommerce_enable_checkout_log
 
 ?>
 <form method="post">
-	<?php _e('If you have shopped with us before, please enter your details in the boxes below. If you are a new customer please proceed to the Billing &amp; Shipping section.', ETHEME_DOMAIN) ?>
+	<?php //_e('If you have shopped with us before, please enter your details in the boxes below. If you are a new customer please proceed to the Billing &amp; Shipping section.', ETHEME_DOMAIN) ?>
 
 	<p class="form-row form-row-first">
 		<label for="username"><?php _e('Username or email', ETHEME_DOMAIN); ?> <span class="required">*</span></label>

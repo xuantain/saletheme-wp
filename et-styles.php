@@ -345,19 +345,19 @@ $selectors['footer_bg'] = '
 
 <div id="styles-main-color">
     <style type="text/css">
-        <?php echo jsString($selectors['active_color']); ?>              { color: <?php echo (etheme_get_option('activecol')) ? etheme_get_option('activecol') : '#fc5a5a' ?>; }
+        <?php echo jsString($selectors['active_color']); ?>              { color: <?php echo (etheme_get_option('activecol')) ? etheme_get_option('activecol') : '#008ACF' ?>; }
         
-        <?php echo jsString($selectors['active_bg']); ?>                 { background-color: <?php echo (etheme_get_option('activecol')) ? etheme_get_option('activecol') : '#fc5a5a' ?>; }
+        <?php echo jsString($selectors['active_bg']); ?>                 { background-color: <?php echo (etheme_get_option('activecol')) ? etheme_get_option('activecol') : '#008ACF' ?>; }
     
-        <?php echo jsString($selectors['active_border']); ?>             { border-color: <?php echo (etheme_get_option('activecol')) ? etheme_get_option('activecol') : '#fc5a5a' ?>;}
+        <?php echo jsString($selectors['active_border']); ?>             { border-color: <?php echo (etheme_get_option('activecol')) ? etheme_get_option('activecol') : '#008ACF' ?>;}
         
         <?php if($etheme_color_version=='dark'): ?>
         
-	        <?php echo jsString($selectors['active_color_dark']); ?>              { color: <?php echo (etheme_get_option('activecol')) ? etheme_get_option('activecol') : '#fc5a5a' ?>; }
+	        <?php echo jsString($selectors['active_color_dark']); ?>              { color: <?php echo (etheme_get_option('activecol')) ? etheme_get_option('activecol') : '#008ACF' ?>; }
 	        
-	        <?php echo jsString($selectors['active_bg_dark']); ?>                 { background-color: <?php echo (etheme_get_option('activecol')) ? etheme_get_option('activecol') : '#fc5a5a' ?>; }
+	        <?php echo jsString($selectors['active_bg_dark']); ?>                 { background-color: <?php echo (etheme_get_option('activecol')) ? etheme_get_option('activecol') : '#008ACF' ?>; }
 	    
-	        <?php echo jsString($selectors['active_border_dark']); ?>             { border-color: <?php echo (etheme_get_option('activecol')) ? etheme_get_option('activecol') : '#fc5a5a' ?>;}
+	        <?php echo jsString($selectors['active_border_dark']); ?>             { border-color: <?php echo (etheme_get_option('activecol')) ? etheme_get_option('activecol') : '#008ACF' ?>;}
         
         <?php endif; ?>
     

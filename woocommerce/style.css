@@ -188,7 +188,7 @@ div.product_meta a{
 }
 div.product_meta span{margin-left:0 !important;}
 .product_meta a:hover{
-	color: #fc5a5a;
+	color: #008ACF;
 }
 
 div.product div.social {
@@ -1067,7 +1067,7 @@ td.actions .button-alt, td.actions .button.alt {
   font-weight: 300;
 }
 .cart-collaterals .shipping_calculator a:hover {
-  color:#fc5a5a;
+  color:#008ACF;
 }
 .cart-collaterals .shipping_calculator .col2-set {
     margin-top:0;
