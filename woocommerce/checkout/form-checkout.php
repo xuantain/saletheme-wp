@@ -19,96 +19,12 @@ wc_print_notices();
 <?php do_action('woocommerce_before_checkout_form', $checkout ); ?>
 
 <div class="<?php if($isAccordion): ?>tabs accordion checkout-accordion<?php else: ?>checkout-default<?php endif; ?>">
-		<?php if(!is_user_logged_in()): ?>
-				<!-- ----------------------------------------------- -->
-				<!-- ------------------- LOGIN --------------------- -->
-				<!-- ----------------------------------------------- -->
-				<?php if($isAccordion): ?><a class="tab-title checkout-accordion-title" id="tab_1"><span><?php _e('Checkout Method', ETHEME_DOMAIN) ?></span></a><?php endif; ?>
-				<div class="tab-content tab-login" id="content_tab_1">
-						<div class="col2-set">
-								<div class="col-1 checkout-login">
-										<h3><?php _e('New Customers', ETHEME_DOMAIN) ?></h3>
-										<div class="checkout-methods">
-												<?php if ($checkout->enable_guest_checkout): ?>
-													<div class="method-radio">
-															<input type="radio" id="method1" name="method" value="1" />
-															<label for="method1"><?php _e('Checkout as Guest', ETHEME_DOMAIN); ?></label>
-															<div class="clear"></div>
-													</div>
-												<?php endif ?>
-												<?php if (get_option('woocommerce_enable_signup_and_login_from_checkout') != 'no'): ?>
-													<div class="method-radio">
-															<input type="radio" id="method2" name="method" value="2" <?php if (!$checkout->enable_guest_checkout): ?> checked <?php endif; ?> />
-															<label for="method2"><?php _e('Create an Account', ETHEME_DOMAIN); ?></label>
-															<div class="clear"></div>
-													</div>
-												<?php endif; ?>
-												<div class="clear"></div>
-										</div>
-										<?php if($isAccordion): ?><a class="button checkout-cont checkout-cont1"><span><?php _e('Continue', ETHEME_DOMAIN) ?></span></a><?php endif; ?>
-								</div>
-								<div class="col-2 checkout-customers">
-										<h3><?php _e('Returning Customers', ETHEME_DOMAIN) ?></h3>
-										<?php
-												// If checkout registration is disabled and not logged in, the user cannot checkout
-												if (get_option('woocommerce_enable_signup_and_login_from_checkout')=="no" && get_option('woocommerce_enable_guest_checkout')=="no" && !is_user_logged_in()) :
-													echo apply_filters('woocommerce_checkout_must_be_logged_in_message', __('You must be logged in to checkout.', ETHEME_DOMAIN));
-													return;
-												endif;
-										?>
-
-								</div>
-								<div class="clear"></div>
-						</div>
-				</div>
-		<?php endif; ?>
-
 		<form name="checkout" method="post" class="checkout checkout-form" action="<?php echo esc_url( $get_checkout_url ); ?>">
-
-			<?php if(!is_user_logged_in()): ?>
-				<?php if (get_option('woocommerce_enable_signup_and_login_from_checkout')=="yes") : ?>
-						<!-- ----------------------------------------------- -->
-						<!-- -------------- -- REGISTER -- ----------------- -->
-						<!-- ----------------------------------------------- -->
-						<?php if($isAccordion): ?><a class="tab-title checkout-accordion-title" id="tab-register"><span><?php _e('Create an Account', ETHEME_DOMAIN) ?></span></a><?php endif; ?>
-						<div class="tab-content register-tab-content" id="content_tab-register">
-
-								<?php if (get_option('woocommerce_enable_guest_checkout')=='yes') : ?>
-
-									<p class="form-row">
-										<input class="input-checkbox" id="createaccount" <?php checked($woocommerce_checkout->get_value('createaccount'), true) ?> type="checkbox" name="createaccount" value="1" />
-										<label for="createaccount" class="checkbox"><?php _e('Create an account?', ETHEME_DOMAIN); ?></label>
-									</p>
-
-								<?php endif; ?>
-
-								<?php do_action( 'woocommerce_before_checkout_registration_form', $woocommerce_checkout ); ?>
-
-								<div class="create-account-form">
-
-									<!--<p><?php _e('Create an account by entering the information below. If you are a returning customer please login with your username at the top of the page.', ETHEME_DOMAIN); ?></p>-->
-
-									<?php foreach ($woocommerce_checkout->checkout_fields['account'] as $key => $field) : ?>
-
-										<?php woocommerce_form_field( $key, $field, $woocommerce_checkout->get_value( $key ) ); ?>
-
-									<?php endforeach; ?>
-
-								</div>
-
-								<?php do_action( 'woocommerce_after_checkout_registration_form', $woocommerce_checkout ); ?>
-
-								<?php if($isAccordion): ?><a class="button checkout-cont checkout-cont2"><span><?php _e('Continue', ETHEME_DOMAIN) ?></span></a><?php endif; ?>
-
-						</div>
-				<?php endif; ?>
-			<?php endif; ?>
-
 			<?php
 				// filter hook for include new pages inside the payment method
-				// $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce->cart->get_checkout_url() ); ?>
+				// $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce->cart->get_checkout_url() );
 
-				<?php if (sizeof($woocommerce_checkout->checkout_fields)>0) : ?>
+				if (sizeof($woocommerce_checkout->checkout_fields)>0) : ?>
 
 						<!-- ----------------------------------------------- -->
 						<!-- ------------------ ORDER ---------------------- -->

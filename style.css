@@ -2253,15 +2253,27 @@ text-decoration: none;
 -webkit-transition-property: color;
 }
 .menu .current-menu-item > a, .menu .current-menu-item > a:hover{border:none;}
-#back-to-top.btn-style-modern > a{position: fixed;z-index:1000;bottom: 0;left:0;width: 160px; text-decoration: none;color: #bbb;text-transform: uppercase;font-size: 12px;height: 100% !important;
+#back-to-top.btn-style-modern > a{
+	position: fixed;
+	z-index:1000;
+	bottom: 0;
+	left:0;
+	width: 160px;
+	text-decoration: none;
+	color: #bbb;
+	text-transform: uppercase;
+	font-size: 12px;
+	height: 100% !important;
  -webkit-transition: all 0.2s ease-in-out;
 		-moz-transition: all 0.2s ease-in-out;
 		 -ms-transition: all 0.2s ease-in-out;
 			-o-transition: all 0.2s ease-in-out;
 				 transition: all 0.2s ease-in-out;
  }
-#back-to-top.btn-style-modern a:hover{background-color: rgba(68, 68, 68, 0.15) !important; color: #444!important;
--webkit-transition: all 0.2s ease-in-out;
+#back-to-top.btn-style-modern a:hover{
+	background-color: rgba(68, 68, 68, 0.15) !important;
+	color: #444!important;
+	-webkit-transition: all 0.2s ease-in-out;
 		-moz-transition: all 0.2s ease-in-out;
 		 -ms-transition: all 0.2s ease-in-out;
 			-o-transition: all 0.2s ease-in-out;
@@ -2276,16 +2288,16 @@ text-decoration: none;
 
 }
 #back-to-top.btn-style-modern a span{
- color: #838383;
- right:17px;
- bottom:0;
- opacity: 1 !important;
- display: block;
- text-align:right;
- padding: 20px 25px;
- position: absolute;
- z-index: 1;
- -webkit-box-sizing: border-box;
+	color: #838383;
+	right:17px;
+	bottom:0;
+	opacity: 1 !important;
+	display: block;
+	text-align:right;
+	padding: 20px 25px;
+	position: absolute;
+	z-index: 1;
+	-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 				 box-sizing: border-box;
  margin: -60px 0 0 0;
@@ -2319,7 +2331,10 @@ text-decoration: none;
 	color: #008ACF;
 }
 
-.responsive-switcher { font-size:14px; text-transform: uppercase; text-align: center; margin:10px 0;display: inline-block;width: 100%;padding: 12px 0 13px;width: 100% !important;-webkit-box-sizing: border-box;
+.responsive-switcher { font-size:14px; text-transform: uppercase; text-align: center;
+	margin:10px 0;display: inline-block;width: 100%;
+	padding: 12px 0 13px;width: 100% !important;
+	-webkit-box-sizing: border-box;
 	 -moz-box-sizing: border-box;
 				box-sizing: border-box;}
 .responsive-switcher a{color: #444;cursor: pointer; cursor: pointer;}
@@ -2327,31 +2342,55 @@ text-decoration: none;
 /* Back to top Standart
 /* -------------------------------------------------- */
 #back-to-top.btn-style-standart {
-	font-size: 12px;
 	display: none;
-	z-index: 999;
 	position: fixed;
-	bottom: 50%;
+	right: 7px;
+	z-index: 999;
 	margin-top: -40px;
-	right: 0px;
-	padding: 10px;
 	margin-left: -70px;
-	width: 40px;
+	padding: 10px;
+	width: 23px;
+	height: 25px;
+	bottom: 50%;
+	font-size: 12px;
 	color: #fff;
-	background-color: #008ACF;
+	background: #006fa6 url(images/icons/icon-group.png) 5px -1894px no-repeat;
+}
+#back-to-top.btn-style-standart:hover {
+	cursor: pointer;
+}
+#back-to-top.btn-style-standart span {
+	position: absolute;
+	top: 0;
+	right: -200px;
+	padding: 13px;
+	margin-left: -160px;
+	-webkit-transition: all 0.1s ease-in-out;
+		-moz-transition: all 0.1s ease-in-out;
+		 -ms-transition: all 0.1s ease-in-out;
+			-o-transition: all 0.1s ease-in-out;
+				 transition: all 0.1s ease-in-out;
+}
+#back-to-top.btn-style-standart:hover span {
+	padding-right: 50px;
+	right: 0;
+	color: #000;
+	background-color: #efefef;
+	opacity: 0.4;
+	-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		 -ms-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+				 transition: all 0.2s ease-in-out;
 }
 #back-to-top.btn-style-standart a {
-	color: #666669;
-	font-size: 11px;
 	display: block;
-	padding: 11px 4px 12px 30px;
-	background: #008ACF rgba(255,255,255,0.8) url(images/arrow_up.png) no-repeat 12px center;
 	text-align: center;
 	text-transform: uppercase;
 }
 #back-to-top.btn-style-standart a:hover {
-	color: #cdcab9 !important;
-	background:url(images/arrow_up.png) no-repeat 12px center;
+	color: #fff !important;
+	background: initial !important;
 }
 /* -------------------------------------------------- */
 /* Hide Container
