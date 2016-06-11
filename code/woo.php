@@ -60,8 +60,10 @@ class Etheme_WooCommerce_Widget_Cart extends WP_Widget {
 		$hide_if_empty = empty( $instance['hide_if_empty'] )	? 0 : 1;
 	?>
 		<a href="<?php echo $woocommerce->cart->get_cart_url(); ?>">
-			<?php if ( $title ) echo $title ; ?><?php echo '<span> - </span>' ?>
-			<span><?php echo $woocommerce->cart->get_cart_subtotal(); ?></span>
+			<?php //if ( $title ) echo $title ; ?>
+			<?php //echo '<span> - </span>' ?>
+			<i class="add-to-cart-btn"></i>
+			<div><?php echo $woocommerce->cart->get_cart_subtotal(); ?></div>
 		</a>
 		<!-- <div class="cart-popup-container">
 			<div class="cart-popup" style="display: none; ">

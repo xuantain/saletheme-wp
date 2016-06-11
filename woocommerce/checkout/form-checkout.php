@@ -16,7 +16,7 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', WC()->cart->g
 wc_print_notices();
 ?>
 
-<?php do_action('woocommerce_before_checkout_form', $checkout ); ?>
+<?php //do_action('woocommerce_before_checkout_form', $checkout ); ?>
 
 <div class="<?php if($isAccordion): ?>tabs accordion checkout-accordion<?php else: ?>checkout-default<?php endif; ?>">
 		<form name="checkout" method="post" class="checkout checkout-form" action="<?php echo esc_url( $get_checkout_url ); ?>">

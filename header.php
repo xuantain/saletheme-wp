@@ -99,6 +99,7 @@
 						<?php endif; ?>
 					</div>
 					<div class="span6">
+						<a href="<?php echo site_url(); ?>" class="home-btn"></a>
 						<?php etheme_header_menu(); ?>
 					</div>
 					<?php if ( is_active_sidebar( 'phone-hotline' ) ) : ?>
@@ -117,9 +118,9 @@
 									<?php $cart_widget = new Etheme_WooCommerce_Widget_Cart(); $cart_widget->widget(); ?>
 							</div>
 					<?php endif ;?>
-				<?php if(etheme_get_option('top_links')): ?>
-					<?php	get_template_part( 'et-links' ); ?>
-						<?php endif; ?>
+					<?php //if(etheme_get_option('top_links')) : ?>
+						<?php	//get_template_part( 'et-links' ); ?>
+					<?php //endif; ?>
 					</div>
 				</div>
 			</div>

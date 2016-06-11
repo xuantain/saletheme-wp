@@ -7,30 +7,25 @@
 	<div class="container_footer_bg">
 		<div class="container">
 			<div class="row footer_container">
-				<div class="span3 footer_block f-contacts">
+				<div class="span4 footer_block f-contacts">
 					<?php if ( !is_active_sidebar( 'first-footer-widget-area' ) ) : ?>
 						<?php etheme_footer_demo(1); ?>
 					<?php else: ?>
 						<?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
 					<?php endif; ?>
 				</div>
-				<div class="span3 footer_block footer-big-block">
+				<div class="span4 footer_block footer-big-block">
 					<?php if ( !is_active_sidebar( 'second-footer-widget-area' ) ) : ?>
 						<?php etheme_footer_demo(2); ?>
 					<?php else: ?>
 						<?php dynamic_sidebar( 'second-footer-widget-area' ); ?>
 					<?php endif; ?>
 				</div>
-				<div class="span3 footer_block">
+				<div class="span4 footer_block">
 					<?php if ( !is_active_sidebar( 'third-footer-widget-area' ) ) : ?>
 						<span class="footer_title"><?php _e( 'Recent Tweets', ETHEME_DOMAIN); ?></span>
 					<?php else: ?>
 						<?php dynamic_sidebar( 'third-footer-widget-area' ); ?>
-					<?php endif; ?>
-				</div>
-				<div class="span3 footer_block">
-					<?php if ( is_active_sidebar( 'fourth-footer-widget-area' ) ) : ?>
-						<?php dynamic_sidebar( 'fourth-footer-widget-area' ); ?>
 					<?php endif; ?>
 				</div>
 			</div>

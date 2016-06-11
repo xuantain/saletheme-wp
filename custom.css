@@ -1,3 +1,29 @@
+#main-nav {
+	margin-top: 4px;
+}
+#top-cart a div {
+	float: left;
+	margin-top: 3px;
+}
+#top-cart a div span {
+	color: #fff !important;
+}
+.home-btn,
+.add-to-cart-btn {
+	display: inline-block;
+	margin-right: 10px;
+	float: left;
+	width: 24px;
+	height: 24px;
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
+.home-btn {
+	background: url(images/icons/icon-home.png) no-repeat;
+}
+.add-to-cart-btn {
+	background: url(images/icons/icon-add-to-cart.png) no-repeat;
+}
 .container.header-area {
 		background-color: transparent;
 }
