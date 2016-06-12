@@ -103,7 +103,7 @@
 						<?php etheme_header_menu(); ?>
 					</div>
 					<?php if ( is_active_sidebar( 'phone-hotline' ) ) : ?>
-					<div class="span8 visible-phone">
+					<div class="span2 visible-phone">
 						<?php dynamic_sidebar( 'phone-hotline' ); ?>
 					</div>
 					<?php endif; ?>

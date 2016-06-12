@@ -271,7 +271,7 @@ body.wide{background:none!important;}
 .boxed .wrapper{margin:0 auto;width:980px;background-color:#fff;-webkit-box-shadow:0 1px 6px;box-shadow:0 1px 6px;}
 .header-bg, .fixed-header-area{
 	border-top:1px solid #ccc;
-	border-bottom:1px solid #efefef;
+	border-bottom:1px solid #ccc;
 	background:#fafafa;
 	-webkit-transition: all 0.2s ease-in-out;
 		 -moz-transition: all 0.2s ease-in-out;
@@ -618,7 +618,7 @@ div.menu{text-align:left;margin:0;padding:0 0 8px;}
 
 .et-mobile-menu{text-align:left;display:none;margin:-20px 0 20px;}
 .header-type-variant2 .et-mobile-menu{margin:0 0 20px;}
-.et-menu-title{cursor: pointer;display: none;line-height: 50px; color: #FFF;font-size: 20px;text-align: left;margin: 20px 0;padding: 0 15px 0 15px;text-transform: uppercase;font-weight:300;}
+.et-menu-title{cursor: pointer;display: none;line-height: 50px; color: #FFF;font-size: 20px;text-align: left;margin: 0;padding: 0 15px 0 15px;text-transform: uppercase;font-weight:300;}
 .et-menu-title i { font-size: 22px;}
 /* level 0
 -------------------------------------------------------------- */

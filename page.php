@@ -14,8 +14,21 @@ global $wp_query;
 extract(etheme_get_page_sidebar());
 
 get_header();
-
 ?>
+
+<style media="screen">
+	#products-grid .product-grid {
+		border: 1px solid #ccc;
+		margin-left: 25px;
+	}
+	#products-grid .product-grid.lastspan3 {
+		width: 270px !important;
+	}
+	#products-grid .product-grid:hover {
+		border: 1px solid #ccc;
+	}
+</style>
+
 <div class="container <?php echo $sidebarname; ?>">
 		<div class="row">
 			<?php blog_breadcrumbs(); ?>

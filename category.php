@@ -9,6 +9,7 @@ $blog_sidebar = etheme_get_option('blog_sidebar');
 $blog_sidebar_responsive = etheme_get_option('blog_sidebar_responsive');
 
 get_header(); ?>
+
 <div class="container">
 		<div class="row">
 			<?php blog_breadcrumbs(); ?>
