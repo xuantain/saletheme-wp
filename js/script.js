@@ -90,7 +90,7 @@ jQuery(document).ready(function() {
 		jQuery(window).scroll(function() {
 				var fixedHeader = jQuery('.fixed-header-area');
 				var scrollTop = jQuery(this).scrollTop();
-				var headerHeight = jQuery('.header-top').height() + jQuery('.header-bg').height();
+				var headerHeight = jQuery('.static-header-area').height();
 				var stickybar = jQuery('.stickybar');
 
 				if (scrollTop > headerHeight) {

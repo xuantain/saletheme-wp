@@ -1,17 +1,6 @@
-#main-nav {
-	margin-top: 4px;
-}
-#top-cart a div {
-	float: left;
-	margin-top: 3px;
-}
-#top-cart a div span {
-	color: #fff !important;
-}
 .home-btn,
 .add-to-cart-btn {
 	display: inline-block;
-	margin-right: 10px;
 	float: left;
 	width: 24px;
 	height: 24px;
@@ -22,7 +11,12 @@
 	background: url(images/icons/icon-home.png) no-repeat;
 }
 .add-to-cart-btn {
+	margin-right: 10px;
 	background: url(images/icons/icon-add-to-cart.png) no-repeat;
+}
+.add-to-cart-btn + div {
+	float: left;
+	margin-top: 3px;
 }
 .container.header-area {
 		background-color: transparent;
