@@ -663,6 +663,9 @@ del span {
 	margin-left: 0 !important;
 	border: 1px solid #ccc;
 }
+#loader {
+	display: none;
+}
 @media only screen and (max-width: 479px) {
 		.header-top-variant5, .header-top-variant5 .container {
 				height: 85px;
@@ -736,6 +739,9 @@ del span {
 	}
 }
 @media only screen and (max-width: 767px){
+	#loader{
+		display: none;
+	}
 	.home-btn {
 		margin-top: 10px;
 	}
