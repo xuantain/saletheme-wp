@@ -63,10 +63,9 @@ function etheme_create_slider($args, $title = false, $image_width = 215, $image_
 		if ($title) {
 			$title_output = '<h4 class="slider-title">'.$title.'</h4>';
 		}
-		echo '<div class="product-slider columns' . $product_per_row . '">';
+		echo '<div class="home-product-grid slider">';
 			echo $title_output;
-			echo '<div class="carousel slider-'.$box_id.'">';
-					echo '<div class="slider">';
+			echo '<div class="products_grid">';
 
 			$_i=0;
 
@@ -76,13 +75,10 @@ function etheme_create_slider($args, $title = false, $image_width = 215, $image_
 					if(class_exists('Woocommerce')) {
 							global $product;
 							if (!$product->is_visible()) continue;
-							echo '<div class="slide product-slide">';
-									woocommerce_get_template_part( 'content', 'product' );
-							echo '</div><!-- slide -->';
+							woocommerce_get_template_part( 'content', 'product' );
 					}
 			endwhile;
 
-					echo '</div><!-- slider -->';
 			echo '</div><!-- carousel -->';
 
 			if($_i > $enable_slider_from):

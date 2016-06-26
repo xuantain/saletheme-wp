@@ -126,15 +126,12 @@
 				</div>
 
 				<!-- SMALL SCREEN -->
-				<div class="row visible-xs">
-					<?php if ( is_active_sidebar( 'phone-hotline' ) ) : ?>
-						<div class="col-xs-4"><?php dynamic_sidebar( 'phone-hotline' ); ?></div>
-					<?php endif; ?>
-					<?php if ( etheme_get_option('search_form') ) : ?>
-						<div class="col-xs-4"><?php get_search_form(); ?></div>
-					<?php endif; ?>
+				<div class="row visible-xs nav-bar-xs">
 					<?php if(class_exists('Woocommerce') && !etheme_get_option('just_catalog') && etheme_get_option('cart_widget')): ?>
-						<div class="col-xs-4"><?php $cart_widget = new Etheme_WooCommerce_Widget_Cart(); $cart_widget->widget(); ?></div>
+						<div class="col-xs-6"><?php $cart_widget = new Etheme_WooCommerce_Widget_Cart(); $cart_widget->widget(); ?></div>
+						<?php if (etheme_get_option('search_form')) : ?>
+						<div class="col-xs-6"><?php get_search_form(); ?></div>
+						<?php endif; ?>
 					<?php endif ;?>
 				</div>
 			</div>
@@ -162,8 +159,8 @@
 
 		<?php
 			get_template_part( 'et-styles' );
-			if($etheme_responsive){
-				get_template_part('large-resolution');
-			}
+			// if($etheme_responsive){
+			// 	get_template_part('large-resolution');
+			// }
 		?>
 	</div>

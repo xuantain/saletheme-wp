@@ -62,7 +62,7 @@ class Etheme_WooCommerce_Widget_Cart extends WP_Widget {
 		<a href="<?php echo $woocommerce->cart->get_cart_url(); ?>">
 			<?php //if ( $title ) echo $title ; ?>
 			<?php //echo '<span> - </span>' ?>
-			<i class="add-to-cart-btn"></i>
+			<i class="check-cart-btn"></i>
 			<div><?php echo $woocommerce->cart->get_cart_subtotal(); ?></div>
 		</a>
 		<!-- <div class="cart-popup-container">
@@ -1023,7 +1023,7 @@ function etheme_woocommerce_featured_products( $atts ) {
 	if ( $products->have_posts() ) : ?>
 
 		<h4 class="slider-title"><?php echo $atts['title']; ?></h4>
-		<div id="products-grid" style="padding: 0;" class="products_grid shortcode-products rows-count<?php echo $columns ?>">
+		<div id="products-grid" class="products_grid">
 				<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
 					<?php woocommerce_get_template_part( 'content', 'product' ); ?>

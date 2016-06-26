@@ -7,21 +7,21 @@
 	<div class="container_footer_bg">
 		<div class="container">
 			<div class="row footer_container">
-				<div class="span4 footer_block f-contacts">
+				<div class="col-xs-4 footer_block f-contacts">
 					<?php if ( !is_active_sidebar( 'first-footer-widget-area' ) ) : ?>
 						<?php etheme_footer_demo(1); ?>
 					<?php else: ?>
 						<?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
 					<?php endif; ?>
 				</div>
-				<div class="span4 footer_block footer-big-block">
+				<div class="col-xs-4 footer_block footer-big-block">
 					<?php if ( !is_active_sidebar( 'second-footer-widget-area' ) ) : ?>
 						<?php etheme_footer_demo(2); ?>
 					<?php else: ?>
 						<?php dynamic_sidebar( 'second-footer-widget-area' ); ?>
 					<?php endif; ?>
 				</div>
-				<div class="span4 footer_block">
+				<div class="col-xs-4 footer_block">
 					<?php if ( !is_active_sidebar( 'third-footer-widget-area' ) ) : ?>
 						<span class="footer_title"><?php _e( 'Recent Tweets', ETHEME_DOMAIN); ?></span>
 					<?php else: ?>
@@ -34,20 +34,20 @@
 	<div class="footer-black-bg">
 		<div class="container no-bg">
 			<div class="row after_footer">
-				<div class="span6" id="after_footer_logo">
+				<div class="hidden" id="after_footer_logo">
 					<img src="<?php echo PARENT_URL.'/images/logo-footer.png'; ?>">
 				</div>
-				<div class="span6" id="after_footer_menu">
+				<div class="col-xs-8" id="after_footer_menu">
 					<?php if ( !is_active_sidebar( 'copyrights-area' ) ) : ?>
 						<?php etheme_footer_demo(8); ?>
 					<?php else: ?>
 						<?php dynamic_sidebar( 'copyrights-area' ); ?>
 					<?php endif; ?>
-					<!-- <div class="span6 footer-copyright">
-						<span class="copyright"><?php etheme_option('copyright') ?></span>
+					<!-- <div class="col-xs-6 footer-copyright">
+						<span class="copyright"><?php //etheme_option('copyright') ?></span>
 					</div> -->
 				</div>
-				<div class="span6" id="after_footer_payments">
+				<div class="col-xs-4" id="after_footer_payments">
 					<?php if ( !is_active_sidebar( 'payments-area' ) ) : ?>
 						<?php etheme_footer_demo(9); ?>
 					<?php else: ?>
@@ -65,7 +65,7 @@
 		</div>
 	</div>
 	<?php if(etheme_get_option('responsive')): ?>
-	<div class="span12 responsive-switcher visible-phone visible-tablet <?php if(!$etheme_responsive) echo 'visible-desktop'; ?>">
+	<div class="col-xs-12 hidden <?php if(!$etheme_responsive) echo 'visible-desktop'; ?>">
 		<?php _e('Mobile version', ETHEME_DOMAIN) ?>:
 		<?php if($etheme_responsive): ?>
 			<a href="<?php echo home_url(); ?>/?responsive=off"><?php _e('Enabled',	ETHEME_DOMAIN) ?></a>

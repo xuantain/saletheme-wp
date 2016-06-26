@@ -13,19 +13,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		get_header('shop');
 ?>
 
-<style media="screen">
-	#products-grid .product-grid {
-		border: 1px solid #ccc;
-		margin-left: 25px;
-	}
-	#products-grid .product-grid.lastspan3 {
-		width: 270px !important;
-	}
-	#products-grid .product-grid:hover {
-		border: 1px solid #ccc;
-	}
-</style>
-
 <div class="container">
 		<div class="row">
 				<div class="span12 breadcrumbs">

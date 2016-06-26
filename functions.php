@@ -31,8 +31,8 @@ register_sidebar(array(
 		'description' => 'Khu vực hiển thị cho sidebar bên trái',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>'
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>'
 ));
 register_sidebar(array(
 		'name' => 'Sidebar custom - Phải',
@@ -40,8 +40,8 @@ register_sidebar(array(
 		'description' => 'Khu vực hiển thị cho sidebar bên phải trang chủ',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>'
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>'
 ));
 register_sidebar(array(
 		'name' => 'Chuyên trang widget',
@@ -109,3 +109,7 @@ function remove_checkout_fields( $fields ) {
 
 		return $fields;
 }
+function new_excerpt_length($length) {
+	return 20;
+}
+add_filter('excerpt_length', 'new_excerpt_length');

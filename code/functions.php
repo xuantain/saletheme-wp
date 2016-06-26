@@ -44,15 +44,15 @@ function etheme_enqueue_styles() {
 
 		$custom_css = etheme_get_option('custom_css');
 		if ( !is_admin() ) {
-				wp_enqueue_style("reset",get_stylesheet_directory_uri().'/css/reset.css');
+				// wp_enqueue_style("reset",get_stylesheet_directory_uri().'/css/reset.css');
 				wp_enqueue_style("bootstrap",get_template_directory_uri().'/css/bootstrap.min.css');
 				wp_enqueue_style("style",get_stylesheet_directory_uri().'/style.css');
 				if($etheme_responsive){
 						//wp_enqueue_style("bootstrap-responsive",get_template_directory_uri().'/css/bootstrap-responsive.css');
 						//wp_enqueue_style("responsive",get_template_directory_uri().'/css/responsive.css');
 				}
-				wp_enqueue_style("slider",get_template_directory_uri().'/css/slider.css');
-				wp_enqueue_style("font-awesome",get_template_directory_uri().'/css/font-awesome.min.css');
+				// wp_enqueue_style("slider",get_template_directory_uri().'/css/slider.css');
+				// wp_enqueue_style("font-awesome",get_template_directory_uri().'/css/font-awesome.min.css');
 				wp_enqueue_style("cbpQTRotator",get_template_directory_uri().'/code/testimonials/assets/css/component.css');
 				if($custom_css) {
 						wp_enqueue_style("custom",get_template_directory_uri().'/custom.css');
@@ -88,8 +88,8 @@ function etheme_enqueue_styles() {
 				wp_enqueue_script('etheme', get_template_directory_uri().'/js/script.js',$script_depends);
 		}
 
-	wp_dequeue_style('woocommerce_prettyPhoto_css');
-	wp_enqueue_style( 'woocommerce_prettyPhoto_css', get_template_directory_uri().'/css/prettyPhoto.css');
+	// wp_dequeue_style('woocommerce_prettyPhoto_css');
+	// wp_enqueue_style( 'woocommerce_prettyPhoto_css', get_template_directory_uri().'/css/prettyPhoto.css');
 
 }
 /** Remove white space around shrtcodes */
@@ -1271,10 +1271,10 @@ function change_existing_currency_symbol( $currency_symbol, $currency ) {
 	return $currency_symbol;
 }
 // Giá cũ và giá mới trên 2 dòng
-add_filter( 'woocommerce_get_price_html', 'gia_cu_moi_html', 100, 2 );
-function gia_cu_moi_html( $price, $product ){
-	$price = str_replace('<ins>', '<br /><ins>', $price );
-	$price = str_replace('<del><span class="amount">', '<del><span class="giacu">', $price);
+add_filter( 'woocommerce_get_price_html', 'the_product_price_old_new', 100, 2 );
+function the_product_price_old_new( $price, $product ){
+	$price = str_replace('<ins>', '<ins>', $price );
+	$price = str_replace('<del><span class="amount">', '<del><span class="old-price">', $price);
 	return $price;
 }
 // Đưa Mô tả và Đánh giá lên trên (trang chi tiết sản phẩm)

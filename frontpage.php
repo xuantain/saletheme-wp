@@ -12,7 +12,7 @@
 
 <div class="container <?php echo $sidebarname; ?>">
 	<div class="row">
-		<div class="span8">
+		<div class="col-xs-12 col-sm-8 xs-no-padding">
 			<?php $frontpage_query = new WP_Query( array ( 'page_id' => $current_page_id ) ); ?>
 			<?php if ( $frontpage_query->have_posts() ) : ?>
 				<?php while ( $frontpage_query->have_posts() ) : $frontpage_query->the_post(); ?>
@@ -20,7 +20,7 @@
 				<?php endwhile; ?>
 			<?php endif; ?>
 		</div>
-		<div class="span4 sidebar_right">
+		<div class="col-xs-12 col-sm-4 sidebar-right">
 			<?php dynamic_sidebar('about-sidebar-right'); ?>
 		</div>
 	</div>
