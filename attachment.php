@@ -6,7 +6,7 @@
 get_header(); ?>
 <div class="container">
 		<div class="row">
-				<div class="span12 grid_content">
+				<div class="col-xs-12 grid_content">
 					<?php
 					/* Run the loop to output the attachment.
 					 * If you want to overload this in a child theme then include a file

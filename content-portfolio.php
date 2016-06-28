@@ -18,16 +18,16 @@ switch($columns) {
 		$span = '';
 	break;
 	case 2:
-		$span = 'span6';
+		$span = 'col-xs-6';
 	break;
 	case 3:
-		$span = 'span4';
+		$span = 'col-xs-4';
 	break;
 	case 4:
-		$span = 'span3';
+		$span = 'col-xs-3';
 	break;
 	default:
-		$span = 'span4';
+		$span = 'col-xs-4';
 	break;
 }
 
@@ -35,7 +35,7 @@ switch($columns) {
 
 ?>
 <div class="portfolio-item <?php echo $span; ?> <?php echo $catsClass; ?>">        
-	<div class="portfolio-image <?php if($columns == 1) echo 'span4'; ?>">
+	<div class="portfolio-image <?php if($columns == 1) echo 'col-xs-4'; ?>">
         <?php the_post_thumbnail() ?>
         <div class="portfolio-mask"></div>
         <div class="portfolio-descr">
@@ -53,7 +53,7 @@ switch($columns) {
         </div>
     </div>
     <?php if($columns == 1): ?>
-    	<div class="span8">
+    	<div class="col-xs-8">
 	    	
 	    	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             <div class="post-information">

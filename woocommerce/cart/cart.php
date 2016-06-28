@@ -97,9 +97,9 @@ do_action( 'woocommerce_before_cart' );
 						<td class="product-name">
 							<?php
 								if ( ! $_product->is_visible() || ( $_product instanceof WC_Product_Variation && ! $_product->parent_is_visible() ) )
-									echo apply_filters( 'woocommerce_in_cart_product_title', $_product->get_title(), $values, $cart_item_key );
+									echo apply_filters( 'woocommerce_in_cart_product-title', $_product->get_title(), $values, $cart_item_key );
 								else
-									printf('<a href="%s">%s</a>', esc_url( get_permalink( apply_filters('woocommerce_in_cart_product_id', $values['product_id'] ) ) ), apply_filters('woocommerce_in_cart_product_title', $_product->get_title(), $values, $cart_item_key ) );
+									printf('<a href="%s">%s</a>', esc_url( get_permalink( apply_filters('woocommerce_in_cart_product_id', $values['product_id'] ) ) ), apply_filters('woocommerce_in_cart_product-title', $_product->get_title(), $values, $cart_item_key ) );
 
 									// Meta data
 									echo $woocommerce->cart->get_item_data( $values );
@@ -185,19 +185,19 @@ do_action( 'woocommerce_before_cart' );
 <!-- <form action="<?php echo esc_url( $get_checkout_url ); ?>" method="post"> -->
 	<div class="row">
 	<?php if ( sizeof($woocommerce->cart->get_cart()) > 0 ) : ?>
-			<div class="span4">
+			<div class="col-xs-4">
 					<!-- ----------------------------------------------- -->
 					<!-- ----------------- BILLING --------------------- -->
 					<!-- ----------------------------------------------- -->
 					<?php do_action('woocommerce_checkout_billing'); ?>
 			</div>
-			<div class="span4">
+			<div class="col-xs-4">
 					<!-- ----------------------------------------------- -->
 					<!-- ----------------- SHIPPING -------------------- -->
 					<!-- ----------------------------------------------- -->
 					<?php do_action('woocommerce_checkout_shipping'); ?>
 			</div>
-			<div class="span4">
+			<div class="col-xs-4">
 				<div class="woocommerce-pay">
 					<h3><?php _e( 'Payment', ETHEME_DOMAIN ); ?></h3>
 					<ul class="payment_methods methods">
@@ -229,7 +229,7 @@ do_action( 'woocommerce_before_cart' );
 					</ul>
 				</div>
 			</div>
-			<div class="span4 btn-group">
+			<div class="col-xs-4 btn-group">
 				<?php if($isAccordion): ?>
 					<a class="button btn-checkout" href="../thanh-toan"><span><?php _e('Payment', ETHEME_DOMAIN) ?></span></a>
 				<?php endif; ?>

@@ -12,11 +12,11 @@ get_header(); ?>
 <div class="container">
 		<div class="row">
 				<?php if($blog_sidebar_responsive == 'top'): ?>
-				<div class="span3 sidebar_grid sidebar_<?php echo $blog_sidebar ?>">
+				<div class="col-xs-3 sidebar_grid sidebar_<?php echo $blog_sidebar ?>">
 						<?php get_sidebar(); ?>
 				</div>
 				<?php endif; ?>
-				<div class="<?php echo ($blog_sidebar)? 'span9':'span12'; ?> grid_content with-sidebar-<?php echo $blog_sidebar ?>">
+				<div class="<?php echo ($blog_sidebar)? 'col-xs-9':'col-xs-12'; ?> grid_content with-sidebar-<?php echo $blog_sidebar ?>">
 				<?php
 					/* Queue the first post, that way we know who
 					 * the author is when we try to get their name,
@@ -59,7 +59,7 @@ get_header(); ?>
 						?>
 				</div><!-- #content -->
 				<?php if($blog_sidebar_responsive == 'bottom'): ?>
-				<div class="span3 sidebar_grid sidebar_<?php echo $blog_sidebar ?>">
+				<div class="col-xs-3 sidebar_grid sidebar_<?php echo $blog_sidebar ?>">
 						<?php get_sidebar(); ?>
 				</div>
 				<?php endif; ?>

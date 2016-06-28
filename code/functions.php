@@ -44,14 +44,15 @@ function etheme_enqueue_styles() {
 
 		$custom_css = etheme_get_option('custom_css');
 		if ( !is_admin() ) {
-				wp_enqueue_style("bootstrap",get_template_directory_uri().'/css/bootstrap.css');
+				// wp_enqueue_style("reset",get_stylesheet_directory_uri().'/css/reset.css');
+				wp_enqueue_style("bootstrap",get_template_directory_uri().'/css/bootstrap.min.css');
 				wp_enqueue_style("style",get_stylesheet_directory_uri().'/style.css');
 				if($etheme_responsive){
-						wp_enqueue_style("bootstrap-responsive",get_template_directory_uri().'/css/bootstrap-responsive.css');
-						wp_enqueue_style("responsive",get_template_directory_uri().'/css/responsive.css');
+						//wp_enqueue_style("bootstrap-responsive",get_template_directory_uri().'/css/bootstrap-responsive.css');
+						//wp_enqueue_style("responsive",get_template_directory_uri().'/css/responsive.css');
 				}
-				wp_enqueue_style("slider",get_template_directory_uri().'/css/slider.css');
-				wp_enqueue_style("font-awesome",get_template_directory_uri().'/css/font-awesome.min.css');
+				// wp_enqueue_style("slider",get_template_directory_uri().'/css/slider.css');
+				// wp_enqueue_style("font-awesome",get_template_directory_uri().'/css/font-awesome.min.css');
 				wp_enqueue_style("cbpQTRotator",get_template_directory_uri().'/code/testimonials/assets/css/component.css');
 				if($custom_css) {
 						wp_enqueue_style("custom",get_template_directory_uri().'/custom.css');
@@ -69,25 +70,27 @@ function etheme_enqueue_styles() {
 						$script_depends = array('wc-add-to-cart-variation');
 				}
 
-				wp_enqueue_script("jquery");
-				wp_enqueue_script('jquery.easing', get_template_directory_uri().'/js/jquery.easing.1.3.min.js',array(),false,true);
-				wp_enqueue_script('cookie', get_template_directory_uri().'/js/cookie.js',array());
-				wp_enqueue_script('jquery.nicescroll', get_template_directory_uri().'/js/jquery.nicescroll.min.js',array(),false,true);
-				wp_enqueue_script('hoverIntent', get_template_directory_uri().'/js/hoverIntent.js',array(),false,true);
-				wp_enqueue_script('jquery.slider', get_template_directory_uri().'/js/jquery.slider.js',array(),false,true);
-				wp_enqueue_script('modernizr.custom', get_template_directory_uri().'/js/modernizr.custom.js');
-				wp_enqueue_script('cbpQTRotator', get_template_directory_uri().'/js/jquery.cbpQTRotator.min.js',array(),false,true);
-				wp_enqueue_script('jquery.inview', get_template_directory_uri().'/js/jquery.inview.js',array(),false,true);
-				wp_enqueue_script('modals', get_template_directory_uri().'/js/modals.js',array(),false,true);
-				wp_enqueue_script('tooltip', get_template_directory_uri().'/js/tooltip.js');
-				wp_enqueue_script('prettyPhoto', get_template_directory_uri().'/js/jquery.prettyPhoto.js');
-				wp_enqueue_script('et_masonry', get_template_directory_uri().'/js/jquery.masonry.min.js',array(),false,true);
-				wp_enqueue_script('flexslider', get_template_directory_uri().'/js/jquery.flexslider-min.js',array(),false,true);
-				wp_enqueue_script('etheme', get_template_directory_uri().'/js/script.js',$script_depends);
+				wp_enqueue_script("woocommerce_jquery_js");
+				wp_enqueue_script('woocommerce_jquery.easing_js', get_template_directory_uri().'/js/jquery.easing.1.3.min.js');
+				wp_enqueue_script('woocommerce_bootstrap_js', get_template_directory_uri().'/js/bootstrap.min.js');
+				wp_enqueue_script('woocommerce_cookie_js', get_template_directory_uri().'/js/cookie.js',array());
+				wp_enqueue_script('woocommerce_jquery.nicescroll_js', get_template_directory_uri().'/js/jquery.nicescroll.min.js');
+				wp_enqueue_script('woocommerce_hoverIntent_js', get_template_directory_uri().'/js/hoverIntent.js');
+				wp_enqueue_script('woocommerce_jquery.slider_js', get_template_directory_uri().'/js/jquery.slider.js');
+				wp_enqueue_script('woocommerce_modernizr.custom_js', get_template_directory_uri().'/js/modernizr.custom.js');
+				wp_enqueue_script('woocommerce_cbpQTRotator_js', get_template_directory_uri().'/js/jquery.cbpQTRotator.min.js');
+				wp_enqueue_script('woocommerce_jquery.inview_js', get_template_directory_uri().'/js/jquery.inview.js');
+				wp_enqueue_script('woocommerce_modals_js', get_template_directory_uri().'/js/modals.js');
+				wp_enqueue_script('woocommerce_tooltip_js', get_template_directory_uri().'/js/tooltip.js');
+				wp_enqueue_script('woocommerce_prettyPhoto_js', get_template_directory_uri().'/js/jquery.prettyPhoto.js');
+				wp_enqueue_script('woocommerce_et_masonry_js', get_template_directory_uri().'/js/jquery.masonry.min.js');
+				wp_enqueue_script('woocommerce_flexslider_js', get_template_directory_uri().'/js/jquery.flexslider-min.js');
+				wp_enqueue_script('woocommerce_zoom_js', get_template_directory_uri().'/js/zoom.js');
+				wp_enqueue_script('woocommerce_etheme_js', get_template_directory_uri().'/js/script.js',$script_depends);
 		}
 
 	wp_dequeue_style('woocommerce_prettyPhoto_css');
-	wp_enqueue_style( 'woocommerce_prettyPhoto_css', get_template_directory_uri().'/css/prettyPhoto.css');
+	wp_enqueue_style('woocommerce_prettyPhoto_css', get_template_directory_uri().'/css/prettyPhoto.css');
 
 }
 /** Remove white space around shrtcodes */
@@ -189,15 +192,13 @@ add_filter('custom_header_filter', 'get_header_type',10);
 
 function etheme_header_menu(){
 
-	$menuClass = 'menu '.etheme_get_option('menu_type').'-menu';
+	// $menuClass = 'menu '.etheme_get_option('menu_type').'-menu';
+	$menuClass = 'nav navbar-nav';
 	if(!etheme_get_option('menu_type')){
 		$menuClass = 'menu default-menu';
 	}
-	?>
-		<div id="main-nav">
-			<?php wp_nav_menu(array('theme_location' => 'top', 'name' => 'top', 'container' => 'div', 'container_class' => $menuClass)); ?>
-		</div>
-	<?php
+
+	wp_nav_menu(array('theme_location' => 'top', 'name' => 'top', 'container' => 'ul', 'menu_class' => $menuClass));
 }
 
 function etheme_header_wp_navigation(){
@@ -210,7 +211,7 @@ function register_header_cat_navigation() {
 add_action('init', 'register_header_cat_navigation');
 
 function etheme_header_cat_navigation() {
-	wp_nav_menu(array('theme_location' => 'cat-nav', 'name' => 'cat-nav', 'container' => 'div', 'container_class' => 'menu cat-nav-menu'));
+	wp_nav_menu(array('theme_location' => 'cat-nav', 'name' => 'cat-nav', 'container' => 'ul', 'menu_class' => 'nav navbar-nav'));
 }
 
 function etheme_logo() {
@@ -221,7 +222,7 @@ function etheme_logo() {
 	}
 	?>
 	<?php if($logoimg): ?>
-		<a href="<?php echo home_url(); ?>"><img src="<?php echo $logoimg ?>" alt="<?php bloginfo( 'description' ); ?>" /></a>
+		<a href="<?php echo home_url(); ?>"><img class="navbar-brand" src="<?php echo $logoimg ?>" alt="<?php bloginfo( 'description' ); ?>" /></a>
 	<?php else: ?>
 		<a href="<?php echo home_url(); ?>"><span class="logo-text-red">Thegioiphukienso</span></a>
 	<?php endif ;
@@ -941,7 +942,7 @@ function blog_breadcrumbs() {
 
 	} else {
 
-		echo '<div class="span12 breadcrumbs">';
+		echo '<div class="col-xs-12 breadcrumbs">';
 		echo '<div id="breadcrumb">';
 		echo '<a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . ' ';
 
@@ -1271,10 +1272,10 @@ function change_existing_currency_symbol( $currency_symbol, $currency ) {
 	return $currency_symbol;
 }
 // Giá cũ và giá mới trên 2 dòng
-add_filter( 'woocommerce_get_price_html', 'gia_cu_moi_html', 100, 2 );
-function gia_cu_moi_html( $price, $product ){
-	$price = str_replace('<ins>', '<br /><ins>', $price );
-	$price = str_replace('<del><span class="amount">', '<del><span class="giacu">', $price);
+add_filter( 'woocommerce_get_price_html', 'the_product_price_old_new', 100, 2 );
+function the_product_price_old_new( $price, $product ){
+	$price = str_replace('<ins>', '<ins>', $price );
+	$price = str_replace('<del><span class="amount">', '<del><span class="old-price">', $price);
 	return $price;
 }
 // Đưa Mô tả và Đánh giá lên trên (trang chi tiết sản phẩm)

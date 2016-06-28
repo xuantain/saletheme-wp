@@ -18,11 +18,11 @@ get_header(); ?>
 		<div class="row">
 			<?php blog_breadcrumbs(); ?>
 				<?php if($position && $responsive == 'top'): ?>
-						<div class="span3 sidebar_grid sidebar_<?php echo $position ?>">
+						<div class="col-xs-3 sidebar_grid sidebar_<?php echo $position ?>">
 								<?php get_sidebar($sidebarname); ?>
 						</div>
 				<?php endif; ?>
-				<div class="<?php echo ($position)? 'span9':'span12'; ?> grid_content with-sidebar-<?php echo $position ?>">
+				<div class="<?php echo ($position)? 'col-xs-9':'col-xs-12'; ?> grid_content with-sidebar-<?php echo $position ?>">
 
 				<?php
 				/* Run the loop to output the posts.
@@ -33,7 +33,7 @@ get_header(); ?>
 				?>
 				</div><!-- #content -->
 					<?php if($position && $responsive == 'bottom'): ?>
-							<div class="span3 sidebar_grid sidebar_<?php echo $position ?>">
+							<div class="col-xs-3 sidebar_grid sidebar_<?php echo $position ?>">
 									<?php get_sidebar($sidebarname); ?>
 							</div>
 					<?php endif; ?>

@@ -38,18 +38,18 @@ wc_print_notices();
 							<!-- ----------------------------------------------- -->
 							<!-- ----------------- BILLING --------------------- -->
 							<!-- ----------------------------------------------- -->
-							<div class="span4">
+							<div class="col-xs-4">
 									<?php do_action('woocommerce_checkout_billing'); ?>
 							</div>
 
 							<!-- ----------------------------------------------- -->
 							<!-- ----------------- SHIPPING -------------------- -->
 							<!-- ----------------------------------------------- -->
-							<div class="span4">
+							<div class="col-xs-4">
 									<?php do_action('woocommerce_checkout_shipping'); ?>
 							</div>
 
-							<div class="span4">
+							<div class="col-xs-4">
 								<div class="woocommerce-pay">
 									<h3><?php _e( 'Payment', ETHEME_DOMAIN ); ?></h3>
 									<ul class="payment_methods methods">
@@ -83,7 +83,7 @@ wc_print_notices();
 							</div>
 
 							<!-- <?php //if ( ! $is_ajax ) : ?><div id="order_review"><?php //endif; ?> -->
-							<div class="span4 btn-group">
+							<div class="col-xs-4 btn-group">
 
 								<?php do_action( 'woocommerce_review_order_before_payment' ); ?>
 

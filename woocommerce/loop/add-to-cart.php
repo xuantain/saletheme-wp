@@ -13,10 +13,10 @@ global $product;
 $ajax_addtocart = etheme_get_option('ajax_addtocart');
 
 ?>
-<div class="btn-cont">
+<div class="add-to-card-btn">
 	<?php
 	echo apply_filters( 'woocommerce_loop_add_to_cart_link',
-		sprintf( '<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" class="button %s product_type_%s">%s</a>',
+		sprintf( '<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" class="col-xs-5 btn btn-sm btn-primary %s product_type_%s">%s</a>',
 			esc_url( $product->add_to_cart_url() ),
 			esc_attr( $product->id ),
 			esc_attr( $product->get_sku() ),
@@ -29,7 +29,7 @@ $ajax_addtocart = etheme_get_option('ajax_addtocart');
 // dung ajax de custom duong link dan den trang thanh toan sau khi add thanh cong product
 // ajax xu ly dat tai frontpage.php ---> stupid way
 	echo apply_filters( 'woocommerce_loop_add_to_cart_link',
-		sprintf( '<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" class="button %s product_type_%s" onclick="add_to_cart_redirect_ajax(\'%s\')">%s</a>',
+		sprintf( '<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" class="col-xs-offset-1 col-xs-6 btn btn-sm btn-primary %s product_type_%s" onclick="add_to_cart_redirect_ajax(\'%s\')">%s</a>',
 			esc_url( $product->add_to_cart_url() ),
 			esc_attr( $product->id ),
 			esc_attr( $product->get_sku() ),

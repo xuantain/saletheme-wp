@@ -6,11 +6,11 @@ get_header(); ?>
 <div class="container">
 		<div class="row">
 				<?php if($blog_sidebar_responsive == 'top'): ?>
-				<div class="span3 sidebar_grid sidebar_<?php echo $blog_sidebar ?>">
+				<div class="col-xs-3 sidebar_grid sidebar_<?php echo $blog_sidebar ?>">
 						<?php get_sidebar(); ?>
 				</div>
 				<?php endif; ?>
-				<div class="<?php echo ($blog_sidebar)? 'span3':'span12'; ?> grid_content with-sidebar-<?php echo $blog_sidebar ?>">
+				<div class="<?php echo ($blog_sidebar)? 'col-xs-3':'col-xs-12'; ?> grid_content with-sidebar-<?php echo $blog_sidebar ?>">
 					<?php if ( have_posts() ) : ?>
 					<h3 class="page-title">
 							<?php if ( is_day() ) : ?>
@@ -35,7 +35,7 @@ get_header(); ?>
 					<?php endif; ?>
 				</div><!-- #content -->
 				<?php if($blog_sidebar_responsive == 'bottom'): ?>
-				<div class="span3 sidebar_grid sidebar_<?php echo $blog_sidebar ?>">
+				<div class="col-xs-3 sidebar_grid sidebar_<?php echo $blog_sidebar ?>">
 						<?php get_sidebar(); ?>
 				</div>
 				<?php endif; ?>

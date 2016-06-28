@@ -1,5 +1,11 @@
 jQuery(document).ready(function() {
 
+		/* Loader */
+
+		jQuery("#loader-status").fadeOut().remove();
+		jQuery("#loader").delay(300).fadeOut("slow").remove();
+
+
 		/* Search form
 		-------------------------------------------------------------- */
 
@@ -90,7 +96,7 @@ jQuery(document).ready(function() {
 		jQuery(window).scroll(function() {
 				var fixedHeader = jQuery('.fixed-header-area');
 				var scrollTop = jQuery(this).scrollTop();
-				var headerHeight = jQuery('.header-top').height() + jQuery('.header-bg').height();
+				var headerHeight = jQuery('.static-header-area').height();
 				var stickybar = jQuery('.stickybar');
 
 				if (scrollTop > headerHeight) {
@@ -564,7 +570,7 @@ jQuery(document).ready(function() {
 										jQuery('.widget_shopping_cart').html(jQuery(data).find('.widget_shopping_cart').html());
 										productImageSrc = jQuery('.main-image img').attr('src');
 										productImage = '<img width="72" src="' + productImageSrc + '" />';
-										productName = jQuery('.product_description_mainblock > h1').text();
+										productName = jQuery('.product-description-mainblock > h1').text();
 										cartHref = jQuery('#top-cart > a').attr('href');
 										popupHtml = productImage + '<em>' + productName + '</em> <br> ' + successfullyAdded2;
 										popupWindow.find('.etheme-popup-content').css('backgroundImage', 'none').html(popupHtml);
@@ -748,11 +754,6 @@ jQuery(document).ready(function() {
 		/* Testimonials Gallery */
 
 		jQuery('.testimonials-slider').cbpQTRotator();
-
-		/* Loader */
-
-		jQuery("#loader-status").fadeOut().remove();
-		jQuery("#loader").delay(300).fadeOut("slow").remove();
 
 		/* ----------------------------------------------------------------------------- */
 

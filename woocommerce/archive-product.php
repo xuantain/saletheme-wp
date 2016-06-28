@@ -13,22 +13,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		get_header('shop');
 ?>
 
-<style media="screen">
-	#products-grid .product-grid {
-		border: 1px solid #ccc;
-		margin-left: 25px;
-	}
-	#products-grid .product-grid.lastspan3 {
-		width: 270px !important;
-	}
-	#products-grid .product-grid:hover {
-		border: 1px solid #ccc;
-	}
-</style>
-
 <div class="container">
 		<div class="row">
-				<div class="span12 breadcrumbs">
+				<div class="col-xs-12 breadcrumbs">
 					<?php
 							do_action('woocommerce_before_main_content');
 							extract(etheme_get_shop_sidebar());
@@ -42,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 <div class="container">
 		<div class="row">
 			<?php if($product_sidebar && $responsive == 'top') : ?>
-				<!-- <div id="products-sidebar" class="span3 sidebar_grid leftnav acc_enabled sidebar_<?php echo $grid_sidebar ?>">
+				<!-- <div id="products-sidebar" class="col-xs-3 sidebar_grid leftnav acc_enabled sidebar_<?php echo $grid_sidebar ?>">
 					<?php if ( is_active_sidebar( 'product-widget-area' ) ) : ?>
 							<?php dynamic_sidebar( 'product-widget-area' ); ?>
 					<?php else: ?>
@@ -51,7 +38,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 						<div class="clear"></div>
 				</div> -->
 			<?php endif; ?>
-				<div id="default_products_page_container" class="grid_content span12">
+				<div id="default_products_page_container" class="grid_content col-xs-12">
 					<?php
 							global $wp_query;
 							$cat = $wp_query->get_queried_object();
@@ -131,7 +118,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 				</div>
 
 				<?php if($product_sidebar && $responsive == 'bottom') : ?>
-					<div id="products-sidebar" class="span3 sidebar_grid leftnav acc_enabled sidebar_<?php echo $grid_sidebar ?>">
+					<div id="products-sidebar" class="col-xs-3 sidebar_grid leftnav acc_enabled sidebar_<?php echo $grid_sidebar ?>">
 						<?php if ( is_active_sidebar( 'product-widget-area' ) ) : ?>
 							<?php dynamic_sidebar( 'product-widget-area' ); ?>
 							<?php else: ?>

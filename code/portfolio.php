@@ -137,7 +137,7 @@ function etheme_create_portfolio_slider($args,$title = false,$enable_slider_from
         		while ($multislides->have_posts()) : $multislides->the_post();
                     $_i++;
                 
-                    echo '<div class="slide span3 portfolio-slide">';
+                    echo '<div class="slide col-xs-3 portfolio-slide">';
                         get_template_part( 'portfolio', 'slide' );
                     echo '</div><!-- slide -->';
                      

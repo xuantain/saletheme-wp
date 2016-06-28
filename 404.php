@@ -8,7 +8,7 @@ get_header(); ?>
 
         <div class="container">
             <div class="row">
-                <div class="span12 grid_content">
+                <div class="col-xs-12 grid_content">
                     <h1 class="notFound"><?php _e('<strong>404</strong>', ETHEME_DOMAIN); ?></h1>
     				
     				<p><?php _e('Sorry, but the page you are looking for is not found. Please, make sure you’ve typed the current  URL.', ETHEME_DOMAIN); ?> <br />

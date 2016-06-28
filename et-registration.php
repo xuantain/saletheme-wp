@@ -18,7 +18,7 @@ if (!$user_ID) {
         <div class="container">
             <div class="row">
 	            <?php blog_breadcrumbs(); ?>
-                <div class="span12 grid_content with-sidebar-<?php echo $blog_sidebar ?>">			
+                <div class="col-xs-12 grid_content with-sidebar-<?php echo $blog_sidebar ?>">			
                    <?php
                     if(get_option('users_can_register')) {
                         ?>

@@ -13,14 +13,14 @@ get_header();
 ?>
 <div class="container <?php echo $sidebarname; ?>">
 		<div class="row">
-				<div class="span12">
+				<div class="col-xs-12">
 					<?php blog_breadcrumbs(); ?>
 				</div>
-				<div class="<?php echo ($position)? 'span9':'span6'; ?> grid_content with-sidebar-<?php echo $position ?>">
+				<div class="<?php echo ($position)? 'col-xs-9':'col-xs-6'; ?> grid_content with-sidebar-<?php echo $position ?>">
 					<?php $post_id = $wp_query->get_queried_object_id();
 								$title = get_post_field( 'post_title', $post_id );
 								$page_slug = get_post_field( 'post_name', $post_id ); ?>
-						<h1 class="page-title"><?php echo $title; ?></h1>
+						<h3 class="page-title"><?php echo $title; ?></h3>
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 							<?php the_content(); ?>
 							<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', ETHEME_DOMAIN ), 'after' => '' ) ); ?>
@@ -33,7 +33,7 @@ get_header();
 					<?php endif; ?>
 					<div class="clear"></div>
 				</div>
-				<div class="span3 sidebar_grid">
+				<div class="col-xs-3 sidebar_grid">
 						<ul class="regulation-side-bar">
 							<li class="<?php echo ("gioi-thieu" == $page_slug) ? 'current-page' : ''; ?>">
 								<a href="<?php echo site_url(); ?>/gioi-thieu">Giới thiệu công ty</a></li>
@@ -54,7 +54,7 @@ get_header();
 						</ul>
 				</div>
 			<?php if($position && $responsive == 'bottom'): ?>
-				<div class="span3 sidebar_grid sidebar_<?php echo $position ?>">
+				<div class="col-xs-3 sidebar_grid sidebar_<?php echo $position ?>">
 						<?php get_sidebar($sidebarname); ?>
 				</div>
 			<?php endif; ?>

@@ -201,10 +201,10 @@ function etheme_contacts_shortcodes($atts, $content=null) {
 	} else {
 		?>
 
-		<div class="span9 blog1_post contacts-page" id="blog_full_content">
+		<div class="col-xs-9 blog1_post contacts-page" id="blog_full_content">
 			<?php
 			if($a['gmap'] == 1):?>
-				<div class="span9 blog1_post_image" id="map-image">
+				<div class="col-xs-9 blog1_post_image" id="map-image">
 						<div id="map">
 								<p>Enable your JavaScript!</p>
 						</div>
@@ -285,10 +285,10 @@ function etheme_contacts_shortcodes($atts, $content=null) {
 						<?php echo etheme_option('contacts_custom_html') ?>
 				<?php endif; ?>
 				<div id="contactsMsgs" class="clear"></div>
-				<div class="span4 contact_info">
+				<div class="col-xs-4 contact_info">
 						<?php etheme_option('contacts_info'); ?>
 				</div>
-				<div class="span5 blog_full_review_container" id="contact_container">
+				<div class="col-xs-5 blog_full_review_container" id="contact_container">
 						<h2><?php _e('Contact Form', ETHEME_DOMAIN); ?></h2>
 						<form action="<?php the_permalink(); ?>" method="POST" class="form" id="ethemeContactForm">
 								<label for="contactName"><?php _e('Name', ETHEME_DOMAIN); ?> <span class="required">*</span></label>
@@ -560,16 +560,16 @@ function etheme_callto_shortcode($atts, $content = null) {
 				if($a['btn'] != '') {
 
 								if ($a['btn_position'] == 'left') {
-										$output .= '<div class="span3">'.$btn.'</div>';
+										$output .= '<div class="col-xs-3">'.$btn.'</div>';
 								}
-								$output .= '<div class="span9">'. do_shortcode($content) .'</div>';
+								$output .= '<div class="col-xs-9">'. do_shortcode($content) .'</div>';
 
 								if ($a['btn_position'] == 'right') {
-										$output .= '<div class="span3">'.$btn.'</div>';
+										$output .= '<div class="col-xs-3">'.$btn.'</div>';
 								}
 
 				} else{
-						$output .= '<div class="span12">'. do_shortcode($content) .'</div>';
+						$output .= '<div class="col-xs-12">'. do_shortcode($content) .'</div>';
 				}
 		$output .= '</div></div>';
 
@@ -634,19 +634,19 @@ function etheme_column_shortcode($atts, $content = null) {
 		), $atts);
 		switch($a['size']) {
 				case 'one-half':
-						$class = 'span6 ';
+						$class = 'col-xs-6 ';
 				break;
 				case 'one-third':
-						$class = 'span4 ';
+						$class = 'col-xs-4 ';
 				break;
 				case 'two-third':
-						$class = 'span8 ';
+						$class = 'col-xs-8 ';
 				break;
 				case 'one-fourth':
-						$class = 'span3 ';
+						$class = 'col-xs-3 ';
 				break;
 				case 'three-fourth':
-						$class = 'span9 ';
+						$class = 'col-xs-9 ';
 				break;
 				default:
 						$class = $a['size'];
@@ -824,7 +824,7 @@ $a = shortcode_atts(array(
 add_shortcode('team_member', 'etheme_team_member_shortcode');
 function etheme_team_member_shortcode($atts, $content = null) {
 $a = shortcode_atts(array(
-				'class' => 'span4',
+				'class' => 'col-xs-4',
 				'name' => '',
 				'position' => '',
 				'img' => ''
@@ -878,7 +878,7 @@ add_shortcode('ptable','etheme_ptable_shortcode');
 
 function etheme_ptable_shortcode($atts, $content = null) {
 
-	return '<ul class="p-table span3">'.do_shortcode($content).'</ul>';
+	return '<ul class="p-table col-xs-3">'.do_shortcode($content).'</ul>';
 }
 
 add_shortcode('prow','etheme_prow_shortcode');
