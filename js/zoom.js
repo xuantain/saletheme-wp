@@ -1,8 +1,8 @@
 ;(function($, undefined)
 {
     var
-    
-      defaults = 
+
+      defaults =
       {
           'damping': 8,
           'steps': 15,
@@ -11,7 +11,7 @@
           'controls': true,
           'size': 'actual' // actual|src|css-width
       },
-      
+
       p = 'swinxyzoom';
 
     /**
@@ -21,7 +21,7 @@
     {
         this.e = e.get(0);
         this.j = e.first();
-          
+
         if (x != undefined) $.extend(this, x);
     }
 
@@ -37,19 +37,19 @@
         s.options = $['extend']({}, defaults, options);
 
         s.driver = new $.fn.swinxyzoom.modes[s.options['mode']](this);
-        
+
         s.initialised = false; // true when the target elements html is rebuilt
         s.enabled     = false; // true when everything is up and running
         s.waiting     = null;  // holds callback if waiting on user interaction before loading large image
-        
+
         s.element.css({cursor: 'default'});
-    
+
         s.dmp = {cX: 0, tX: 0, cY: 0, tY: 0, timer: false};
 
         s.last = false;
-    
+
         s.hasFocus = false;
-        
+
         /*
          * Internal functions used as callbacks requiring a this = that style
          * closure
@@ -60,7 +60,7 @@
          */
         s._animate = function()
         {
-            var 
+            var
               dmp   = s.dmp,
               sis   = s.si.e.style,
               d     = s.options['damping'],
@@ -76,7 +76,7 @@
                 dmp.timer = false;
             }
         };
-         
+
         /**
          *
          */
@@ -93,7 +93,7 @@
 
             s.zoom(level, s.cursor.lastX, s.cursor.lastY);
         };
-        
+
         /**
          *
          */
@@ -101,19 +101,19 @@
         {
             var
               offset = s.dp.j.offset();
-              
+
             s.dp.ol = offset.left;
             s.dp.ot = offset.top;
-            
+
             s.hasFocus = true;
-            
+
             if (s.options['controls'])
             {
                 s.ct.j.show();
                 s.ct.ol.j.stop().animate({opacity:0.5}, {queue:false});
                 s.ct.j.show();
             }
-            
+
             if ((s.last !== false) && (s.last.w != s.rt.j.width() || s.last.h != s.rt.j.height()))
             {
                 s.rebuild(function()
@@ -123,13 +123,13 @@
                     if (s.driver.load)
                         s.driver.load(s.cursor.lastX, s.cursor.lastY);
 
-                    s.zoom(s.maxZoom, s.cursor.lastX, s.cursor.lastY);   
+                    s.zoom(s.maxZoom, s.cursor.lastX, s.cursor.lastY);
                 });
             }
-            
+
             s.last = {w: s.rt.j.width(), h: s.rt.j.height()};
         };
-        
+
         /**
          *
          */
@@ -137,7 +137,7 @@
         {
             s.hasFocus = false;
             jQuery("html").getNiceScroll().show();
-            
+
             if (s.options['controls'])
             {
                 s.ct.j.hide();
@@ -145,7 +145,7 @@
                 //s.ct.j.stop().animate({opacity:0.0},{queue:false, complete: function() { s.ct.j.hide(); }});
             }
         }
-        
+
         /**
          *
          */
@@ -155,7 +155,7 @@
             jQuery("html").getNiceScroll().hide();
             s.zoom(s.level + Math.round(y * (s.maxZoom / s.options['steps'])), e.pageX, e.pageY);
         };
-        
+
         /**
          *
          */
@@ -164,7 +164,7 @@
             e.preventDefault();
             s.zoom(s.level + Math.round(1 * (s.maxZoom / s.options['steps'])), s.cursor.lastX, s.cursor.lastY);
         };
-        
+
         /**
          *
          */
@@ -173,17 +173,17 @@
              e.preventDefault();
              s.zoom(s.level + Math.round(-1 * (s.maxZoom / s.options['steps'])), s.cursor.lastX, s.cursor.lastY);
         };
-        
+
         var scaleStartLevel;
-        
+
         s._scale = [];
         s._scale[1] = function(e) {  scaleStartLevel = s.level; $('#info').append('start[' + scaleStartLevel + '] '); };
         s._scale[2] = function(e) { $('#info').append('s '); $('#info').append('s[' + Math.abs((scaleStartLevel * e.scale)) + ',' + e.position.x + '] '); s.zoom((scaleStartLevel * e.scale), e.position.x, e.position.y);  };
         s._scale[3] = function(e) {};
-        
+
         var thumbSrc = s.element.children().first().attr('src');
         var largeSrc = s.element.attr('href');
-        
+
         var img = new Image();
         img.onload = function() { s.load(thumbSrc, largeSrc); }
         img.src = thumbSrc;
@@ -196,13 +196,13 @@
     {
         var
           s = this;
-        
+
         if (!thumb)
             thumb = s.dp.tn.src;
-        
+
         if (!large)
             large = s.si.src;
-        
+
         var delayedLoad = function()
         {
             if (hasFocus)
@@ -254,7 +254,7 @@
                             s.driver.load(s.cursor.lastX, s.cursor.lastY);
 
                         s.zoom(((s.maxZoom / s.options.steps) * s.options.zoom), s.cursor.lastX, s.cursor.lastY);
-                        s.rt.j.toggleClass('sxy-zoom-loading');    
+                        s.rt.j.toggleClass('sxy-zoom-loading');
                     });
                 });
 
@@ -274,14 +274,14 @@
                 if (!s.waiting)
                 {
                     s.rt.j.one('sxy-focus', s.waiting = function(e)
-                    {                    
+                    {
                         s.rt.j.toggleClass('sxy-zoom-loading');
                         hndLoad(e.pointers[0].x, e.pointers[0].y);
                     });
                 }
             }
         };
-        
+
         if (s.initialised == false)
         {
             s.tearUp(delayedLoad);
@@ -299,7 +299,7 @@
     {
         var
           i = new Image();
-          
+
         i.onload = function() { cb({ w: i.width, h: i.height }); };
         i.src    = src;
     };
@@ -315,10 +315,10 @@
           vp = s.vp,
           si = s.si,
           vf = s.vf;
-       
+
         // Dragpad
-        
-        $.extend(dp, 
+
+        $.extend(dp,
         {
             w   : (s.options['size'] == 'actual') ? dp.tn.j.width()  : s.rt.j.width(),
             h   : (s.options['size'] == 'actual') ? dp.tn.j.height() : s.rt.j.height(),
@@ -326,27 +326,27 @@
             ot  : dp.j.offset().top,
             hyp : Math.round(Math.sqrt(Math.pow(dp.tn.j.width(), 2) + Math.pow(dp.tn.j.height(), 2)))
         });
-        
+
         // Container
-        
+
         switch (s.options['size'])
         {
             case 'actual':
                 s.rt.j.css({width: dp.w, height:dp.h});
                 break;
-                
+
             case 'src':
                 s.rt.j.css({width: dp.w, height:dp.h});
                 break;
         }
 
         // Viewport
-        
+
         $.extend(vp, { w: dp.w, h: dp.h });
         s.vp.j.css({width: dp.w, height:dp.h});
-        
+
         // Scale Image
-        
+
         s.getNaturalSize(s.si.src, function(siNs)
         {
             $.extend(si,
@@ -387,17 +387,17 @@
     };
 
     /**
-     * 
+     *
      */
     Zoom.prototype.tearUp = function(cb)
     {
         var
           t = null,
           s = this,
-         
+
           tplWrapper = '<div class="sxy-zoom-container sxy-zoom-mode-{mode}" style="width: {w}; height: {h}; position: relative;" ></div>',
-          tplContent =   '<img class="sxy-zoom-bg" src="{srcthumb}" />'
-                       + '{auto}'
+          tplContent =   '<img class="sxy-zoom-bg img-responsive" src="{srcthumb}" />'
+                      //  + '{auto}'
                        + '<div class="sxy-controls">'
                          + '<div class="overlay"></div>'
                          + '<a class="in" href="#"></a>'
@@ -420,7 +420,7 @@
          */
 
         // Target Element
-        
+
         s.el    = new E(s.element);
         s.el.tn = new E(s.element.children());
 
@@ -504,7 +504,7 @@
             s.ct.zout.j.on('click', s._stepOut);
 
             s.ct.sl.j.on('sxy-down sxy-move', s._moveSlider);
-            
+
             cb();
         });
     };
@@ -552,7 +552,7 @@
          */
 
         s.dmp.tX = left;
-        s.dmp.tY = top;                
+        s.dmp.tY = top;
 
         if (animate && s.options['damping'] != false)
         {
@@ -563,11 +563,11 @@
         {
             clearTimeout(s.dmp.timer);
             s.dmp.timer = false;
-            
+
             var sis = s.si.e.style;
             sis.left = (s.dmp.tX = s.dmp.cX = left) + 'px';
-            sis.top  = (s.dmp.tY = s.dmp.cY = top) + 'px';  
-        }  
+            sis.top  = (s.dmp.tY = s.dmp.cY = top) + 'px';
+        }
     };
 
     /**
@@ -576,7 +576,7 @@
     Zoom.prototype.center = function(x, y, animate)
     {
         var s = this;
-        
+
         s.move((-1 * ((x - (s.vf.w / 2)) * s.scale)), (-1 * ((y - (s.vf.h / 2)) * s.scale)), animate);
     };
 
@@ -588,12 +588,12 @@
         var
           s = this,
           t = null;
-        
+
         /*
          * Ensure we never go beyond the calculated maxmimum zoom
          * level
          */
-        
+
         s.level = level;
 
         if (s.level < 0) s.level = 0;
@@ -629,28 +629,28 @@
 
         s.si.mL = (0 - (s.si.w - s.vp.w));
         s.si.mT = (0 - (s.si.h - s.vp.h));
-        
+
         if (s.driver.zoom)
             s.driver.zoom(x, y);
     };
 
     /**
-     * 
+     *
      */
     $.fn[p] = function(method)
     {
         var
           args = Array.prototype.slice.call(arguments, 1);
-        
+
         return this.each(function()
         {
             var zoom;
-            
+
             if((zoom = $.data(this, p)))
             {
                 if(zoom[method])
                     return zoom[method].apply(zoom, args)
-                
+
                 $.error("Method " + method + " does not exist on jQuery.swinxyzoom")
             }
             else
@@ -659,9 +659,9 @@
             }
        });
     }
-    
+
     // Add a container for the various zoom modes
-    
+
     $.fn[p]['modes'] = {};
 })
 (jQuery);
@@ -669,18 +669,18 @@
 ;(function($, undefined)
 {
     var
-      defaults = 
+      defaults =
       {
           position: 'right'
       };
-    
+
     var venderChecked = false;
-    
+
     var
       vendorPropertyMap =
       {
           'backgroundSize':
-          { 
+          {
               'supported'  : false,
               'variations' : ['backgroundSize', 'WebkitBackgroundSize', 'MozBackgroundSize', 'OBackgroundSize', 'msBackgroundSize']
           }
@@ -693,15 +693,15 @@
     function checkVendorPropertyMap(map)
     {
         var checked = 0, supported = 0;
-        
+
         for (var k in map)
         {
             ++checked;
-            
+
             var
               property   = map[k],
               variations = property.variations;
-            
+
             for (var i = 0, m = variations.length; i < m; ++i)
             {
                 if(document.createElement('div').style[variations[i]] !== undefined)
@@ -712,37 +712,37 @@
                 }
             }
         }
-        
+
         return (checked == supported);
     }
-    
+
     /**
      *
      */
     function ZoomDock(b)
     {
         this.initialised = false;
-        
+
         if (!venderChecked) // We only want to run the checks once per page load
         {
             venderChecked = true;
             vendorPropertyMap['_all'] = checkVendorPropertyMap(vendorPropertyMap);
         }
-        
+
         var
           hasFocus  = false,
           s         = this,
           vpLeft    = 0,
           vpTop     = 0,
           useBgSize = vendorPropertyMap.backgroundSize.supported;
-        
+
         var _hndMove = function(e) { var p; if ( e.pointers.length == 1) { p = e.pointers[0]; move(p.x, p.y, true); } };
-        
+
         var
           options = $.extend({}, defaults, ((b.options.dock != undefined) ? b.options.dock : {}));
-        
 
-        
+
+
         function checkBounds(x, y)
         {
             var
@@ -753,10 +753,10 @@
               top    = offset.top,
               right  = left + b.dp.j.width(),
               bottom = top + b.dp.j.height();
-              
+
             return ((y < top || x > right || y > bottom || x < left) ? false : true);
         };
-        
+
         function blur()
         {
             if (hasFocus)
@@ -770,8 +770,8 @@
                     queue: false
                 });
             }
-        };        
-        
+        };
+
         function focus(x, y)
         {
             if (!b.waiting)
@@ -788,16 +788,16 @@
                 s.move(x, y, true);
             }
         };
-        
+
         function tearUp()
         {
             b.rt.j.on('sxy-focus', function(e) { var p = e.pointers[0]; focus(p.x, p.y); });
             b.rt.j.on('sxy-blur',  function(e) {  blur(); });
             b.dp.j.on('sxy-hover sxy-move sxy-down', _hndMove);
-            
+
             // We favour background image scaling over the image tag as it gives considerably better
             // performance accross the range of browsers
-            
+
             if (useBgSize == false)
             {
                 var
@@ -806,12 +806,12 @@
                 b.vf.j.append(img);
                 b.vf.img = { j: img, e: img.get(0) };
             }
-            
+
             s.initialised = true;
         };
-        
+
         var timer = false, lastLeft, lastTop;
-        
+
         function load(x, y)
         {
             switch (options.position)
@@ -820,27 +820,27 @@
                     vpLeft = 0;
                     vpTop  = (-1 * (b.dp.h + 10));
                     break;
-                    
+
                 case 'right':
                     vpLeft = b.dp.w + 10;
                     vpTop  = 0;
                     break;
-                    
+
                 case 'bottom':
                     vpLeft = 0;
                     vpTop = b.dp.h + 10;
                     break;
-                    
+
                 case 'left':
                     vpLeft = (-1 * (b.dp.w + 10));
                     vpTop  = 0;
                     break;
             }
-            
+
             b.vp.j.css({width: 0, height: 0, left: (b.dp.w / 2), top: (b.dp.h / 2)});
             b.dp.ovl.j.css({opacity: 0});
             b.vf.j.css({'position': 'relative', 'overflow': 'hidden'});
-            
+
             lastLeft = lastTop = 0;
 
             if (!s.initialised)
@@ -874,17 +874,17 @@
             var
               vf  = b.vf,
               vfs = b.vf.e.style;
-              
+
             if (vf.l != lastLeft || vf.t != lastTop)
             {
                 vfs.left = (lastLeft = vf.l) + 'px';
                 vfs.top  = (lastTop = vf.t) + 'px';
-                
+
                 if (useBgSize == false)
                 {
                     var
                       vfi = b.vf.img.e.style;
-                      
+
                     vfi.left = '-' + (vf.l + vf.osl) + 'px';
                     vfi.top  = '-' + (vf.t + vf.ost) + 'px';
                 }
@@ -892,7 +892,7 @@
                 {
                     vfs.backgroundPosition = '-' + (vf.l + vf.osl) + 'px' + ' -' + (vf.t + vf.ost) + 'px';
                 }
-                
+
                 timer = setTimeout(_moveViewFinder, 8);
             }
             else
@@ -902,7 +902,7 @@
         }
 
         /**
-         * 
+         *
          */
         function move(x, y, animate)
         {
@@ -912,7 +912,7 @@
                     focus(x, y);
 
                 b.center((x - b.dp.ol), (y - b.dp.ot), animate);
-                
+
                 if (!timer)
                     _moveViewFinder();
             }
@@ -929,7 +929,7 @@
         s.move   = move;
         s.zoom   = zoom;
     }
-    
+
     $.fn['swinxyzoom']['modes']['dock'] = ZoomDock;
 })
 (jQuery);
@@ -943,7 +943,7 @@
     {
         var
           s = this;
-        
+
         this.initialised = false;
 
         function tearUp(x, y)
@@ -952,9 +952,9 @@
             b.rt.j.on('sxy-blur',  function() { blur(); });
             b.dp.j.on('sxy-hover sxy-move sxy-down', function(e) { var p; if ( e.pointers.length == 1) { p = e.pointers[0]; move(p.x, p.y, true); } });
         };
-        
+
         var timer = false, lastLeft, lastTop;
-        
+
         function load(x, y)
         {
             b.vp.j.css({opacity: 0.0, width: b.dp.w, height: b.dp.h, left: 0, top: 0});
@@ -967,7 +967,7 @@
             if (b.hasFocus)
                 s.focus(x, y);
         }
-        
+
         function focus(x, y)
         {
             if (!b.waiting)
@@ -998,7 +998,7 @@
             var
               vf  = b.vf,
               vfs = b.vf.e.style;
-              
+
             if (vf.l != lastLeft || vf.t != lastTop)
             {
                 vfs.left = (lastLeft = vf.l) + 'px';
@@ -1037,11 +1037,11 @@
     function ZoomSlippy(b)
     {
         this.initialised = false;
-        
+
         var
           s = this,
           start = {};
-        
+
         function tearUp()
         {
             b.dp.j.on('sxy-focus', function(e) { focus(e.pointers[0].x, e.pointers[0].y); });
@@ -1059,9 +1059,9 @@
 
             start = { l: 0, t: 0, x: x, y: y };
             b.center((b.dp.w / 2), (b.dp.h / 2), false);
-            
+
             lastLeft = lastTop = 0;
-            
+
             if (!s.initialised)
                 tearUp();
 
@@ -1090,7 +1090,7 @@
         function zoom(x, y)
         {
             b.center(b.cursor.lastX- b.dp.ol, b.cursor.lastY - b.dp.ot, false);
-            b.vf.j.css({left:b.vf.l, top:b.vf.t});  
+            b.vf.j.css({left:b.vf.l, top:b.vf.t});
         };
 
         function _moveViewFinder()
@@ -1098,7 +1098,7 @@
             var
               vf  = b.vf,
               vfs = b.vf.e.style;
-              
+
             if (vf.l != lastLeft || vf.t != lastTop)
             {
                 vfs.left = (lastLeft = vf.l) + 'px';
@@ -1126,21 +1126,21 @@
         s.blur   = blur;
         s.zoom   = zoom;
     }
-    
+
     $.fn['swinxyzoom']['modes']['slippy'] = ZoomSlippy;
 })
 (jQuery);
 
 ;(function($, undefined)
 {
-    var 
-    
+    var
+
       defaults =
       {
           width: 200,
           height: 200
       };
-    
+
     function ZoomLens(b)
     {
         this.initialised = false;
@@ -1155,7 +1155,7 @@
           options = $.extend({}, defaults, ((b.options.lens != undefined) ? b.options.lens : {}));
 
         function tearUp(x, y)
-        {      
+        {
             b.dp.j.swinxytouch('bound');
             b.dp.j.on('sxy-focus', function(e) { focus(e.pointers[0].x, e.pointers[0].y); });
             b.dp.j.on('sxy-blur', function() { blur(); });
@@ -1188,7 +1188,7 @@
                 hasFocus = true;
 
                 b.dp.j.on('sxy-hover sxy-move sxy-down', _hndMove);
-                b.vp.j.show(); 
+                b.vp.j.show();
                 b.vp.j.stop().animate({opacity: 1.0, width: b.vp.w, height: b.vp.h}, { queue: false });
 
                 s.move(x, y, true);
@@ -1211,7 +1211,7 @@
               vf  = b.vf,
               vp  = b.vp,
               vps = b.vp.e.style;
-              
+
             if (vf.l != lastLeft || vf.t != lastTop)
             {
                 vps.left = (b.cursor.lastX - b.dp.ol) - (vp.w / 2) + 'px';

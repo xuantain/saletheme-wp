@@ -94,7 +94,7 @@ class Etheme_WooCommerce_Widget_Cart extends WP_Widget {
 
 								<?php echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="delete-btn" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remove this item', ETHEME_DOMAIN) ), $cart_item_key ); ?>
 
-								<h5><a href="<?php echo get_permalink( $cart_item['product_id'] ); ?>"><?php echo apply_filters('woocommerce_widget_cart_product_title', $_product->get_title(), $_product ) ?></a></h5>
+								<h5><a href="<?php echo get_permalink( $cart_item['product_id'] ); ?>"><?php echo apply_filters('woocommerce_widget_cart_product-title', $_product->get_title(), $_product ) ?></a></h5>
 
 								<div class="qty">
 										<span class="price"><span class="pricedisplay"><?php echo $product_price; ?></span></span><br />

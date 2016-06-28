@@ -70,26 +70,27 @@ function etheme_enqueue_styles() {
 						$script_depends = array('wc-add-to-cart-variation');
 				}
 
-				wp_enqueue_script("jquery");
-				wp_enqueue_script('jquery.easing', get_template_directory_uri().'/js/jquery.easing.1.3.min.js',array(),false,true);
-				wp_enqueue_script('bootstrap', get_template_directory_uri().'/js/bootstrap.min.js',array(),false,true);
-				wp_enqueue_script('cookie', get_template_directory_uri().'/js/cookie.js',array());
-				wp_enqueue_script('jquery.nicescroll', get_template_directory_uri().'/js/jquery.nicescroll.min.js',array(),false,true);
-				wp_enqueue_script('hoverIntent', get_template_directory_uri().'/js/hoverIntent.js',array(),false,true);
-				wp_enqueue_script('jquery.slider', get_template_directory_uri().'/js/jquery.slider.js',array(),false,true);
-				wp_enqueue_script('modernizr.custom', get_template_directory_uri().'/js/modernizr.custom.js');
-				wp_enqueue_script('cbpQTRotator', get_template_directory_uri().'/js/jquery.cbpQTRotator.min.js',array(),false,true);
-				wp_enqueue_script('jquery.inview', get_template_directory_uri().'/js/jquery.inview.js',array(),false,true);
-				wp_enqueue_script('modals', get_template_directory_uri().'/js/modals.js',array(),false,true);
-				wp_enqueue_script('tooltip', get_template_directory_uri().'/js/tooltip.js');
-				wp_enqueue_script('prettyPhoto', get_template_directory_uri().'/js/jquery.prettyPhoto.js');
-				wp_enqueue_script('et_masonry', get_template_directory_uri().'/js/jquery.masonry.min.js',array(),false,true);
-				wp_enqueue_script('flexslider', get_template_directory_uri().'/js/jquery.flexslider-min.js',array(),false,true);
-				wp_enqueue_script('etheme', get_template_directory_uri().'/js/script.js',$script_depends);
+				wp_enqueue_script("woocommerce_jquery_js");
+				wp_enqueue_script('woocommerce_jquery.easing_js', get_template_directory_uri().'/js/jquery.easing.1.3.min.js');
+				wp_enqueue_script('woocommerce_bootstrap_js', get_template_directory_uri().'/js/bootstrap.min.js');
+				wp_enqueue_script('woocommerce_cookie_js', get_template_directory_uri().'/js/cookie.js',array());
+				wp_enqueue_script('woocommerce_jquery.nicescroll_js', get_template_directory_uri().'/js/jquery.nicescroll.min.js');
+				wp_enqueue_script('woocommerce_hoverIntent_js', get_template_directory_uri().'/js/hoverIntent.js');
+				wp_enqueue_script('woocommerce_jquery.slider_js', get_template_directory_uri().'/js/jquery.slider.js');
+				wp_enqueue_script('woocommerce_modernizr.custom_js', get_template_directory_uri().'/js/modernizr.custom.js');
+				wp_enqueue_script('woocommerce_cbpQTRotator_js', get_template_directory_uri().'/js/jquery.cbpQTRotator.min.js');
+				wp_enqueue_script('woocommerce_jquery.inview_js', get_template_directory_uri().'/js/jquery.inview.js');
+				wp_enqueue_script('woocommerce_modals_js', get_template_directory_uri().'/js/modals.js');
+				wp_enqueue_script('woocommerce_tooltip_js', get_template_directory_uri().'/js/tooltip.js');
+				wp_enqueue_script('woocommerce_prettyPhoto_js', get_template_directory_uri().'/js/jquery.prettyPhoto.js');
+				wp_enqueue_script('woocommerce_et_masonry_js', get_template_directory_uri().'/js/jquery.masonry.min.js');
+				wp_enqueue_script('woocommerce_flexslider_js', get_template_directory_uri().'/js/jquery.flexslider-min.js');
+				wp_enqueue_script('woocommerce_zoom_js', get_template_directory_uri().'/js/zoom.js');
+				wp_enqueue_script('woocommerce_etheme_js', get_template_directory_uri().'/js/script.js',$script_depends);
 		}
 
-	// wp_dequeue_style('woocommerce_prettyPhoto_css');
-	// wp_enqueue_style( 'woocommerce_prettyPhoto_css', get_template_directory_uri().'/css/prettyPhoto.css');
+	wp_dequeue_style('woocommerce_prettyPhoto_css');
+	wp_enqueue_style('woocommerce_prettyPhoto_css', get_template_directory_uri().'/css/prettyPhoto.css');
 
 }
 /** Remove white space around shrtcodes */
@@ -941,7 +942,7 @@ function blog_breadcrumbs() {
 
 	} else {
 
-		echo '<div class="span12 breadcrumbs">';
+		echo '<div class="col-xs-12 breadcrumbs">';
 		echo '<div id="breadcrumb">';
 		echo '<a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . ' ';
 

@@ -466,7 +466,7 @@
                 title : 'Team Member',  
                 image : url+'/editor_images/et_tm.png',  
                 onclick : function() {  
-                     ed.selection.setContent('[team_member class="span4" name="John Doe" position="CEO" img="avatar.jpg"]Member description[/team_member]');  
+                     ed.selection.setContent('[team_member class="col-xs-4" name="John Doe" position="CEO" img="avatar.jpg"]Member description[/team_member]');  
                 }  
             });  
         },  

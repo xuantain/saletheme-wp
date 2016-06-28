@@ -12,7 +12,7 @@ get_header(); ?>
 		<div class="row">
 			<?php blog_breadcrumbs(); ?>
 
-				<div class="span12 grid_content">
+				<div class="col-xs-12 grid_content">
 
 
 				<?php /* If there are no posts to display, such as an empty archive page */ ?>
@@ -49,7 +49,7 @@ get_header(); ?>
 								$attachments = get_posts($args);
 								if($attachments || has_post_thumbnail()):
 								?>
-								<div class="attachments-slider nav-type-<?php etheme_option('slider_nav_type'); ?> span6">
+								<div class="attachments-slider nav-type-<?php etheme_option('slider_nav_type'); ?> col-xs-6">
 									<ul class="slides">
 										<?php if(has_post_thumbnail()): ?>
 											<?php $attachment_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full'); ?>
@@ -83,7 +83,7 @@ get_header(); ?>
 
 								<?php endif; ?>
 
-														<div class="portfolio-content span6">
+														<div class="portfolio-content col-xs-6">
 																<h3><?php the_title(); ?></h3>
 																<div class="post-information">
 											<div class="blog_icon_date">

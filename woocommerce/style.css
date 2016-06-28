@@ -62,7 +62,7 @@ form.woocommerce_ordering select {
 div.product {
   position: relative;
 }
-div.product .product_title {
+div.product .product-title {
   clear: none;
   margin-top: 0;
   float: left;

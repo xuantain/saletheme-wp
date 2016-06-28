@@ -15,7 +15,7 @@ get_header('shop'); ?>
 
 <div class="container">
 		<div class="row">
-				<div class="span12 breadcrumbs">
+				<div class="col-xs-12 breadcrumbs">
 						<?php
 								do_action('woocommerce_before_main_content');
 								$product_per_row = etheme_get_option('prodcuts_per_row');

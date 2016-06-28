@@ -15,29 +15,15 @@ extract(etheme_get_page_sidebar());
 
 get_header();
 ?>
-
-<style media="screen">
-	#products-grid .product-grid {
-		border: 1px solid #ccc;
-		margin-left: 25px;
-	}
-	#products-grid .product-grid.lastspan3 {
-		width: 270px !important;
-	}
-	#products-grid .product-grid:hover {
-		border: 1px solid #ccc;
-	}
-</style>
-
 <div class="container <?php echo $sidebarname; ?>">
 		<div class="row">
 			<?php blog_breadcrumbs(); ?>
 			<?php if($position && $responsive == 'top'): ?>
-				<div class="span3 sidebar_grid sidebar_<?php echo $position ?>">
+				<div class="col-xs-4 sidebar_grid sidebar_<?php echo $position ?>">
 						<?php get_sidebar($sidebarname); ?>
 				</div>
 			<?php endif; ?>
-				<div class="<?php echo ($position)? 'span9':'span12'; ?> grid_content with-sidebar-<?php echo $position ?>">
+				<div class="<?php echo ($position)? 'col-xs-8':'col-xs-12'; ?> grid_content with-sidebar-<?php echo $position ?>">
 					<?php $post_id = $wp_query->get_queried_object_id();
 								$title = get_post_field( 'post_title', $post_id ); ?>
 						<h1 class="page-title"><?php echo $title; ?></h1>
@@ -54,7 +40,7 @@ get_header();
 					<div class="clear"></div>
 				</div>
 			<?php if($position && $responsive == 'bottom'): ?>
-				<div class="span3 sidebar_grid sidebar_<?php echo $position ?>">
+				<div class="col-xs-4 sidebar_grid sidebar_<?php echo $position ?>">
 						<?php get_sidebar($sidebarname); ?>
 				</div>
 			<?php endif; ?>

@@ -60,7 +60,7 @@
 
 <?php endif; // end have_comments() ?>
 
-		<div class="span4 blog_full_review_container">
+		<div class="col-xs-4 blog_full_review_container">
 		<?php $comment_args = array(
 				'title_reply'=>'<div class="review_title">'.__('Leave a Comment', ETHEME_DOMAIN).'</div>',
 				'fields' => apply_filters( 'comment_form_default_fields', array(

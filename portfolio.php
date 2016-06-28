@@ -8,7 +8,7 @@
 get_header(); ?>
         <div class="container">
             <div class="row">
-                <div class="span12 grid_content">
+                <div class="col-xs-12 grid_content">
                 	<?php blog_breadcrumbs(); ?>
                 	<h1 class="entry-title"><?php the_title(); ?></h1>
 					<?php 

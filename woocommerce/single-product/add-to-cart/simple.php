@@ -33,7 +33,7 @@ $ajax_addtocart = etheme_get_option('ajax_addtocart');
 
 		<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
 
-		<button type="submit" class="button big active <?php if($ajax_addtocart){?> etheme-simple-product <?php } ?>"><span><?php echo $product->single_add_to_cart_text(); ?></span></button>
+		<button type="submit" class="btn btn-primary <?php if($ajax_addtocart){?>etheme-simple-product <?php } ?>"><span><?php echo $product->single_add_to_cart_text(); ?></span></button>
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>
