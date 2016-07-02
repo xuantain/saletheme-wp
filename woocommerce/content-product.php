@@ -11,7 +11,7 @@
 
 	if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-	global $product, $post, $woocommerce_loop,$woocommerce;
+	global $product, $post, $woocommerce_loop, $woocommerce;
 
 	$product_page_productname = etheme_get_option('product_page_productname');
 	$product_page_price = etheme_get_option('product_page_price');
@@ -40,10 +40,11 @@
 	$product_sidebar = etheme_get_option('product_page_sidebar');
 	$product_img_hover = etheme_get_option('product_img_hover');
 
-	// $class = '';
+	$class = '';
 	// $columns = 0;
 
-	// if ($product_sidebar) {
+	if (is_page( 'home' )) {
+		$class .= 'col-xs-6 col-sm-6 col-md-4';
 	// 	if($product_per_row >= 3) {
 	// 		$class .= 'col-xs-6 col-sm-4';
 	// 		$columns = 3;
@@ -51,7 +52,8 @@
 	// 		$class .= 'col-xs-6 col-sm-6';
 	// 		$columns = 2;
 	// 	}
-	// } else {
+	} else {
+		$class .= 'col-xs-6 col-sm-4 col-md-3';
 	// 	if($product_per_row >= 5) {
 	// 		$class .= 'col-xs-3 col-sm-2';
 	// 		$columns = 6;
@@ -62,10 +64,18 @@
 	// 		$class .= 'col-xs-6';
 	// 		$columns = 2;
 	// 	}
-	// }
+	}
 
-	if($woocommerce_loop['loop'] % 3 == 0){
-		$class .= ' product-last';
+	if($woocommerce_loop['loop'] % 3 == 0) {
+    if (is_page( 'home' )) {
+      $class .= ' product-last';
+    } else {
+      $class .= ' product-last-sm';
+    }
+	}
+
+	if(!is_page( 'home' ) && $woocommerce_loop['loop'] % 4 == 0){
+		$class .= ' product-last-md';
 	}
 
 	if($product_page_productname == 0 && $product_page_price == 0 && $product_page_addocart == 0) {
@@ -73,7 +83,7 @@
 	}
 ?>
 
-<div class="col-xs-6 col-sm-6 col-md-4 no-padding">
+<div class="<?php echo $class; ?> no-padding">
 	<div class="product xs-no-margin">
 	<?php //do_action( 'woocommerce_before_shop_loop_item' ); ?>
 

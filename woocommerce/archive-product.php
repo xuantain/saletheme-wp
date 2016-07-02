@@ -15,30 +15,30 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 <div class="container">
 		<div class="row">
-				<div class="col-xs-12 breadcrumbs">
+				<div class="col-xs-12-fluid col-sm-12 breadcrumbs">
 					<?php
 							do_action('woocommerce_before_main_content');
 							extract(etheme_get_shop_sidebar());
 					?>
-					<a class="back-to" href="javascript: history.go(-1)">
-						<span>&lsaquo;</span> <?php _e('Return to Previous Page', ETHEME_DOMAIN); ?>
-					</a>
+					<!-- <a class="back-to" href="javascript: history.go(-1)">
+						<span>&lsaquo;</span> <?php //_e('Return to Previous Page', ETHEME_DOMAIN); ?>
+					</a> -->
 				</div>
 		</div>
 </div>
 <div class="container">
 		<div class="row">
-			<?php if($product_sidebar && $responsive == 'top') : ?>
-				<!-- <div id="products-sidebar" class="col-xs-3 sidebar_grid leftnav acc_enabled sidebar_<?php echo $grid_sidebar ?>">
-					<?php if ( is_active_sidebar( 'product-widget-area' ) ) : ?>
-							<?php dynamic_sidebar( 'product-widget-area' ); ?>
-					<?php else: ?>
-							<?php //etheme_get_wc_categories_menu() ?>
-					<?php endif; ?>
-						<div class="clear"></div>
-				</div> -->
-			<?php endif; ?>
-				<div id="default_products_page_container" class="grid_content col-xs-12">
+  			<?php //if($product_sidebar && $responsive == 'top') : ?>
+  				<!-- <div id="products-sidebar" class="col-xs-3 sidebar_grid leftnav acc_enabled sidebar_<?php //echo $grid_sidebar ?>">
+  					<?php //if ( is_active_sidebar( 'product-widget-area' ) ) : ?>
+  							<?php //dynamic_sidebar( 'product-widget-area' ); ?>
+  					<?php //else: ?>
+  							<?php //etheme_get_wc_categories_menu() ?>
+  					<?php //endif; ?>
+  						<div class="clear"></div>
+  				</div> -->
+  			<?php //endif; ?>
+				<div id="default_products_page_container" class="col-xs-12-fluid col-sm-12">
 					<?php
 							global $wp_query;
 							$cat = $wp_query->get_queried_object();
@@ -57,20 +57,20 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 								<?php
 							}
 
-							if(isset($cat->description) && $cat->description !='' && !is_shop()) {
+							//if(isset($cat->description) && $cat->description !='' && !is_shop()) {
 								?>
-									<div class="product-category-description">
-										<?php echo do_shortcode($cat->description); ?>
-									</div>
+									<!-- <div class="product-category-description"> -->
+										<?php //echo do_shortcode($cat->description); ?>
+									<!-- </div> -->
 								<?php
-							}
+							//}
 					?>
 					<?php etheme_demo_alerts(); ?>
 					<?php //dynamic_sidebar( 'loc-theo-mau-sac' ); ?>
 					<?php if ( have_posts() ) : ?>
-									<div class="grid_pagination_block">
+									<div class="home-product-grid">
 										<?php do_action('woocommerce_before_shop_loop'); ?>
-											<div class="clear"></div>
+											<div class="row"></div>
 									</div>
 							<?php woocommerce_product_subcategories(array('before'=>'<div class="product_categories_grid">', 'after' => '</div>')); ?>
 
@@ -83,7 +83,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 										}
 								?>
 
-									<div id="products-grid" class="products_grid <?php echo $view_class;	?> row rows-count4">
+									<div id="products-grid" class="<?php echo $view_class;	?>">
 											<?php while ( have_posts() ) : the_post(); ?>
 												<?php woocommerce_get_template_part( 'content', 'product' ); ?>
 											<?php endwhile; // end of the loop. ?>
@@ -116,17 +116,16 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 					<?php dynamic_sidebar( 'under-product-widget-area' ); ?>
 					<?php do_action('woocommerce_after_main_content'); ?>
 				</div>
-
-				<?php if($product_sidebar && $responsive == 'bottom') : ?>
-					<div id="products-sidebar" class="col-xs-3 sidebar_grid leftnav acc_enabled sidebar_<?php echo $grid_sidebar ?>">
-						<?php if ( is_active_sidebar( 'product-widget-area' ) ) : ?>
-							<?php dynamic_sidebar( 'product-widget-area' ); ?>
-							<?php else: ?>
-									<?php etheme_get_wc_categories_menu() ?>
-						<?php endif; ?>
-							<div class="clear"></div>
-					</div>
-				<?php endif; ?>
+				<?php //if($product_sidebar && $responsive == 'bottom') : ?>
+					<!-- <div id="products-sidebar" class="col-xs-3 sidebar_grid leftnav acc_enabled sidebar_<?php //echo $grid_sidebar ?>"> -->
+						<?php //if ( is_active_sidebar( 'product-widget-area' ) ) : ?>
+							<?php //dynamic_sidebar( 'product-widget-area' ); ?>
+							<?php //else: ?>
+									<?php //etheme_get_wc_categories_menu() ?>
+						<?php //endif; ?>
+							<!-- <div class="clear"></div> -->
+					<!-- </div> -->
+				<?php //endif; ?>
 				<div class="clear"></div>
 		</div>
 </div><!-- .container -->

@@ -17,7 +17,7 @@ get_header();
 ?>
 <div class="container <?php echo $sidebarname; ?>">
 		<div class="row">
-			<?php blog_breadcrumbs(); ?>
+			<?php //blog_breadcrumbs(); ?>
 			<?php if($position && $responsive == 'top'): ?>
 				<div class="col-xs-4 sidebar_grid sidebar_<?php echo $position ?>">
 						<?php get_sidebar($sidebarname); ?>
@@ -26,7 +26,7 @@ get_header();
 				<div class="<?php echo ($position)? 'col-xs-8':'col-xs-12'; ?> grid_content with-sidebar-<?php echo $position ?>">
 					<?php $post_id = $wp_query->get_queried_object_id();
 								$title = get_post_field( 'post_title', $post_id ); ?>
-						<h1 class="page-title"><?php echo $title; ?></h1>
+						<!-- <h4 class="page-title"><?php //echo $title; ?></h4> -->
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 							<?php the_content(); ?>
 							<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', ETHEME_DOMAIN ), 'after' => '' ) ); ?>

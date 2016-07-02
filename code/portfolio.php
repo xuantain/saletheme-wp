@@ -6,7 +6,7 @@
 *
 */
 
-add_action('init', 'etheme_portfolio_init');  
+add_action('init', 'etheme_portfolio_init');
 
 function etheme_portfolio_init(){
 	$labels = array(
@@ -18,13 +18,13 @@ function etheme_portfolio_init(){
 		'new_item' => __('New Project'),
 		'view_item' => __('View Project'),
 		'search_items' => __('Search Projects'),
-		'not_found' =>  __('No projects found'),
+		'not_found' =>	__('No projects found'),
 		'not_found_in_trash' => __('No projects found in Trash'),
 		'parent_item_colon' => '',
 		'menu_name' => 'Portfolio'
-	
+
 	);
-	
+
 	$args = array(
 		'labels' => $labels,
 		'public' => true,
@@ -39,13 +39,13 @@ function etheme_portfolio_init(){
 		'menu_position' => null,
 		'supports' => array('title','editor','author','thumbnail','excerpt','comments')
 	);
-	
+
 	register_post_type('etheme_portfolio',$args);
-	
+
 	$labels = array(
 		'name' => _x( 'Tags', 'taxonomy general name' ),
 		'singular_name' => _x( 'Tag', 'taxonomy singular name' ),
-		'search_items' =>  __( 'Search Types' ),
+		'search_items' =>	__( 'Search Types' ),
 		'all_items' => __( 'All Tags' ),
 		'parent_item' => __( 'Parent Tag' ),
 		'parent_item_colon' => __( 'Parent Tag:' ),
@@ -54,7 +54,7 @@ function etheme_portfolio_init(){
 		'add_new_item' => __( 'Add New Tag' ),
 		'new_item_name' => __( 'New Tag Name' ),
 	);
-	
+
 	// Custom taxonomy for Project Tags
 	/*register_taxonomy('tag',array('etheme_portfolio'), array(
 		'hierarchical' => false,
@@ -63,11 +63,11 @@ function etheme_portfolio_init(){
 		'query_var' => true,
 		'rewrite' => array( 'slug' => 'tag' ),
 	));*/
-	
+
 	$labels2 = array(
 		'name' => _x( 'Categories', 'taxonomy general name' ),
 		'singular_name' => _x( 'Category', 'taxonomy singular name' ),
-		'search_items' =>  __( 'Search Types' ),
+		'search_items' =>	__( 'Search Types' ),
 		'all_items' => __( 'All Categories' ),
 		'parent_item' => __( 'Parent Category' ),
 		'parent_item_colon' => __( 'Parent Category:' ),
@@ -76,8 +76,8 @@ function etheme_portfolio_init(){
 		'add_new_item' => __( 'Add New Category' ),
 		'new_item_name' => __( 'New Category Name' ),
 	);
-	
-	
+
+
 	register_taxonomy('categories',array('etheme_portfolio'), array(
 		'hierarchical' => true,
 		'labels' => $labels2,
@@ -94,13 +94,13 @@ add_shortcode('portfolio', 'etheme_portfolio_shortcode');
 
 function etheme_portfolio_shortcode() {
 	$a = shortcode_atts( array(
-       'title' => 'Recent Works',
-       'limit' => 12
-   ), $atts );
-   
-   
-   return etheme_get_recent_portfolio($a['limit'], $a['title']);
-    
+			 'title' => 'Recent Works',
+			 'limit' => 12
+	 ), $atts );
+
+
+	 return etheme_get_recent_portfolio($a['limit'], $a['title']);
+
 }
 
 
@@ -112,143 +112,143 @@ function etheme_get_recent_portfolio($limit, $title = 'Recent Works', $not_in = 
 		'posts_per_page' => $limit,
 		'post__not_in' => array( $not_in )
 	);
-	
+
 	return etheme_create_portfolio_slider($args, $title);
 }
 
 function etheme_create_portfolio_slider($args,$title = false,$enable_slider_from=4,$last_offset = 3){
 	global $wpdb;
-    $portfolio_columns = etheme_get_option('portfolio_columns');
-    $box_id = rand(1000,10000);
+		$portfolio_columns = etheme_get_option('portfolio_columns');
+		$box_id = rand(1000,10000);
 	$multislides = new WP_Query( $args );
 	ob_start();
 	if ( $multislides->have_posts() ) :
 		if ($title) {
 			$title_output = '<h4 class="slider-title">'.$title.'</h4>';
-		}	
-          echo '<div class="product-slider works-slider  columns' . $portfolio_columns . '">';
-            echo $title_output;
-            echo '<div class="clear"></div>';
-            echo '<div class="carousel slider-'.$box_id.'">';
-                echo '<div class="slider">';
-               	
-                $_i=0;
-                
-        		while ($multislides->have_posts()) : $multislides->the_post();
-                    $_i++;
-                
-                    echo '<div class="slide col-xs-3 portfolio-slide">';
-                        get_template_part( 'portfolio', 'slide' );
-                    echo '</div><!-- slide -->';
-                     
+		}
+					echo '<div class="product-slider works-slider	columns' . $portfolio_columns . '">';
+						echo $title_output;
+						echo '<div class="clear"></div>';
+						echo '<div class="carousel slider-'.$box_id.'">';
+								echo '<div class="slider">';
 
-        		endwhile; 
-                echo '</div><!-- slider -->'; 
-            echo '</div><!-- carousel -->'; 
-                
-            if($_i > $enable_slider_from):
-                echo '<div class="prev arrow'.$box_id.'" style="cursor: pointer; ">&nbsp;</div>';
-                echo '<div class="next arrow'.$box_id.'" style="cursor: pointer; ">&nbsp;</div>';
-            endif; 
-          echo '</div><!-- product-slider -->'; 
+								$_i=0;
+
+						while ($multislides->have_posts()) : $multislides->the_post();
+										$_i++;
+
+										echo '<div class="slide col-xs-3 portfolio-slide">';
+												get_template_part( 'portfolio', 'slide' );
+										echo '</div><!-- slide -->';
+
+
+						endwhile;
+								echo '</div><!-- slider -->';
+						echo '</div><!-- carousel -->';
+
+						if($_i > $enable_slider_from):
+								echo '<div class="prev arrow'.$box_id.'" style="cursor: pointer; ">&nbsp;</div>';
+								echo '<div class="next arrow'.$box_id.'" style="cursor: pointer; ">&nbsp;</div>';
+						endif;
+					echo '</div><!-- product-slider -->';
 	endif;
 	wp_reset_query();
-	if ($_i>$enable_slider_from) {   
-	   
-        if(etheme_get_option('touch_carusels')){
-            $desktopClickDrag = 'true';
-        }else{
-            $desktopClickDrag = 'false';
-        }
-        echo '
-            <script type="text/javascript">
-                jQuery(document).ready(function(){
-                    jQuery(".arrow'.$box_id.'.prev").addClass("disabled");
-                    jQuery(".slider-'.$box_id.'").iosSlider({
-                        desktopClickDrag: '.$desktopClickDrag.',
-                        snapToChildren: true,
-                        infiniteSlider: false,
-                        navNextSelector: ".arrow'.$box_id.'.next",
-                        navPrevSelector: ".arrow'.$box_id.'.prev",
-                        lastSlideOffset: '.$last_offset.',
-                        onFirstSlideComplete: function(){
-                            jQuery(".arrow'.$box_id.'.prev").addClass("disabled");
-                        },
-                        onLastSlideComplete: function(){
-                            jQuery(".arrow'.$box_id.'.next").addClass("disabled");
-                        },
-                        onSlideChange: function(){
-                            jQuery(".arrow'.$box_id.'.next").removeClass("disabled");
-                            jQuery(".arrow'.$box_id.'.prev").removeClass("disabled");
-                        }
-                    });
-                });
-            </script>
-        ';
-        
+	if ($_i>$enable_slider_from) {
+
+				if(etheme_get_option('touch_carusels')){
+						$desktopClickDrag = 'true';
+				}else{
+						$desktopClickDrag = 'false';
+				}
+				echo '
+						<script type="text/javascript">
+								jQuery(document).ready(function(){
+										jQuery(".arrow'.$box_id.'.prev").addClass("disabled");
+										jQuery(".slider-'.$box_id.'").iosSlider({
+												desktopClickDrag: '.$desktopClickDrag.',
+												snapToChildren: true,
+												infiniteSlider: false,
+												navNextSelector: ".arrow'.$box_id.'.next",
+												navPrevSelector: ".arrow'.$box_id.'.prev",
+												lastSlideOffset: '.$last_offset.',
+												onFirstSlideComplete: function(){
+														jQuery(".arrow'.$box_id.'.prev").addClass("disabled");
+												},
+												onLastSlideComplete: function(){
+														jQuery(".arrow'.$box_id.'.next").addClass("disabled");
+												},
+												onSlideChange: function(){
+														jQuery(".arrow'.$box_id.'.next").removeClass("disabled");
+														jQuery(".arrow'.$box_id.'.prev").removeClass("disabled");
+												}
+										});
+								});
+						</script>
+				';
+
 	}
-	
+
 	$html = ob_get_contents();
 	ob_end_clean();
-	
+
 	return $html;
-	
+
 }
 
 
-function etheme_portfolio_pagination($wp_query, $paged, $pages = '', $range = 2) {  
-     $showitems = ($range * 2)+1;  
+function etheme_portfolio_pagination($wp_query, $paged, $pages = '', $range = 2) {
+		 $showitems = ($range * 2)+1;
 
-     if(empty($paged)) $paged = 1;
+		 if(empty($paged)) $paged = 1;
 
-     if($pages == '')
-     {
-         $pages = $wp_query->max_num_pages;
-         if(!$pages)
-         {
-             $pages = 1;
-         }
-     }   
+		 if($pages == '')
+		 {
+				 $pages = $wp_query->max_num_pages;
+				 if(!$pages)
+				 {
+						 $pages = 1;
+				 }
+		 }
 
-     if(1 != $pages)
-     {
-	     echo "<div class='grid_pagination_bottom_block'>";
-	         echo "<div class='grid_pagination'>";
-		         echo '<ul class="page-numbers">';
-			         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<li><a href='".get_pagenum_link(1)."' class='prev page-numbers'></a></li>";
-			
-			         for ($i=1; $i <= $pages; $i++)
-			         {
-			             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
-			             {
-			                 echo ($paged == $i)? "<li><span class='page-numbers current'>".$i."</span></li>":"<li><a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a></li>";
-			             }
-			         }
-			
-			         if ($paged < $pages && $showitems < $pages) echo "<li><a href='".get_pagenum_link($paged + 1)."' class='next page-numbers'></a></li>";
-		         echo '</ul>';
-	         echo "</div>\n";
-         echo "</div>";
-     }
+		 if(1 != $pages)
+		 {
+			 echo "<div class='grid_pagination_bottom_block'>";
+					 echo "<div class='grid_pagination'>";
+						 echo '<ul class="page-numbers pagination">';
+							 if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<li class='page-item'><a href='".get_pagenum_link(1)."' class='prev page-numbers page-link'></a></li>";
+
+							 for ($i=1; $i <= $pages; $i++)
+							 {
+									 if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
+									 {
+											 echo ($paged == $i)? "<li class='page-item'><span class='page-numbers active page-link'>".$i."</span></li>":"<li class='page-item'><a href='".get_pagenum_link($i)."' class='inactive page-link' >".$i."</a></li>";
+									 }
+							 }
+
+							 if ($paged < $pages && $showitems < $pages) echo "<li class='page-item'><a href='".get_pagenum_link($paged + 1)."' class='next page-numbers page-link'></a></li>";
+						 echo '</ul>';
+					 echo "</div>\n";
+				 echo "</div>";
+		 }
 }
 
 add_action("admin_init", "etheme_add_portfolio_meta_boxes");
 function etheme_add_portfolio_meta_boxes(){
-    
-    $post_type = 'etheme_portfolio';
-    
-    remove_meta_box( 'authordiv' , $post_type, 'normal' );
-    remove_meta_box( 'postexcerpt' , $post_type, 'normal' );
-    
+
+		$post_type = 'etheme_portfolio';
+
+		remove_meta_box( 'authordiv' , $post_type, 'normal' );
+		remove_meta_box( 'postexcerpt' , $post_type, 'normal' );
+
 	add_meta_box("etheme-post-meta-box", __( "Custom Settings", ETHEME_DOMAIN ), "etheme_portfolio_post_meta_box", $post_type, "normal", "low");
 }
 function etheme_portfolio_post_meta_box() {
-    global $post;
+		global $post;
 ?>
 
 <input type="hidden" name="etheme_post_meta_box_nonce" value="<?php echo wp_create_nonce(plugin_basename(__FILE__)); ?>" />
 
-<div class="post-metaboxes">	
+<div class="post-metaboxes">
 <div class="format-settings">
 	<div class="format-setting-label">
 		<h3 class="label">Item Information</h3>
@@ -295,19 +295,19 @@ function etheme_portfolio_post_meta_box_save($post_id, $post) {
 	if ( ('page' == $_POST['post_type'] && !current_user_can('edit_page', $post->ID)) || !current_user_can('edit_post', $post->ID ) )
 		return $post->ID;
 	$product_defaults = array(
-        'project_layout' => '',
-        'project_url' => '',
-        'client' => '',
-        'client_url' => '',
-        'copyright' => '',
-        'copyright_url' => ''
-	); 
+				'project_layout' => '',
+				'project_url' => '',
+				'client' => '',
+				'client_url' => '',
+				'copyright' => '',
+				'copyright_url' => ''
+	);
 	$product = wp_parse_args($_POST['etheme_post'], $product_defaults);
-	
+
 	//	store the custom fields
 	foreach ( (array)$product as $key => $value ) {
 		if ( $post->post_type == 'revision' ) return; // don't try to store data during revision save
-		
+
 		if($value['global'] == 1) {
 			update_post_meta($post->ID, $key, 'global');
 		} else {
@@ -316,7 +316,7 @@ function etheme_portfolio_post_meta_box_save($post_id, $post) {
 			else
 				update_post_meta($post->ID, $key, '');
 		}
-		
+
 
 	}
 }

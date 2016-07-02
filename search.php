@@ -5,9 +5,9 @@
  */
 
 get_header(); ?>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-9 grid_content">
+				<div class="container">
+						<div class="row">
+								<div class="col-xs-9 grid_content">
 <?php if ( have_posts() ) : ?>
 				<p><?php printf( __( 'Search Results for: %s', ETHEME_DOMAIN ), '<em>' . get_search_query() . '</em>' ); ?></p>
 				<?php
@@ -26,11 +26,11 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 				</div><!-- #post-0 -->
 <?php endif; ?>
-    			</div><!-- #content -->
-                <div class="col-xs-3 sidebar_grid">
-                    <?php get_sidebar(); ?>
-                </div>
-                <div class="clear"></div>
-    		</div>
+					</div><!-- #content -->
+								<div class="col-xs-3 sidebar_grid">
+										<?php get_sidebar(); ?>
+								</div>
+								<div class="clear"></div>
+				</div>
 		</div><!-- .container -->
 <?php get_footer(); ?>

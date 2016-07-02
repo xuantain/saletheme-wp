@@ -553,8 +553,6 @@ function etheme_grid_list_switcher() {
 			<div class="switchToGrid">grid</div>
 		</div>
 	<?php endif ;?>
-
-
 	<?php
 }
 
@@ -598,7 +596,7 @@ function etheme_woocommerce_product($atts){
 	if ( $products->have_posts() ) : ?>
 
 
-		<div id="products-grid" class="products_grid shortcode-products row rows-count4">
+		<div id="products-grid" class="shortcode-products row rows-count4">
 				<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
 					<?php woocommerce_get_template_part( 'content', 'product' ); ?>
@@ -670,7 +668,7 @@ function etheme_woocommerce_products($atts){
 
 	if ( $products->have_posts() ) : ?>
 
-		<div id="products-grid" class="products_grid shortcode-products row rows-count<?php echo $columns ?>">
+		<div id="products-grid" class="shortcode-products row rows-count<?php echo $columns ?>">
 				<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
 					<?php woocommerce_get_template_part( 'content', 'product' ); ?>
@@ -785,7 +783,7 @@ function etheme_woocommerce_product_category($atts){
 
 	if ( $products->have_posts() ) : ?>
 
-		<div id="products-grid" class="products_grid shortcode-products row rows-count<?php echo $columns ?>">
+		<div id="products-grid" class="shortcode-products row rows-count<?php echo $columns ?>">
 				<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
 					<?php woocommerce_get_template_part( 'content', 'product' ); ?>
@@ -910,7 +908,7 @@ function etheme_woocommerce_sale_products( $atts ){
 
 	if ( $products->have_posts() ) : ?>
 
-		<div id="products-grid" class="products_grid shortcode-products row rows-count<?php echo $columns ?>">
+		<div id="products-grid" class="shortcode-products row rows-count<?php echo $columns ?>">
 				<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
 					<?php woocommerce_get_template_part( 'content', 'product' ); ?>
@@ -960,7 +958,7 @@ function etheme_woocommerce_best_selling_products( $atts ){
 
 	if ( $products->have_posts() ) : ?>
 
-		<div id="products-grid" class="products_grid shortcode-products row rows-count<?php echo $columns ?>">
+		<div id="products-grid" class="shortcode-products row rows-count<?php echo $columns ?>">
 				<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
 					<?php woocommerce_get_template_part( 'content', 'product' ); ?>
@@ -1023,7 +1021,7 @@ function etheme_woocommerce_featured_products( $atts ) {
 	if ( $products->have_posts() ) : ?>
 
 		<h4 class="slider-title"><?php echo $atts['title']; ?></h4>
-		<div id="products-grid" class="products_grid">
+		<div id="products-grid">
 				<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
 					<?php woocommerce_get_template_part( 'content', 'product' ); ?>
@@ -1077,7 +1075,7 @@ function etheme_woocommerce_recent_products( $atts ) {
 
 	if ( $products->have_posts() ) : ?>
 
-		<div id="products-grid" style="padding: 0;" class="products_grid shortcode-products row rows-count<?php echo $columns ?>">
+		<div id="products-grid" style="padding: 0;" class="shortcode-products row rows-count<?php echo $columns ?>">
 				<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
 					<?php woocommerce_get_template_part( 'content', 'product' ); ?>

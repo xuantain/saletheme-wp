@@ -1038,7 +1038,7 @@ function blog_breadcrumbs() {
 		}
 
 		echo '</div>';
-		echo '<a class="back-to" href="javascript: history.go(-1)"><span>‹</span>'.__('Return to Previous Page',ETHEME_DOMAIN).'</a></div>';
+		// echo '<a class="back-to" href="javascript: history.go(-1)"><span>‹</span>'.__('Return to Previous Page',ETHEME_DOMAIN).'</a></div>';
 
 	}
 }

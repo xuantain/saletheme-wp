@@ -7,21 +7,21 @@
 	<div class="container_footer_bg">
 		<div class="container">
 			<div class="row footer_container">
-				<div class="col-xs-4 footer_block f-contacts">
+				<div class="col-xs-12 col-sm-4 footer_block f-contacts">
 					<?php if ( !is_active_sidebar( 'first-footer-widget-area' ) ) : ?>
 						<?php etheme_footer_demo(1); ?>
 					<?php else: ?>
 						<?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
 					<?php endif; ?>
 				</div>
-				<div class="col-xs-4 footer_block footer-big-block">
+				<div class="hidden-xs col-sm-4 footer_block footer-big-block">
 					<?php if ( !is_active_sidebar( 'second-footer-widget-area' ) ) : ?>
 						<?php etheme_footer_demo(2); ?>
 					<?php else: ?>
 						<?php dynamic_sidebar( 'second-footer-widget-area' ); ?>
 					<?php endif; ?>
 				</div>
-				<div class="col-xs-4 footer_block">
+				<div class="hidden-xs col-sm-4 footer_block">
 					<?php if ( !is_active_sidebar( 'third-footer-widget-area' ) ) : ?>
 						<span class="footer_title"><?php _e( 'Recent Tweets', ETHEME_DOMAIN); ?></span>
 					<?php else: ?>
@@ -37,7 +37,7 @@
 				<div class="hidden" id="after_footer_logo">
 					<img src="<?php echo PARENT_URL.'/images/logo-footer.png'; ?>">
 				</div>
-				<div class="col-xs-8" id="after_footer_menu">
+				<div class="col-xs-12 col-sm-8" id="after_footer_menu">
 					<?php if ( !is_active_sidebar( 'copyrights-area' ) ) : ?>
 						<?php etheme_footer_demo(8); ?>
 					<?php else: ?>
@@ -47,7 +47,7 @@
 						<span class="copyright"><?php //etheme_option('copyright') ?></span>
 					</div> -->
 				</div>
-				<div class="col-xs-4" id="after_footer_payments">
+				<div class="col-sm-4 hidden-xs" id="after_footer_payments">
 					<?php if ( !is_active_sidebar( 'payments-area' ) ) : ?>
 						<?php etheme_footer_demo(9); ?>
 					<?php else: ?>

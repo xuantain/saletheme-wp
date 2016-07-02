@@ -65,7 +65,7 @@ function etheme_create_slider($args, $title = false, $image_width = 215, $image_
 		}
 		echo '<div class="home-product-grid slider">';
 			echo $title_output;
-			echo '<div class="products_grid">';
+			echo '<div>';
 
 			$_i=0;
 
