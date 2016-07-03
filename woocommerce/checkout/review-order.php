@@ -16,15 +16,17 @@ global $woocommerce;
 
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
 
-	<table class="cart table checkout_cart" cellspacing="0" style="margin-bottom: 20px;">
-		<tr>
-			<th class="product-thumbnail cart_del_column">&nbsp;</th>
-			<th class="product-name"><?php _e('Product', ETHEME_DOMAIN); ?></th>
-			<th class="product-price cart_del_column"><?php _e('Price', ETHEME_DOMAIN); ?></th>
-			<th class="product-quantity"><?php _e('Qty', ETHEME_DOMAIN); ?></th>
-			<th class="product-subtotal"><?php _e('Total', ETHEME_DOMAIN); ?></th>
-			<th class="product-remove cart_del_column">&nbsp;</th>
-		</tr>
+	<table class="cart table table-bordered table-hover table-responsive  checkout_cart" cellspacing="0" style="margin-bottom: 20px;">
+		<thead>
+			<tr class="bg-primary text-uppercase">
+				<th class="product-thumbnail">&nbsp;</th>
+				<th class="product-name"><?php _e('Product', ETHEME_DOMAIN); ?></th>
+				<th class="product-price cart_del_column"><?php _e('Price', ETHEME_DOMAIN); ?></th>
+				<th class="product-quantity"><?php _e('Qty', ETHEME_DOMAIN); ?></th>
+				<th class="product-subtotal"><?php _e('Total', ETHEME_DOMAIN); ?></th>
+				<th class="product-remove cart_del_column">&nbsp;</th>
+			</tr>
+		</thead>
 
 		<?php do_action( 'woocommerce_before_cart_contents' ); ?>
 
@@ -109,14 +111,14 @@ global $woocommerce;
 
 		<!-- Checkout totals : START -->
 		<tr class="cart-subtotal">
-			<td colspan="4"><?php _e( 'Cart Subtotal', ETHEME_DOMAIN ); ?></td>
-			<td><?php wc_cart_totals_subtotal_html(); ?></td>
+			<td colspan="4" class="text-right"><?php _e( 'Cart Subtotal', ETHEME_DOMAIN ); ?></td>
+			<td colspan="2"><?php wc_cart_totals_subtotal_html(); ?></td>
 		</tr>
 
 		<?php foreach ( WC()->cart->get_coupons( 'cart' ) as $code => $coupon ) : ?>
 			<tr class="cart-discount coupon-<?php echo esc_attr( $code ); ?>">
-				<td colspan="4"><?php _e( 'Coupon:', ETHEME_DOMAIN ); ?> <?php echo esc_html( $code ); ?></td>
-				<td><?php wc_cart_totals_coupon_html( $coupon ); ?></td>
+				<td colspan="4" class="text-right"><?php _e( 'Coupon:', ETHEME_DOMAIN ); ?> <?php echo esc_html( $code ); ?></td>
+				<td colspan="2"><?php wc_cart_totals_coupon_html( $coupon ); ?></td>
 			</tr>
 		<?php endforeach; ?>
 
@@ -130,8 +132,8 @@ global $woocommerce;
 
 		<?php foreach ( WC()->cart->get_fees() as $fee ) : ?>
 			<tr class="fee">
-				<td colspan="4"><?php echo esc_html( $fee->name ); ?></td>
-				<td><?php wc_cart_totals_fee_html( $fee ); ?></td>
+				<td colspan="4" class="text-right"><?php echo esc_html( $fee->name ); ?></td>
+				<td colspan="2"><?php wc_cart_totals_fee_html( $fee ); ?></td>
 			</tr>
 		<?php endforeach; ?>
 
@@ -139,55 +141,57 @@ global $woocommerce;
 			<?php if ( get_option( 'woocommerce_tax_total_display' ) === 'itemized' ) : ?>
 				<?php foreach ( WC()->cart->get_tax_totals() as $code => $tax ) : ?>
 					<tr class="tax-rate tax-rate-<?php echo sanitize_title( $code ); ?>">
-						<td colspan="4"><?php echo esc_html( $tax->label ); ?></td>
-						<td><?php echo wp_kses_post( $tax->formatted_amount ); ?></td>
+						<td colspan="4" class="text-right"><?php echo esc_html( $tax->label ); ?></td>
+						<td colspan="2"><?php echo wp_kses_post( $tax->formatted_amount ); ?></td>
 					</tr>
 				<?php endforeach; ?>
 			<?php else : ?>
 				<tr class="tax-total">
-					<td colspan="4"><?php echo esc_html( WC()->countries->tax_or_vat() ); ?></td>
-					<td><?php echo wc_price( WC()->cart->get_taxes_total() ); ?></td>
+					<td colspan="4" class="text-right"><?php echo esc_html( WC()->countries->tax_or_vat() ); ?></td>
+					<td colspan="2"><?php echo wc_price( WC()->cart->get_taxes_total() ); ?></td>
 				</tr>
 			<?php endif; ?>
 		<?php endif; ?>
 
 		<?php foreach ( WC()->cart->get_coupons( 'order' ) as $code => $coupon ) : ?>
 			<tr class="order-discount coupon-<?php echo esc_attr( $code ); ?>">
-				<td colspan="4"><?php _e( 'Coupon:', ETHEME_DOMAIN ); ?> <?php echo esc_html( $code ); ?></td>
-				<td><?php wc_cart_totals_coupon_html( $coupon ); ?></td>
+				<td colspan="4" class="text-right"><?php _e( 'Coupon:', ETHEME_DOMAIN ); ?> <?php echo esc_html( $code ); ?></td>
+				<td colspan="2"><?php wc_cart_totals_coupon_html( $coupon ); ?></td>
 			</tr>
 		<?php endforeach; ?>
 
 		<?php do_action( 'woocommerce_review_order_before_order_total' ); ?>
 
 		<tr class="order-total">
-			<td colspan="4"><?php _e( 'Order Total', ETHEME_DOMAIN ); ?></td>
-			<td><?php wc_cart_totals_order_total_html(); ?></td>
+			<td colspan="4" class="text-right"><?php _e( 'Order Total', ETHEME_DOMAIN ); ?></td>
+			<td colspan="2"><?php wc_cart_totals_order_total_html(); ?></td>
 		</tr>
 
 		<?php do_action( 'woocommerce_review_order_after_order_total' ); ?>
 		<!-- Checkout totals : END -->
 
-		<tr>
+		<!-- <tr>
 			<td colspan="6" class="actions">
 
-				<?php if ( get_option( 'woocommerce_enable_coupons' ) == 'yes' ) { ?>
+				<?php //if ( get_option( 'woocommerce_enable_coupons' ) == 'yes' ) { ?>
 					<div class="coupon">
 
-						<label for="coupon_code"><?php _e('Coupon', ETHEME_DOMAIN); ?>:</label> <input name="coupon_code" class="input-text" id="coupon_code" value="" /> <input type="submit" class="button apply-coupon" name="apply_coupon" value="<?php _e('Apply Coupon', ETHEME_DOMAIN); ?>" />
+						<label for="coupon_code"><?php //_e('Coupon', ETHEME_DOMAIN); ?>:</label>
+						<input name="coupon_code" class="input-text" id="coupon_code" value="" />
+						<input type="submit" class="button apply-coupon" name="apply_coupon" value="<?php //_e('Apply Coupon', ETHEME_DOMAIN); ?>" />
 
-						<?php do_action('woocommerce_cart_coupon'); ?>
+						<?php //do_action('woocommerce_cart_coupon'); ?>
 
 					</div>
-				<?php } ?>
+				<?php //} ?>
 
-				<input type="submit" class="button update-button" name="update_cart" value="<?php _e('Update Cart', ETHEME_DOMAIN); ?>" />
+				<input type="submit" class="button update-button" name="update_cart" value="<?php //_e('Update Cart', ETHEME_DOMAIN); ?>" />
 
-				<?php do_action('woocommerce_proceed_to_checkout'); ?>
+				<?php //do_action('woocommerce_proceed_to_checkout'); ?>
 
-				<?php wp_nonce_field('woocommerce-cart') ?>
+				<?php //wp_nonce_field('woocommerce-cart') ?>
 			</td>
-		</tr>
+		</tr> -->
 
 		<?php do_action( 'woocommerce_after_cart_contents' ); ?>
 	</table>

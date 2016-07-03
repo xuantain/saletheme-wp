@@ -26,17 +26,24 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 			}
 		?>
-
-		<h3 id="ship-to-different-address">
-			<input id="ship-to-different-address-checkbox" class="input-checkbox" <?php checked( $ship_to_different_address, 1 ); ?> type="checkbox" name="ship_to_different_address" value="1" />
-			<label for="ship-to-different-address-checkbox" class="checkbox"><?php _e( 'Ship to a different address?', 'woocommerce' ); ?></label>
-		</h3>
+		<div class="checkbox bg-primary form-header" id="ship-to-different-address">
+		  <label for="ship-to-different-address-checkbox">
+		    <input class="input-checkbox" id="ship-to-different-address-checkbox" <?php checked( $ship_to_different_address, 1 ); ?>
+					 type="checkbox" name="ship_to_different_address" value="1" >
+		    <h4 class="bg-primary"><?php _e( 'Ship to a different address?', 'woocommerce' ); ?></h4>
+		  </label>
+		</div>
 
 		<div class="shipping_address">
 
 			<?php do_action( 'woocommerce_before_checkout_shipping_form', $checkout ); ?>
 
 			<?php foreach ( $checkout->checkout_fields['shipping'] as $key => $field ) : ?>
+
+					<?php
+						$field['class'] = array('form-group');
+						$field['input_class'] = array('form-control');
+					?>
 
 					<?php woocommerce_form_field( $key, $field, $checkout->get_value( $key ) ); ?>
 
@@ -59,6 +66,11 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		<?php endif; ?>
 
 		<?php foreach ( $checkout->checkout_fields['order'] as $key => $field ) : ?>
+
+			<?php
+				$field['class'] = array('form-group');
+				$field['input_class'] = array('form-control');
+			?>
 
 			<?php woocommerce_form_field( $key, $field, $checkout->get_value( $key ) ); ?>
 

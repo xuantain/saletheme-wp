@@ -13,17 +13,22 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 <div class="woocommerce-billing-fields">
 	<?php if ( WC()->cart->ship_to_billing_address_only() && WC()->cart->needs_shipping() ) : ?>
 
-		<h3><?php _e( 'Billing & Shipping', 'woocommerce' ); ?></h3>
+		<h3 class="bg-primary form-header text-center"><?php _e( 'Billing & Shipping', 'woocommerce' ); ?></h3>
 
 	<?php else : ?>
 
-		<h3><?php _e( 'Billing Address', 'woocommerce' ); ?></h3>
+		<h3 class="bg-primary form-header text-center"><?php _e( 'Billing Address', 'woocommerce' ); ?></h3>
 
 	<?php endif; ?>
 
 	<?php do_action( 'woocommerce_before_checkout_billing_form', $checkout ); ?>
 
 	<?php foreach ( $checkout->checkout_fields['billing'] as $key => $field ) : ?>
+
+			<?php
+				$field['class'] = array('form-group');
+				$field['input_class'] = array('form-control');
+			?>
 
 			<?php woocommerce_form_field( $key, $field, $checkout->get_value( $key ) ); ?>
 
@@ -35,9 +40,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 		<?php if ( $checkout->enable_guest_checkout  && !etheme_get_option('checkout_accordion') ) : ?>
 
-			p class="form-row form-row-wide create-account">
-				<input class="input-checkbox" id="createaccount" <?php checked( ( true === $checkout->get_value( 'createaccount' ) || ( true === apply_filters( 'woocommerce_create_account_default_checked', false ) ) ), true) ?> type="checkbox" name="createaccount" value="1" /> <label for="createaccount" class="checkbox"><?php _e( 'Create an account?', 'woocommerce' ); ?></label>
-			</p
+			<p class="form-row form-row-wide create-account">
+				<input class="input-checkbox" id="createaccount" <?php checked( ( true === $checkout->get_value( 'createaccount' ) || ( true === apply_filters( 'woocommerce_create_account_default_checked', false ) ) ), true) ?> type="checkbox" name="createaccount" value="1" />
+				<label for="createaccount" class="checkbox"><?php _e( 'Create an account?', 'woocommerce' ); ?></label>
+			</p>
 
 		<?php endif; ?>
 
@@ -45,7 +51,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 		<?php if ( ! empty( $checkout->checkout_fields['account'] ) && !etheme_get_option('checkout_accordion') ) : ?>
 
-			div class="create-account">
+			<div class="create-account">
 
 				<p><?php _e( 'Create an account by entering the information below. If you are a returning customer please login at the top of the page.', 'woocommerce' ); ?></p>
 
