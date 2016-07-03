@@ -652,12 +652,12 @@ jQuery(document).ready(function() {
 												}
 										});
 										// Changes button classes
-										$thisbutton.addClass('added').parent().parent().parent().after('<p class="added-text">' + successfullyAdded + '</p>');
+										$thisbutton.addClass('added').parent().after('<p class="added-text bg-success">' + successfullyAdded + '</p>');
 
 										setTimeout(function() {
-												$thisbutton.parent().parent().parent().parent().removeClass('loading');
-												$thisbutton.removeClass('added');
-												jQuery('.added-text').fadeOut(300);
+												$thisbutton.parent().parent().removeClass('loading');
+												// $thisbutton.removeClass('added');
+												// jQuery('.added-text').fadeOut(300);
 										}, 3000);
 
 

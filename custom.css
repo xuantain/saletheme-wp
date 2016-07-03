@@ -308,6 +308,14 @@ aside.widget ins {
 	text-align: center;
 }
 
+.added-text {
+	position: absolute;
+	top: -40%;
+	left: 0;
+	padding: 10px;
+	color: #fff;
+}
+
 /*	992 <= md < 1200px */
 @media only screen and (min-width: 992) and (max-width: 1199px) {
 	.home-product-grid .product-last-md .product {
