@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 <div class="container">
 		<div class="row">
-				<div class="col-xs-12-fluid col-sm-12 breadcrumbs">
+				<div class="col-xs-12 col-sm-12 breadcrumbs xs-no-padding">
 					<?php
 							do_action('woocommerce_before_main_content');
 							extract(etheme_get_shop_sidebar());
@@ -38,7 +38,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
   						<div class="clear"></div>
   				</div> -->
   			<?php //endif; ?>
-				<div id="default_products_page_container" class="col-xs-12-fluid col-sm-12">
+				<div id="default_products_page_container" class="col-xs-12 col-sm-12 xs-no-padding">
 					<?php
 							global $wp_query;
 							$cat = $wp_query->get_queried_object();
@@ -70,7 +70,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 					<?php if ( have_posts() ) : ?>
 									<div class="home-product-grid">
 										<?php do_action('woocommerce_before_shop_loop'); ?>
-											<div class="row"></div>
+											<div class="col-xs-12" style="height:10px;"></div>
 									</div>
 							<?php woocommerce_product_subcategories(array('before'=>'<div class="product_categories_grid">', 'after' => '</div>')); ?>
 

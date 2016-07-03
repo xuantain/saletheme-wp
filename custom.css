@@ -63,7 +63,6 @@
 			 -o-transition: 0.2s ease-in-out, background, border-color;
 					transition: 0.2s ease-in-out, background, border-color;
 }
-
 .chuyen-trang-item {
 	width: 100%;
 	margin-bottom: 18px;;
@@ -127,6 +126,7 @@ aside.widget ins {
 	margin-top: 10px;
 }
 .home-product-grid .product .product-information {
+	position: relative;
 	margin: 10px 0;
 	height: 145px;
 }
@@ -134,7 +134,7 @@ aside.widget ins {
 	position: absolute;
 	left: 15px;
 	right: 30px;
-	bottom: 30px;
+	bottom: 0px;
 }
 .home-product-grid .product:hover,
 .grid_pagination_block .product:hover {
@@ -159,8 +159,8 @@ aside.widget ins {
 }
 .price > span {
 	position: absolute;
-	top: 10px;
-	right: 25px;
+	top: -180px;
+	right: 5px;
 	width: 50px;
 	height: 25px;
 	line-height: 25px;
@@ -272,16 +272,13 @@ aside.widget ins {
 	display: inline-block;
 }
 
-.navbar-collapse .nav .menu-item a {
-	padding-left: 15px !important;
-}
-
 .breadcrumbs {
 	font-size: 1.3em;
 }
 
 .regulation-side-bar {
 	margin-top: 10px;
+	padding-left: 0;
 	list-style: none;
 	font-size: 1.2em;
 	line-height: 1.7em;
@@ -307,6 +304,10 @@ aside.widget ins {
 	border-color: #337ab7;
 }
 
+.grid_pagination_bottom_block {
+	text-align: center;
+}
+
 /*	992 <= md < 1200px */
 @media only screen and (min-width: 992) and (max-width: 1199px) {
 	.home-product-grid .product-last-md .product {
@@ -319,6 +320,10 @@ aside.widget ins {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.navbar-header {
 		display: none;
+	}
+	.home-product-grid .product-last .product {
+		position: relative;
+		margin-right: 15px;
 	}
 	.home-product-grid .product-last-sm .product {
 		position: relative;
@@ -340,6 +345,9 @@ aside.widget ins {
 	.nav-bar-xs > div {
 		margin-top: 5px;
 		margin-bottom: 5px;
+	}
+	.navbar-collapse .nav .menu-item a {
+		padding-left: 15px !important;
 	}
 	#searchform .field {
 		float: right;
@@ -369,16 +377,24 @@ aside.widget ins {
 	.home-product-grid .product .product-information .add-to-card-btn {
 		left: 10px;
 		right: 10px;
-		bottom: 10px;
 	}
 	.price > span {
-		top: 5px;
-		right: 5px;
+		top: -170px;
 	}
 	.chuyen-trang {
 		margin-top: 10px;
 	}
+	.chuyen-trang-item {
+		margin-bottom: 10px;;
+	}
 	.regulation-side-bar {
 		padding-left: 0;
+	}
+	.breadcrumbs {
+		margin-top: 5px;
+	}
+	#vgc_off_mobile {
+		right: 5px !important;
+		bottom: 5px !important;
 	}
 }

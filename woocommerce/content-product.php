@@ -66,6 +66,12 @@
 	// 	}
 	}
 
+	if($woocommerce_loop['loop'] % 2 == 0) {
+    if (is_page( 'home' )) {
+      $class .= ' product-last-sm';
+    }
+	}
+
 	if($woocommerce_loop['loop'] % 3 == 0) {
     if (is_page( 'home' )) {
       $class .= ' product-last';
