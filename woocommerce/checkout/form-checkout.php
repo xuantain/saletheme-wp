@@ -38,21 +38,21 @@ wc_print_notices();
 							<!-- ----------------------------------------------- -->
 							<!-- ----------------- BILLING --------------------- -->
 							<!-- ----------------------------------------------- -->
-							<div class="col-xs-4">
+							<div class="col-xs-12 col-sm-4">
 									<?php do_action('woocommerce_checkout_billing'); ?>
 							</div>
 
 							<!-- ----------------------------------------------- -->
 							<!-- ----------------- SHIPPING -------------------- -->
 							<!-- ----------------------------------------------- -->
-							<div class="col-xs-4">
+							<div class="col-xs-12 col-sm-4">
 									<?php do_action('woocommerce_checkout_shipping'); ?>
 							</div>
 
-							<div class="col-xs-4">
+							<div class="col-xs-12 col-sm-4">
 								<div class="woocommerce-pay">
-									<h3><?php _e( 'Payment', ETHEME_DOMAIN ); ?></h3>
-									<ul class="payment_methods methods">
+									<h3 class="bg-primary form-header text-center"><?php _e( 'Payment', ETHEME_DOMAIN ); ?></h3>
+									<div class="payment_methods methods">
 										<?php
 											if ( $available_gateways = WC()->payment_gateways->get_available_payment_gateways() ) {
 												// Chosen Method
@@ -61,9 +61,12 @@ wc_print_notices();
 
 												foreach ( $available_gateways as $gateway ) {
 													?>
-													<li class="payment_method_<?php echo $gateway->id; ?>">
-														<input id="payment_method_<?php echo $gateway->id; ?>" type="radio" class="input-radio" name="payment_method" value="<?php echo esc_attr( $gateway->id ); ?>" <?php checked( $gateway->chosen, true ); ?> data-order_button_text="<?php echo esc_attr( $gateway->order_button_text ); ?>" />
-														<label for="payment_method_<?php echo $gateway->id; ?>"><?php echo $gateway->get_title(); ?> <?php echo $gateway->get_icon(); ?></label>
+													<div class="radio payment_method_<?php echo $gateway->id; ?>">
+													  <label>
+															<input id="payment_method_<?php echo $gateway->id; ?>" type="radio" class="input-radio" name="payment_method" value="<?php echo esc_attr( $gateway->id ); ?>" <?php checked( $gateway->chosen, true ); ?>
+																data-order_button_text="<?php echo esc_attr( $gateway->order_button_text ); ?>" />
+													    <?php echo $gateway->get_title(); ?> <?php echo $gateway->get_icon(); ?>
+													  </label>
 														<?php
 															if ( $gateway->has_fields() || $gateway->get_description() ) {
 																echo '<div class="payment_box payment_method_' . $gateway->id . '" style="display:none;">';
@@ -71,40 +74,48 @@ wc_print_notices();
 																echo '</div>';
 															}
 														?>
-													</li>
+													</div>
 													<?php
 												}
 											} else {
 												echo '<p>' . __( 'Sorry, it seems that there are no available payment methods for your location. Please contact us if you require assistance or wish to make alternate arrangements.', ETHEME_DOMAIN ) . '</p>';
 											}
 										?>
-									</ul>
+									</div>
 								</div>
 							</div>
 
 							<!-- <?php //if ( ! $is_ajax ) : ?><div id="order_review"><?php //endif; ?> -->
-							<div class="col-xs-4 btn-group">
+							<div class="col-xs-12 col-sm-4">
 
 								<?php do_action( 'woocommerce_review_order_before_payment' ); ?>
 
-								<noscript><?php _e( 'Since your browser does not support JavaScript, or it is disabled, please ensure you click the <em>Update Totals</em> button before placing your order. You may be charged more than the amount stated above if you fail to do so.', ETHEME_DOMAIN ); ?><br/><input type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php _e( 'Update totals', ETHEME_DOMAIN ); ?>" /></noscript>
+								<noscript><?php _e( 'Since your browser does not support JavaScript, or it is disabled, please ensure you click the <em>Update Totals</em> button before placing your order."
+									. "You may be charged more than the amount stated above if you fail to do so.', ETHEME_DOMAIN ); ?><br/>
+									<input type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php _e( 'Update totals', ETHEME_DOMAIN ); ?>" />
+								</noscript>
 
 								<?php wp_nonce_field( 'woocommerce-process_checkout' ); ?>
 
 								<?php if ( wc_get_page_id( 'terms' ) > 0 && apply_filters( 'woocommerce_checkout_show_terms', true ) ) {
 									$terms_is_checked = apply_filters( 'woocommerce_terms_is_checked_default', isset( $_POST['terms'] ) );
 									?>
-									<p class="form-row terms">
-										<label for="terms" class="checkbox"><?php _e( 'I have read and accept the', ETHEME_DOMAIN ); ?> <a href="<?php echo esc_url( get_permalink(wc_get_page_id('terms')) ); ?>" target="_blank"><?php _e( 'terms &amp; conditions', ETHEME_DOMAIN ); ?></a></label>
-										<input type="checkbox" class="input-checkbox" name="terms" <?php checked( $terms_is_checked, true ); ?> id="terms" />
-									</p>
+									<div class="form-row woocommerce-terms">
+									  <label for="terms" class="checkbox">
+									    <input type="checkbox" class="input-checkbox" id="terms" name="terms" <?php checked( $terms_is_checked, 1 ); ?>>
+									    <?php _e( 'I have read and accept the', ETHEME_DOMAIN ); ?>
+											<a href="<?php echo esc_url( get_permalink(wc_get_page_id('terms')) ); ?>" target="_blank"><?php _e( 'terms &amp; conditions', ETHEME_DOMAIN ); ?></a>
+									  </label>
+									</div>
 								<?php } ?>
 
 								<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
 
 								<?php
 									$order_button_text = apply_filters( 'woocommerce_order_button_text', __( 'Place order', ETHEME_DOMAIN ) );
-									echo apply_filters( 'woocommerce_order_button_html', '<input type="submit" class="button btn-submit-order" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '" />' );
+									echo apply_filters( 'woocommerce_order_button_html',
+										'<input type="submit" class="btn btn-primary btn-block btn-submit-order" name="woocommerce_checkout_place_order" id="place_order" value="'
+											. esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '" />' );
 								?>
 
 								<?php do_action( 'woocommerce_review_order_after_submit' ); ?>
