@@ -201,114 +201,126 @@ function etheme_contacts_shortcodes($atts, $content=null) {
 	} else {
 		?>
 
-		<div class="col-xs-9 blog1_post contacts-page" id="blog_full_content">
-			<?php
-			if($a['gmap'] == 1):?>
-				<div class="col-xs-9 blog1_post_image" id="map-image">
-						<div id="map">
-								<p>Enable your JavaScript!</p>
-						</div>
-				</div>
-				<div class="clear"></div>
+		<div class="container">
 
-				<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-				<script type="text/javascript">
+			<div class="row blog1_post contacts-page" id="blog_full_content">
+				<?php
+				if($a['gmap'] == 1):?>
+					<div class="col-xs-12 blog1_post_image" id="map-image">
+							<div id="map">
+									<p>Enable your JavaScript!</p>
+							</div>
+					</div>
+					<div class="clear"></div>
 
-					function etheme_google_map() {
-						var styles = {
-							'8theme':	[{
-									"featureType": "administrative",
-									"stylers": [
-										{ "visibility": "on" }
-									]
-								},
-								{
-									"featureType": "road",
-									"stylers": [
-										{ "visibility": "on" },
-										{ "hue": "#e78b8b" }
-									]
-								},
-								{
-									"stylers": [
-										{ "visibility": "on" },
-										{ "hue": "#e78b8b" },
-										{ "saturation": -50 }
-									]
+					<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+					<script type="text/javascript">
+
+						function etheme_google_map() {
+							var styles = {
+								'8theme':	[{
+										"featureType": "administrative",
+										"stylers": [
+											{ "visibility": "on" }
+										]
+									},
+									{
+										"featureType": "road",
+										"stylers": [
+											{ "visibility": "on" },
+											{ "hue": "#e78b8b" }
+										]
+									},
+									{
+										"stylers": [
+											{ "visibility": "on" },
+											{ "hue": "#e78b8b" },
+											{ "saturation": -50 }
+										]
+									}
+								]};
+
+								var myLatlng = new google.maps.LatLng(<?php etheme_option('google_map'); ?>);
+								var myOptions = {
+										zoom: 17,
+										center: myLatlng,
+										mapTypeId: google.maps.MapTypeId.ROADMAP,
+										disableDefaultUI: true,
+										mapTypeId: '8theme',
+										draggable: true,
+										zoomControl: true,
+										panControl: false,
+										mapTypeControl: true,
+										scaleControl: true,
+										streetViewControl: true,
+										overviewMapControl: true,
+										scrollwheel: false,
+										disableDoubleClickZoom: false
 								}
-							]};
+								var map = new google.maps.Map(document.getElementById("map"), myOptions);
+								var styledMapType = new google.maps.StyledMapType(styles['8theme'], {name: '8theme'});
+								map.mapTypes.set('8theme', styledMapType);
 
-							var myLatlng = new google.maps.LatLng(<?php etheme_option('google_map'); ?>);
-							var myOptions = {
-									zoom: 17,
-									center: myLatlng,
-									mapTypeId: google.maps.MapTypeId.ROADMAP,
-									disableDefaultUI: true,
-									mapTypeId: '8theme',
-									draggable: true,
-									zoomControl: true,
-									panControl: false,
-									mapTypeControl: true,
-									scaleControl: true,
-									streetViewControl: true,
-									overviewMapControl: true,
-									scrollwheel: false,
-									disableDoubleClickZoom: false
-							}
-							var map = new google.maps.Map(document.getElementById("map"), myOptions);
-							var styledMapType = new google.maps.StyledMapType(styles['8theme'], {name: '8theme'});
-							map.mapTypes.set('8theme', styledMapType);
+								var marker = new google.maps.Marker({
+										position: myLatlng,
+										map: map,
+										title:""
+								});
+						}
 
-							var marker = new google.maps.Marker({
-									position: myLatlng,
-									map: map,
-									title:""
-							});
-					}
+						jQuery(document).ready(function(){
+							etheme_google_map();
+						});
 
-					jQuery(document).ready(function(){
-						etheme_google_map();
-					});
+						jQuery(document).resize(function(){
+							etheme_google_map();
+						});
 
-					jQuery(document).resize(function(){
-						etheme_google_map();
-					});
+					</script>
 
-				</script>
-
-			<?php endif; ?>
-		</div>
-
-		<div class="contact-form">
-			<h1><?php the_title(); ?></h1>
-				<?php if(etheme_option('contacts_custom_html') != ''): ?>
-						<?php echo etheme_option('contacts_custom_html') ?>
 				<?php endif; ?>
-				<div id="contactsMsgs" class="clear"></div>
-				<div class="col-xs-4 contact_info">
-						<?php etheme_option('contacts_info'); ?>
-				</div>
-				<div class="col-xs-5 blog_full_review_container" id="contact_container">
-						<h2><?php _e('Contact Form', ETHEME_DOMAIN); ?></h2>
-						<form action="<?php the_permalink(); ?>" method="POST" class="form" id="ethemeContactForm">
-								<label for="contactName"><?php _e('Name', ETHEME_DOMAIN); ?> <span class="required">*</span></label>
-								<input type="text" class="contact_input required-field" name="contactName"/>
-								<label for="contactEmail"><?php _e('Email', ETHEME_DOMAIN); ?> <span class="required">*</span></label>
-								<input type="text" class="contact_input required-field" name="contactEmail"/>
-								<label for="contactSubject"><?php _e('Subject', ETHEME_DOMAIN); ?> <span class="required">*</span></label>
-								<input type="text" class="contact_input" name="contactSubject"/>
-								<label for="contactMessage"><?php _e('Message', ETHEME_DOMAIN); ?> <span class="required">*</span></label>
-								<textarea class="contact_textarea required-field" rows="10" cols="45" name="contactMessage"></textarea>
-								<div id="contact_button">
-										<button class="button fl-r" name="contactSubmit" type="submit"><span><?php _e('Send Request', ETHEME_DOMAIN); ?></span></button>
-										<div class="contactSpinner"></div>
-								</div>
-						</form>
-				</div>
-				<div class="clear"></div>
+			</div>
+
+			<div class="row contact-form">
+					<?php if(etheme_option('contacts_custom_html') != ''): ?>
+							<?php echo etheme_option('contacts_custom_html') ?>
+					<?php endif; ?>
+					<div id="contactsMsgs" class="clear"></div>
+					<div class="col-xs-12 col-sm-4 contact_info">
+							<?php etheme_option('contacts_info'); ?>
+					</div>
+					<div class="col-xs-12 col-sm-8 blog_full_review_container" id="contact_container">
+							<h4><?php _e('Contact Form', ETHEME_DOMAIN); ?></h4>
+							<form action="<?php the_permalink(); ?>" method="POST" class="form" id="ethemeContactForm">
+								<p class="form-row terms wc-terms-and-conditions">
+									<label for="contactName"><?php _e('Name', ETHEME_DOMAIN); ?> <span class="required">*</span></label>
+									<input type="text" class="input-text form-control contact_input required-field" name="contactName"/>
+								</p>
+								<p class="form-row terms wc-terms-and-conditions">
+									<label for="contactEmail"><?php _e('Email', ETHEME_DOMAIN); ?> <span class="required">*</span></label>
+									<input type="text" class="input-text form-control contact_input required-field" name="contactEmail"/>
+								</p>
+								<p class="form-row terms wc-terms-and-conditions">
+									<label for="contactSubject"><?php _e('Subject', ETHEME_DOMAIN); ?> <span class="required">*</span></label>
+									<input type="text" class="input-text form-control contact_input" name="contactSubject"/>
+								</p>
+								<p class="form-row terms wc-terms-and-conditions">
+									<label for="contactMessage"><?php _e('Message', ETHEME_DOMAIN); ?> <span class="required">*</span></label>
+									<textarea class="input-text form-control contact_textarea required-field" rows="5" cols="45" name="contactMessage"></textarea>
+								</p>
+									<div id="contact_button">
+											<button class="btn btn-primary fl-r" name="contactSubmit" type="submit"><span><?php _e('Send Request', ETHEME_DOMAIN); ?></span></button>
+											<div class="contactSpinner"></div>
+									</div>
+							</form>
+					</div>
+					<div class="clear"></div>
+			</div>
+
 		</div>
+
 <?php
-}
+	}
 }
 
 

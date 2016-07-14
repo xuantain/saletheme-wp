@@ -93,20 +93,11 @@
 
 /* Scroll bar - on the right */
 .nicescroll-rails {
-	position: fixed;
-	top: 0px;
-	right: 0px;
-	height: 100%;
-	width: 7px !important;
-	cursor: default;
-	opacity: 1;
-	background: #efefef;
-	z-index: 101!important;
+	top: 0 !important;
+	z-index: 1001!important;
 }
 .nicescroll-rails div {
-	position: relative;
 	float: right;
-	top: 163px;
 	right: 0;
 	width: 7px !important;
 	height: 55px;

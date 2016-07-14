@@ -83,10 +83,10 @@ wc_print_notices();
 										?>
 									</div>
 								</div>
-							</div>
+							<!-- </div> -->
 
 							<!-- <?php //if ( ! $is_ajax ) : ?><div id="order_review"><?php //endif; ?> -->
-							<div class="col-xs-12 col-sm-4">
+							<!-- <div class="col-xs-12 col-sm-4"> -->
 
 								<?php do_action( 'woocommerce_review_order_before_payment' ); ?>
 

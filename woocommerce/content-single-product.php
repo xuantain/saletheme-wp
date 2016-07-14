@@ -38,7 +38,7 @@
 
 				<div class="clear"></div>
 
-		</div><!-- #product-<?php the_ID(); ?> -->
+		</div><!-- #product-<?php //the_ID(); ?> -->
 
 		<div class="row">
 			<div class="col-xs-1"></div>

@@ -20,7 +20,7 @@ $imgId = get_post_thumbnail_id();
 $crop = false;
 
 if($zoom != 'disable'){
-	wp_enqueue_style("zoom",get_template_directory_uri().'/css/zoom.css');
+	// wp_enqueue_style("zoom",get_template_directory_uri().'/css/zoom.css');
 	wp_enqueue_script('mousewheel', get_template_directory_uri().'/js/jquery.mousewheel.js');
 	wp_enqueue_script('touch', get_template_directory_uri().'/js/touch.js');
 	wp_enqueue_script('zoom', get_template_directory_uri().'/js/zoom.js');
@@ -28,7 +28,7 @@ if($zoom != 'disable'){
 
 ?>
 <div class="col-xs-12 col-sm-3 product_image <?php if($zoom != 'disable') echo 'zoom-enabled'; ?>" data-img="<?php echo etheme_get_image( $imgId, $mainWidth, $mainHeight, $crop ) ?>" data-original="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
-		<!-- <h1 class="product-title2"><?php the_title(); ?></h1> -->
+		<!-- <h1 class="product-title2"><?php //the_title(); ?></h1> -->
 	<?php if ( has_post_thumbnail() ) : ?>
 		<div class="main-image" style="position:relative;">
 			<?php etheme_wc_product_labels(); ?>

@@ -95,9 +95,9 @@ global $woocommerce;
 							?>
 						</td>
 						<!-- Remove from cart link -->
-						<td class="product-remove cart_del_column">
+						<td class="product-remove cart_del_column text-center">
 							<?php
-								echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="delete-btn" title="%s"></a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remove this item', ETHEME_DOMAIN) ), $cart_item_key );
+								echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="glyphicon glyphicon-remove" title="%s"></a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remove this item', ETHEME_DOMAIN) ), $cart_item_key );
 							?>
 						</td>
 					</tr>

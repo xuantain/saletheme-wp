@@ -129,4 +129,20 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 				<div class="clear"></div>
 		</div>
 </div><!-- .container -->
+<script type="text/javascript">
+	function add_to_cart_redirect_ajax (_url) {
+		jQuery.ajax({
+			method: 'post',
+			url: _url,
+			success: function (res) {
+				if (res) {
+					window.location.replace('http://localhost/thegioiphukienso.vn/thanh-toan');
+				}
+			},
+			error: function (err) {
+				alert('Error: Cannot put to your card!');
+			}
+		})
+	}
+</script>
 <?php get_footer('shop'); ?>

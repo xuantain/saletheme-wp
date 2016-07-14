@@ -33,17 +33,14 @@ $woocommerce_loop['columns'] 	= $columns;
 $related_count = 0;
 
 if ( $products->have_posts() ) : ?>
-		<div class="product-slider related columns4">
+		<div class="home-product-grid slider">
 				<h4 class="slider-title"><?php _e('Related Products', ETHEME_DOMAIN); ?></h4>
-				<div class="clear"></div>
-				<div class="carousel slider-<?php echo $rand ?>" <?php if($related_count < 5): ?>style="height:auto;"<?php endif; ?>>
-						<div class="slider">
-			<?php while ( $products->have_posts() ) : $products->the_post();	$related_count++; ?>
-					<div class="slide product-slide">
-				<?php woocommerce_get_template_part( 'content', 'product' ); ?>
-						 </div>
-			<?php endwhile; // end of the loop. ?>
-						</div>
+				<div>
+					<?php while ( $products->have_posts() ) : $products->the_post();	$related_count++; ?>
+							<div class="slide product-slide">
+								<?php woocommerce_get_template_part( 'content', 'product' ); ?>
+							</div>
+					<?php endwhile; // end of the loop. ?>
 				</div>
 				<?php if($related_count > 1): ?>
 
@@ -82,6 +79,22 @@ if ( $products->have_posts() ) : ?>
 										}
 								});
 						});
+				</script>
+				<script type="text/javascript">
+					function add_to_cart_redirect_ajax (_url) {
+						jQuery.ajax({
+							method: 'post',
+							url: _url,
+							success: function (res) {
+								if (res) {
+									window.location.replace('http://localhost/thegioiphukienso.vn/thanh-toan');
+								}
+							},
+							error: function (err) {
+								alert('Error: Cannot put to your card!');
+							}
+						})
+					}
 				</script>
 		<?php endif; ?>
 
